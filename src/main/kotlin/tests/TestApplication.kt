@@ -1,13 +1,13 @@
-import javafx.scene.text.Text;
-import org.junit.Before;
-import org.junit.Test;
+package tests
 
-public class TecTextParserTest {
+import TecTextParser
+import View
+import javafx.application.Application
+import javafx.stage.Stage
 
+class TestApplication : Application() {
 
-    private TecTextParser parser;
-
-    public String sample = "You are wearing:\n" +
+    var sample = "You are wearing:\n" +
             "<ul><li>some dark linen breeches\n" +
             "<li>a lorica hamata\n" +
             "<li>a leather belt with iron studs\n" +
@@ -44,9 +44,26 @@ public class TecTextParserTest {
             "<li>a bronze greave\n" +
             "<li>a bronze greave\n" +
             "<li>some torn leather gloves with tarnished iron studs at the knuckles\n" +
-            "</ul>";
-    String fontSample = " </font>You are facing south. You see </font><font color=\"#646464\">Quiet Room A</font> to the </font><font color=\"#646464\">north</font>; a </font><font color=\"#646464\">walkway</font> to the </font><font color=\"#646464\">east</font> and to the </font><font color=\"#646464\">west</font>; </font><font color=\"#646464\">Quiet Room B</font> to the </font><font color=\"#646464\">south</font>; and an </font><font color=\"#646464\">obsidian staircase</font> leading </font><font color=\"#646464\">downwards</font>.</font>";
-    String example2 = "Please enter your username:\n" +
+            "</ul>"
+
+
+    val view = View({ text -> System.out.println(text) })
+    val parser = TecTextParser()
+    override fun start(primaryStage: Stage?) {
+        view.setupUI(primaryStage)
+
+        view.addTextWithStyle(parser.parseLine(test3))
+    }
+
+    companion object {
+        @JvmStatic
+        fun main(vararg args: String) {
+            launch(TestApplication::class.java)
+        }
+    }
+
+    var centerTest = "<center>*** Login successful (24.49.42.149) ***</center>"
+    val test3 = "Please enter your username:\n" +
             "Please enter your password:\n" +
             "SKOTOS Zealous 0.7.12.2\n" +
             "\n" +
@@ -69,9 +86,9 @@ public class TecTextParserTest {
             "The Eternal City uses email to notify you of several things.  If you wish to receive these notifications please set an e-mail address using the @email command.\n" +
             "\n" +
             "\n" +
-            "*** Login successful (24.49.42.149) ***\n" +
-            "** Last connection at 11:50 pm, Thursday, July 27, 2017 **\n" +
-            "** You are the fourteen million, eight hundred seventy-five thousand, three hundred eighty-sixth login to date **\n" +
+            "<center>*** Login successful (24.49.42.149) ***</center>" +
+            "<center>** Last connection at 11:50 pm, Thursday, July 27, 2017 **</center>" +
+            "<center>** You are the fourteen million, eight hundred seventy-five thousand, three hundred eighty-sixth login to date **</center>\n" +
             "Welcome to the Welcome Room! This cozy little place might be ideal, whether you're just passing through or stopping by for a chat. A fountain trickles nearby, surrounded by several comfortable-looking chairs. \n" +
             "No new forum messages found.\n" +
             "\n" +
@@ -404,33 +421,5 @@ public class TecTextParserTest {
             "Spoken Cineran           :  speak cineran &lt;text&gt;\n" +
             "Swaying Dodge            :  N/A\n" +
             "<hr>\n" +
-            "</pre>&lt;Nicasia thinks aloud: Alright.. I'm bored.&gt;\n";
-
-    @Before
-    public void setup() {
-        parser = new TecTextParser();
-    }
-
-    @Test
-    public void testFonts() {
-        parser.parseLine(sample);
-    }
-
-    @Test
-    public void testSkoot6() {
-        parser.parseLine("SKOOT 6 -10,-10,20,#ff0000,195.0,10,-10,20,#ffffff,160.22,-30,-10,20,#ffffff,150.441,-10,10,20,#ffffff,20.0,-10,-30,20,#ffffff,140.0,30,-10,20,#ffffff,21.1014,30,10,20,#ffffff,120.0,30,-30,20,#ffffff,120.0,10,-30,20,#ffffff,20.0,-50,-10,20,#ffffff,135.0,-50,10,20,#ffffff,35.0,-50,-30,20,#ffffff,22.2029,-30,-30,20,#ffffff,35.0,-30,10,20,#ffffff,35.0,10,-50,20,#ffffff,120.0,20,10,10,#ffffff,20.0,20,30,10,#ffffff,20.0,-70,-10,20,#ffffff,35.0,-50,-70,40,#ffffff,15.4406");
-    }
-
-    @Test
-    public void howDoesStylinWork() {
-
-
-        // Compare the layout widths of two strings. One string is composed
-        // of "thin" characters, the other of "wide" characters. In mono-spaced
-        // fonts the widths should be the same.
-
-        final Text thinTxt = new Text("1 l"); // n
-    }
-
-
+            "</pre>&lt;Nicasia thinks aloud: Alright.. I'm bored.&gt;"
 }

@@ -1,29 +1,25 @@
-import mu.KotlinLogging
+import org.apache.logging.log4j.LogManager
 import java.util.regex.Pattern
 
 class TecTextParser {
 
-    private val logger = KotlinLogging.logger {}
-
+    private val logger = LogManager.getLogger()
     val pattern = Pattern.compile("<(.*?)>")
-    //    val tagRegex = Regex()
     var listDepth = 0
-    val fontColorPattern = Pattern.compile("font color=\"(#[0-9a-fA-F]{6})\"")
 
-    data class TextAndStyle(val text: String, val style: String?)
+    data class TextAndStyle(val text: String, val style: ArrayList<String>, val alignment: String? = null)
 
     fun parseLine(line: String): ArrayList<TextAndStyle> {
         val textList = ArrayList<TextAndStyle>()
         if ("SKOOT" in line) {
             parseSkoot(line)
         } else {
-            if (listDepth > 0) {
-                listDepth -= countSubstring(line, "</ul>")
-            }
-            val lineNoEndTags = line.replace(Regex("</.*?>"), "")
-            val tags = ArrayList<String>()
+            var styleList = ArrayList<String>()
             var currentFontColor: String? = null
+            var currentAlignment: String? = null
+            var currentWeight: String? = null
 
+            var newParagraph: Boolean = false
             val segments = segmentLine(line)
             if (segments.toList().size > 1) {
                 segments
@@ -31,29 +27,49 @@ class TecTextParser {
                         .filterNot { it.trim().isEmpty() }
                         .forEach {
                             if ("<font color" in it) {
-                                currentFontColor = Regex("color=\"(#[0-9a-fA-F]{6})\"").find(it)?.groupValues?.get(1)
+                                currentFontColor = "-fx-fill: " + Regex("color=\"(#[0-9a-fA-F]{6})\"").find(it)?.groupValues?.get(1)
+                                styleList.add(currentFontColor!!)
                             } else if ("</font>" in it) {
-                                currentFontColor = null
+                                styleList.remove(currentFontColor)
+                            } else if ("<center>" in it) {
+                                currentAlignment = "-fx-text-alignment: center;"
+                            } else if ("</center>" in it) {
+                                currentAlignment = null
+                            } else if ("<b>" in it) {
+                                currentWeight = "-fx-font-weight: bold;"
+                                styleList.add(currentWeight!!)
+                            } else if ("</b>" in it) {
+                                styleList.remove(currentWeight)
+                            } else if ("<ul>" in it) {
+                                listDepth++
+                            } else if ("</ul>" in it) {
+                                listDepth--
+                            } else if ("<li>" in it) {
+                                val text = it.replace("<li>", appendTabs())
+                                textList.add(TextAndStyle(text, ArrayList(styleList), currentAlignment))
                             } else {
-                                var style: String? = null
-                                if (currentFontColor != null) {
-                                    style = "-fx-fill: " + currentFontColor +";"
-                                }
-                                textList.add(TextAndStyle(it, style))
+                                textList.add(TextAndStyle(it, ArrayList(styleList), currentAlignment))
                             }
                         }
             } else {
                 if ("Either that user does not exist or has a different password." !in line) {
-                    var style: String? = null
-                    if (currentFontColor != null) {
-                        style = "-fx-fill: " + currentFontColor + currentFontColor +";"
-                    }
-                    textList.add(TextAndStyle(line, style))
+
+                    textList.add(TextAndStyle(line, styleList, currentAlignment))
                 }
             }
         }
         return textList
     }
+
+    fun appendTabs(): String {
+        val tabs = StringBuilder()
+        for (i in 1..listDepth) {
+            tabs.append("    ")
+
+        }
+        return tabs.append("* ").toString()
+    }
+
 
     fun segmentLine(line: String): ArrayList<String> {
         val segments = ArrayList<String>()
@@ -90,22 +106,34 @@ class TecTextParser {
             } else if (skootNumber == "10") {
                 updateExits(skoot.groupValues[2])
             } else {
-                logger.debug { "Unknown SKOOT $line" }
+                logger.debug("Unknown SKOOT " + line)
             }
         }
 
     }
 
+    data class MapData(val x: Int, val y: Int, val size: Int, val color: String)
 
     private fun updateMap(skoot: String) {
+        val mapUpdateString = skoot.split(",")
+        val mapUpdate = ArrayList<MapData>()
+        for (i in 0..mapUpdateString.size step 5) {
+            mapUpdate.add(MapData(mapUpdateString[i].toInt(),
+                    mapUpdateString[i + 1].toInt(),
+                    mapUpdateString[i + 2].toInt(),
+                    mapUpdateString[i + 3]))
+        }
+//        val mapItems =
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     private fun updateCompass(skoot: String) {
+        val compassData = Regex("\\W+").split(skoot)
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     private fun updatePlayerStatus(skoot: String) {
+        val statusData = Regex("\\W+").split(skoot)
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 

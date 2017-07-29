@@ -11,6 +11,7 @@ import okhttp3.HttpUrl
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import org.apache.logging.log4j.LogManager
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -20,6 +21,8 @@ import java.security.MessageDigest
 
 
 class TecClient : Application() {
+    private val logger = LogManager.getLogger()
+
     companion object {
         @JvmStatic
         fun main(vararg args: String) {
@@ -34,7 +37,7 @@ class TecClient : Application() {
     var socket: Socket? = null
     var user = ""
     var pass = ""
-    val view = View()
+    val view = View(this::send)
     val parser = TecTextParser()
 
     override fun start(primaryStage: Stage?) {
@@ -143,6 +146,7 @@ class TecClient : Application() {
                 while (true) {
                     if (!line.isNullOrEmpty()) {
                         emitter.onNext(line)
+                        logger.debug(line)
                     }
                     line = reader.readLine()
                 }
