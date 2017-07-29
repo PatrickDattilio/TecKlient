@@ -1,4 +1,5 @@
 import javafx.scene.text.Text;
+import kotlin.Unit;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -408,7 +409,10 @@ public class TecTextParserTest {
 
     @Before
     public void setup() {
-        parser = new TecTextParser();
+        parser = new TecTextParser(new View((String s) -> {
+            System.out.println(s);
+            return Unit.INSTANCE;
+        }));
     }
 
     @Test

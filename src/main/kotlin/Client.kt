@@ -38,7 +38,7 @@ class TecClient : Application() {
     var user = ""
     var pass = ""
     val view = View(this::send)
-    val parser = TecTextParser()
+    val parser = TecTextParser(view)
 
     override fun start(primaryStage: Stage?) {
         view.setupUI(primaryStage)

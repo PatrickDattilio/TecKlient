@@ -3,6 +3,7 @@ import javafx.scene.canvas.Canvas
 import javafx.scene.control.*
 import javafx.scene.layout.GridPane
 import javafx.scene.layout.VBox
+import javafx.scene.paint.Paint
 import javafx.stage.Stage
 import org.apache.logging.log4j.LogManager
 import org.fxmisc.flowless.VirtualizedScrollPane
@@ -49,7 +50,8 @@ class View(send: (String) -> Unit) {
 //        ,
 //                setupCompass(),
 //                setupStatus())
-
+        map.fill = Paint.valueOf("000000")
+        map.fillRect(0.0, 0.0, mapCanvas.width, mapCanvas.height)
 
         root.add(menuBar, 0, 0, 4, 1)
         root.add(scrollPane, 0, 1, 4, 4)

@@ -1,7 +1,9 @@
+import javafx.scene.paint.Color
+import javafx.scene.paint.Paint
 import org.apache.logging.log4j.LogManager
 import java.util.regex.Pattern
 
-class TecTextParser {
+class TecTextParser(val view: View) {
 
     private val logger = LogManager.getLogger()
     val pattern = Pattern.compile("<(.*?)>")
@@ -112,17 +114,26 @@ class TecTextParser {
 
     }
 
-    data class MapData(val x: Int, val y: Int, val size: Int, val color: String)
+    data class MapData(val x: Double, val y: Double, val size: Double, val color: String)
 
     private fun updateMap(skoot: String) {
         val mapUpdateString = skoot.split(",")
         val mapUpdate = ArrayList<MapData>()
-        for (i in 0..mapUpdateString.size step 5) {
-            mapUpdate.add(MapData(mapUpdateString[i].toInt(),
-                    mapUpdateString[i + 1].toInt(),
-                    mapUpdateString[i + 2].toInt(),
-                    mapUpdateString[i + 3]))
+        val offset = view.mapCanvas.width / 2
+        (0..mapUpdateString.size - 1 step 5).mapTo(mapUpdate) {
+            MapData(mapUpdateString[it].toDouble() + offset,
+                    mapUpdateString[it + 1].toDouble() + offset + mapUpdateString[it + 2].toDouble(),
+                    mapUpdateString[it + 2].toDouble(),
+                    mapUpdateString[it + 3])
         }
+
+        view.map.stroke = Paint.valueOf("000000")
+        for ((x, y, size, color) in mapUpdate) {
+            view.map.fill = Paint.valueOf(color)
+            view.map.fillRect(x, y, size, size)
+            view.map.strokeRect(x, y, size, size)
+        }
+
 //        val mapItems =
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -141,7 +152,61 @@ class TecTextParser {
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
+    data class ExitData(val x: Double, val y: Double, val orient: String, val colorString: String) {
+        val color: Color = if (colorString == "1") Color.WHITE else Color.BLACK
+        val pos: Array<Array<Double>>? = computeExitPositions(x, y, orient)
+
+
+        fun computeExitPositions(x: Double, y: Double, orient: String): Array<Array<Double>>? {
+            if (orient == "ver") {
+                return arrayOf(
+                        arrayOf(x - 1.0, y + 5.0, x - 1.0, y - 5.0),
+                        arrayOf(x, y + 5.0, x, y - 5.0),
+                        arrayOf(x + 1.0, y + 5.0, x + 1.0, y - 5.0))
+            } else if (orient == "hor") {
+
+                return arrayOf(
+                        arrayOf(x + 5.0, y - 1.0, x - 5.0, y - 1.0),
+                        arrayOf(x + 5.0, y, x - 5.0, y),
+                        arrayOf(x + 5.0, y + 1.0, x - 5.0, y + 1.0))
+            } else if ((orient == "ne").or(orient == "sw")) {
+                return arrayOf(
+                        arrayOf(x - 3, y + 4.0, x + 3.0, y - 4.0),
+                        arrayOf(x - 3.0, y + 3.0, x + 3.0, y - 3.0),
+                        arrayOf(x - 3.0, y + 1.0, x + 3.0, y - 1.0))
+            } else if ((orient == "nw").or(orient == "se")) {
+                return arrayOf(
+                        arrayOf(x - 3.0, y - 4.0, x + 3.0, y + 4.0),
+                        arrayOf(x - 3.0, y - 3.0, x + 3.0, y + 3.0),
+                        arrayOf(x - 3.0, y - 1.0, x + 3.0, y + 1.0))
+            }
+            return null
+        }
+    }
+
     private fun updateExits(skoot: String) {
-        //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val exitStrings = skoot.split(",")
+        val exitList = ArrayList<ExitData>()
+
+        val offset = view.mapCanvas.width / 2
+        (0..exitStrings.size - 1 step 4).mapTo(exitList) {
+            ExitData(exitStrings[it].toDouble() + offset,
+                    exitStrings[it + 1].toDouble() + offset,
+                    exitStrings[2],
+                    exitStrings[it + 3])
+        }
+
+        for (exitData in exitList) {
+            if (exitData.pos != null) {
+                view.map.lineWidth = 4.0
+                view.map.stroke = exitData.color
+                view.map.strokeLine(exitData.pos[1][0], exitData.pos[1][1], exitData.pos[1][2], exitData.pos[1][3])
+                view.map.lineWidth = 1.0
+                view.map.stroke = Color.BLACK
+                view.map.strokeLine(exitData.pos[0][0], exitData.pos[0][1], exitData.pos[0][2], exitData.pos[0][3])
+                view.map.strokeLine(exitData.pos[0][0], exitData.pos[0][1], exitData.pos[0][2], exitData.pos[0][3])
+            }
+        }
+
     }
 }
