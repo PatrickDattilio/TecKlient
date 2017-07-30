@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Combat.iml" filepath="$PROJECT_DIR$/.idea/modules/Combat.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TecClient2.iml" filepath="$PROJECT_DIR$/.idea/modules/TecClient2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TecClient2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TecClient2_main.iml" group="TecClient2" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TecClient2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TecClient2_test.iml" group="TecClient2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api.iml" />
     </modules>
   </component>
 </project>

@@ -10,7 +10,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.fxmisc.richtext.InlineCssTextArea;
-import org.scenicview.ScenicView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +33,7 @@ public class Example extends Application {
         primaryStage.setTitle("tests.Example");
         primaryStage.setScene(scene);
         primaryStage.show();
-        ScenicView.show(scene);
+//        ScenicView.show(scene);
 
         area.appendText("Test");
 

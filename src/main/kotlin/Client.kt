@@ -12,6 +12,7 @@ import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.apache.logging.log4j.LogManager
+import ro.fortsoft.pf4j.DefaultPluginManager
 import widget.Controls
 import java.io.BufferedReader
 import java.io.IOException
@@ -42,12 +43,17 @@ class TecClient : Application() {
     val view = View(controls)
     val api = Api()
     val parser = TecTextParser(controls, api)
+    val pluginManager = DefaultPluginManager()
 
     override fun start(primaryStage: Stage?) {
+        pluginManager.loadPlugins()
+        pluginManager.startPlugins()
+
+        logger.info("Plugindirectory: ");
+        logger.info("\t" + System.getProperty("pf4j.pluginsDir", "plugins") + "\n")
+        val greetings = pluginManager.getExtensions(api.LinePreprocessor::class.java)
         view.setupUI(primaryStage)
         getCredentials()
-
-
     }
 
     private fun getCredentials() {
