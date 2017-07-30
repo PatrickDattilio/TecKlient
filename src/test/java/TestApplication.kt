@@ -1,8 +1,3 @@
-package tests
-
-import Api
-import TecTextParser
-import View
 import javafx.application.Application
 import javafx.stage.Stage
 import widget.Controls
@@ -19,7 +14,7 @@ class TestApplication : Application() {
     override fun start(primaryStage: Stage?) {
         view.setupUI(primaryStage)
         val classLoader = javaClass.classLoader
-        val file = File(classLoader.getResource("map")!!.file)
+        val file = File(classLoader.getResource("skootTestData")!!.file)
         file.forEachLine { parser.parseLine(it) }
     }
 

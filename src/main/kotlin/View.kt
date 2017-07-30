@@ -5,7 +5,6 @@ import javafx.stage.Stage
 import org.apache.logging.log4j.LogManager
 import org.fxmisc.flowless.VirtualizedScrollPane
 import org.fxmisc.richtext.InlineCssTextArea
-import org.scenicview.ScenicView
 import widget.Controls
 
 class View(val controls: Controls) {
@@ -48,15 +47,8 @@ class View(val controls: Controls) {
         primaryStage?.title = "Hello World!"
         primaryStage?.scene = scene
         primaryStage?.show()
-        ScenicView.show(scene)
+        //ScenicView.show(scene)
     }
-
-    private fun updateMap(skoot: String) {
-
-    }
-
-
-
 
     fun addText(text: String) {
         gameScreen.appendText(text + "\n")

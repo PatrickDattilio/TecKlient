@@ -57,7 +57,7 @@ class Compass(width: Double, height: Double, val sendCommand: (String) -> Unit) 
 
     fun updateCompass(skoot: String) {
         val compassUpdates = Regex("\\W+").split(skoot)
-        for (i in (0..20) step 2) {
+        for (i in (0..compassUpdates.size - 1) step 2) {
             val fill = if (compassUpdates[i + 1] == "show") Color.WHITE else Color.DARKGREY
             compass.get(compassUpdates[i])?.fill = fill
         }
