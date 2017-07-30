@@ -12,6 +12,7 @@ import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.apache.logging.log4j.LogManager
+import widget.Controls
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -37,8 +38,10 @@ class TecClient : Application() {
     var socket: Socket? = null
     var user = ""
     var pass = ""
-    val view = View(this::send)
-    val parser = TecTextParser(view)
+    val controls = Controls(this::send)
+    val view = View(controls)
+    val api = Api()
+    val parser = TecTextParser(controls, api)
 
     override fun start(primaryStage: Stage?) {
         view.setupUI(primaryStage)
@@ -162,8 +165,11 @@ class TecClient : Application() {
         if (line.isNotEmpty()) {
             if (!line.contains("SECRET", ignoreCase = false)) {
 //                view.addText(line)
-                val textAndStyle = parser.parseLine(line)
+
+                val preProcesssedLine = api.preProcessLine(line)
+                val textAndStyle = parser.parseLine(preProcesssedLine)
                 view.addTextWithStyle(textAndStyle)
+                api.postProcessLine(preProcesssedLine)
             } else {
                 clientLogin(line)
             }
