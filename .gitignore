@@ -2,4 +2,4 @@ build
 .gradle
 .idea
 app/plugins/
-app/out
+app/out/
