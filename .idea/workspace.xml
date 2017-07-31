@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="Refactored the project to support plugins.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/HexKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/META-INF/app.kotlin_module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/ClientKt$sam$Consumer$d9dd92a9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$Companion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$Login.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$clearHandler$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$controls$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$gameConnect$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$gameConnect$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$gameConnect$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$gameInputHandler$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$loginToWebsite$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$passwordInputHandler$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$passwordInputHandler$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient$usernameInputHandler$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecTextParser$TextAndStyle.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecTextParser$parseLine$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/TecTextParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/View$setupUI$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/View.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/widget/Map$ExitData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/widget/Map$MapData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/com/dattilio/klient/widget/Map.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/widget/Compass$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/widget/Compass$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/widget/Compass$Rectangle$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/widget/Compass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/widget/Controls$setupMacros$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/widget/Controls$setupMacros$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/out/production/classes/widget/Controls.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -161,13 +129,111 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Client.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="611">
+              <caret line="171" column="51" lean-forward="true" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
+              <folding>
+                <element signature="e#29#729#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hex.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Hex.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TecTextParser.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding>
+                <element signature="e#29#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/resources/log4j2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personalText" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/resources/personalText">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="338" column="297" lean-forward="false" selection-start-line="338" selection-start-column="296" selection-end-line="338" selection-end-column="297" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestApplication.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/text/TestApplication.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="e#34#352#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessController.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/security/AccessController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="370" column="31" lean-forward="false" selection-start-line="370" selection-start-column="31" selection-end-line="370" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PluginManager.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding>
+                <element signature="e#29#121#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,6 +256,7 @@
       <find>pluginsRoot</find>
       <find>Hello</find>
       <find>pluginsRoot =</find>
+      <find>;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1177,7 +1244,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/kotlin/Client.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt" />
         <option value="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/Combat.kt" />
         <option value="$PROJECT_DIR$/plugins/Combat/src/main/com/dattilio/scoundrel/Combat.kt" />
         <option value="$PROJECT_DIR$/plugins/Combat/build.gradle" />
@@ -1187,10 +1253,14 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/plugins/combat/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt" />
         <option value="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/src/test/kotlin/TestApplication.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/text/TestApplication.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt" />
       </list>
     </option>
   </component>
@@ -1201,8 +1271,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2567" />
-    <option name="width" value="1598" />
+    <option name="x" value="-7" />
+    <option name="width" value="1979" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -1221,7 +1291,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1229,10 +1298,76 @@
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
               <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="klient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="klient" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope">
@@ -1260,19 +1395,22 @@
     <property name="SearchEverywhereHistoryKey" value=".gitignore&#9;FILE&#9;file://P:/dev/TecKlient2/.gitignore&#10;abstra&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/sun/nio/fs/AbstractPath.class&#10;Client&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/Client.kt&#10;Combat&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="P:\dev\TecKlient2\app\src\main\resources" />
-      <recent name="P:\dev\TecKlient2\api\src\main\kotlin" />
-      <recent name="P:\dev\TecKlient2\plugins\combat" />
-      <recent name="P:\dev\TecKlient2" />
-      <recent name="P:\dev\TecKlient2\app\src\main\kotlin\com\dattilio\klient" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin\com\dattilio" />
       <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin\com" />
       <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin" />
       <recent name="P:\dev\TecKlient2\app\src\main\kotlin\com\dattilio\klient" />
       <recent name="P:\dev\TecKlient2\app" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.dattilio.klient.text" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="P:\dev\TecKlient2\app\src\test\resources" />
+      <recent name="P:\dev\TecKlient2\app\src\test\kotlin" />
+      <recent name="P:\dev\TecKlient2\app\src\main\resources" />
+      <recent name="P:\dev\TecKlient2\app\src\main\kotlin\com\dattilio\klient" />
+      <recent name="P:\dev\TecKlient2\api\src\main\kotlin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1287,7 +1425,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.dattilio.klient.TecClient">
+  <component name="RunManager" selected="Kotlin.com.dattilio.klient.text.TestApplication">
+    <configuration name="TestApplication" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="app" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -1392,6 +1542,18 @@
       <module name="app" />
       <envs />
     </configuration>
+    <configuration name="com.dattilio.klient.text.TestApplication" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.text.TestApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="app" />
+      <envs />
+    </configuration>
     <configuration name="combat [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1426,35 +1588,20 @@
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
     </configuration>
-    <configuration name="combat::dev:TecKlient2 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyPlugins]" />
       <item index="1" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.TecClient" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.combat [assemble]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [jar]" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.TestApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.text.TestApplication" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.TecClient" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyPlugins]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.combat [assemble]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [jar]" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.text.TestApplication" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.TestApplication" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.TecClient" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyPlugins]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.combat [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -1473,7 +1620,9 @@
       <updated>1501462609538</updated>
       <workItem from="1501462613993" duration="10464000" />
       <workItem from="1501473274645" duration="407000" />
-      <workItem from="1501473697636" duration="88000" />
+      <workItem from="1501473697636" duration="115000" />
+      <workItem from="1501473825007" duration="173000" />
+      <workItem from="1501518616705" duration="4420000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored the project to support plugins.">
       <created>1501472160700</created>
@@ -1489,44 +1638,58 @@
       <option name="project" value="LOCAL" />
       <updated>1501473646375</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gitignore cleanup">
+      <created>1501473806023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1501473806023</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Parse hr,pre, use preprocessing plugins.">
+      <created>1501523441387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1501523441387</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10959000" />
+    <option name="totallyTimeSpent" value="15579000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2567" y="0" width="1598" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1979" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31864673" sideWeight="0.49675852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296617" sideWeight="0.5052016" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40283242" sideWeight="0.5032415" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296617" sideWeight="0.49479845" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32651454" sideWeight="0.48622367" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296617" sideWeight="0.49349806" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20546164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16883793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18985696" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15216258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40283242" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40283242" sideWeight="0.49675852" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31864673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1568,23 +1731,13 @@
     </ignored-roots>
     <MESSAGE value="Refactored the project to support plugins." />
     <MESSAGE value="Ready to actually write plugins." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready to actually write plugins." />
+    <MESSAGE value="gitignore cleanup" />
+    <MESSAGE value="Parse hr,pre, use preprocessing plugins." />
+    <option name="LAST_COMMIT_MESSAGE" value="Parse hr,pre, use preprocessing plugins." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java</url>
-          <line>680</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java</url>
-          <line>222</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt</url>
           <line>33</line>
@@ -1603,38 +1756,36 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt</url>
+          <line>2</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt</url>
+          <line>2</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="pluginsRoot.toFile()" language="JAVA" />
         <watch expression="Paths.get(&quot;.&quot;).toFile()" language="JAVA" />
+        <watch expression="classLoader.getResource(&quot;personalText&quot;)" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3774">
@@ -1655,7 +1806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1663,7 +1813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1697,13 +1846,6 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Hex.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1742,7 +1884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1752,7 +1893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1760,13 +1900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1788,14 +1921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1890,35 +2015,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/BasePluginRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3094">
-          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1936,7 +2036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1944,11 +2043,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/out/production/classes/HexKt.class" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/out/production/classes/HexKt.class">
+    <entry file="file://$PROJECT_DIR$/app/src/test/resources/personalText">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1956,10 +2063,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="697">
+          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/security/AccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="370" column="31" lean-forward="false" selection-start-line="370" selection-start-column="31" selection-end-line="370" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <element signature="e#29#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Hex.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/text/TestApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="171" column="51" lean-forward="true" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
+          <folding>
+            <element signature="e#29#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/personalText">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="338" column="297" lean-forward="false" selection-start-line="338" selection-start-column="296" selection-end-line="338" selection-end-column="297" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#29#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
         </state>
       </provider>
