@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager
 import widget.Controls
 import java.util.regex.Pattern
 
-class TecTextParser(val controls: Controls) {
+class TecTextParser(val controls: Controls, val pluginManager: PluginManager) {
 
     private val logger = LogManager.getLogger()
     val pattern = Pattern.compile("<(.*?)>")
@@ -14,57 +14,61 @@ class TecTextParser(val controls: Controls) {
 
     fun parseLine(line: String): ArrayList<TextAndStyle> {
 
+        val preProcesssedLine = pluginManager.preProcessLine(line)
         val textList = ArrayList<TextAndStyle>()
-        if ("SKOOT" in line) {
-            parseSkoot(line)
+        if ("SKOOT" in preProcesssedLine) {
+            parseSkoot(preProcesssedLine)
         } else {
             var styleList = ArrayList<String>()
             var currentFontColor: String? = null
             var currentAlignment: String? = null
             var currentWeight: String? = null
 
-            var newParagraph: Boolean = false
-            val segments = segmentLine(line)
-            if (segments.toList().size > 1) {
-                segments
-                        .asSequence()
-                        .filterNot { it.trim().isEmpty() }
-                        .forEach {
-                            if ("<font color" in it) {
-                                currentFontColor = "-fx-fill: " + Regex("color=\"(#[0-9a-fA-F]{6})\"").find(it)?.groupValues?.get(1)
-                                styleList.add(currentFontColor!!)
-                            } else if ("</font>" in it) {
-                                styleList.remove(currentFontColor)
-                            } else if ("<center>" in it) {
-                                currentAlignment = "-fx-text-alignment: center;"
-                            } else if ("</center>" in it) {
-                                currentAlignment = null
-                            } else if ("<b>" in it) {
-                                currentWeight = "-fx-font-weight: bold;"
-                                styleList.add(currentWeight!!)
-                            } else if ("</b>" in it) {
-                                styleList.remove(currentWeight)
-                            } else if ("<ul>" in it) {
-                                listDepth++
-                            } else if ("</ul>" in it) {
-                                listDepth--
-                            } else if ("<li>" in it) {
-                                val text = it.replace("<li>", appendTabs())
-                                textList.add(TextAndStyle(text, ArrayList(styleList), currentAlignment))
-                            } else {
-                                textList.add(TextAndStyle(it, ArrayList(styleList), currentAlignment))
+            val segments = segmentLine(preProcesssedLine)
+            segments
+                    .asSequence()
+                    .filterNot { it.trim().isEmpty() }
+                    .forEach {
+                        if ("<font color" in it) {
+                            currentFontColor = "-fx-fill: " + Regex("color=\"(#[0-9a-fA-F]{6})\"").find(it)?.groupValues?.get(1)
+                            styleList.add(currentFontColor!!)
+                        } else if ("</font>" in it) {
+                            styleList.remove(currentFontColor)
+                        } else if ("<center>" in it) {
+                            currentAlignment = "-fx-text-alignment: center;"
+                        } else if ("</center>" in it) {
+                            currentAlignment = null
+                        } else if ("<b>" in it) {
+                            currentWeight = "-fx-font-weight: bold;"
+                            styleList.add(currentWeight!!)
+                        } else if ("</b>" in it) {
+                            styleList.remove(currentWeight)
+                        } else if ("<ul>" in it) {
+                            listDepth++
+                        } else if ("</ul>" in it) {
+                            listDepth--
+                        } else if ("<li>" in it) {
+                            val text = it.replace("<li>", appendTabs())
+                            textList.add(TextAndStyle(text, ArrayList(styleList), currentAlignment))
+                        } else if ("<hr>" in it) {
+                            val builder = StringBuilder()
+                            for (i in 1..it.length) {
+                                builder.append("-")
                             }
+                            textList.add(TextAndStyle(builder.toString(), ArrayList(styleList), currentAlignment))
+                        } else if ("<pre>" in it) {
+                        } else if ("</pre>" in it) {
+
+                        } else {
+                            textList.add(TextAndStyle(it.replace("&gt;",">")
+                                    .replace("&lt;","<")
+                                    .replace("&quot;","\""), ArrayList(styleList), currentAlignment))
                         }
-            } else {
-                if ("Either that user does not exist or has a different password." !in line) {
-
-                    textList.add(TextAndStyle(line, styleList, currentAlignment))
-                }
-            }
+                    }
         }
-
         return textList
     }
+
 
     fun appendTabs(): String {
         val tabs = StringBuilder()

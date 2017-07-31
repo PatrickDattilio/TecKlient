@@ -1,6 +1,5 @@
 package com.dattilio.klient
 
-import com.dattilio.klient.api.LinePreprocessor
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
 import io.reactivex.rxjavafx.schedulers.JavaFxScheduler
@@ -15,7 +14,6 @@ import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.apache.logging.log4j.LogManager
-import ro.fortsoft.pf4j.DefaultPluginManager
 import toHexString
 import widget.Controls
 import java.io.BufferedReader
@@ -23,8 +21,6 @@ import java.io.IOException
 import java.io.InputStreamReader
 import java.net.Socket
 import java.nio.charset.Charset
-import java.nio.file.Path
-import java.nio.file.Paths
 import java.security.MessageDigest
 
 
@@ -47,16 +43,10 @@ class TecClient : Application() {
     var pass = ""
     val controls = Controls(this::send)
     val view = View(controls)
-    val parser = TecTextParser(controls)
-    val pluginManager = DefaultPluginManager(Paths.get("app/plugins"))
+    val pluginManager = PluginManager()
+    val parser = TecTextParser(controls,pluginManager)
 
     override fun start(primaryStage: Stage?) {
-        pluginManager.loadPlugins()
-        pluginManager.startPlugins()
-
-        System.out.println("Plugindirectory: ");
-        System.out.println("\t" + System.getProperty("pf4j.pluginsDir", "plugins") + "\n")
-        val greetings = pluginManager.getExtensions(LinePreprocessor::class.java)
         view.setupUI(primaryStage)
         getCredentials()
     }
