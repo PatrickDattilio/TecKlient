@@ -1,4 +1,4 @@
-package widget
+package com.dattilio.klient.widget
 
 import javafx.scene.canvas.Canvas
 import javafx.scene.paint.Color

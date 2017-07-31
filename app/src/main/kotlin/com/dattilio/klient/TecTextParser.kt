@@ -1,8 +1,10 @@
+package com.dattilio.klient
+
 import org.apache.logging.log4j.LogManager
 import widget.Controls
 import java.util.regex.Pattern
 
-class TecTextParser(val controls: Controls, val api: Api) {
+class TecTextParser(val controls: Controls) {
 
     private val logger = LogManager.getLogger()
     val pattern = Pattern.compile("<(.*?)>")
@@ -13,9 +15,8 @@ class TecTextParser(val controls: Controls, val api: Api) {
     fun parseLine(line: String): ArrayList<TextAndStyle> {
 
         val textList = ArrayList<TextAndStyle>()
-        val preProcesssedLine = api.preProcessLine(line)
-        if ("SKOOT" in preProcesssedLine) {
-            parseSkoot(preProcesssedLine)
+        if ("SKOOT" in line) {
+            parseSkoot(line)
         } else {
             var styleList = ArrayList<String>()
             var currentFontColor: String? = null
@@ -23,7 +24,7 @@ class TecTextParser(val controls: Controls, val api: Api) {
             var currentWeight: String? = null
 
             var newParagraph: Boolean = false
-            val segments = segmentLine(preProcesssedLine)
+            val segments = segmentLine(line)
             if (segments.toList().size > 1) {
                 segments
                         .asSequence()
@@ -55,9 +56,9 @@ class TecTextParser(val controls: Controls, val api: Api) {
                             }
                         }
             } else {
-                if ("Either that user does not exist or has a different password." !in preProcesssedLine) {
+                if ("Either that user does not exist or has a different password." !in line) {
 
-                    textList.add(TextAndStyle(preProcesssedLine, styleList, currentAlignment))
+                    textList.add(TextAndStyle(line, styleList, currentAlignment))
                 }
             }
         }

@@ -1,3 +1,6 @@
+package com.dattilio.klient
+
+import com.dattilio.klient.api.LinePreprocessor
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
 import io.reactivex.rxjavafx.schedulers.JavaFxScheduler
@@ -13,12 +16,15 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.apache.logging.log4j.LogManager
 import ro.fortsoft.pf4j.DefaultPluginManager
+import toHexString
 import widget.Controls
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
 import java.net.Socket
 import java.nio.charset.Charset
+import java.nio.file.Path
+import java.nio.file.Paths
 import java.security.MessageDigest
 
 
@@ -41,17 +47,16 @@ class TecClient : Application() {
     var pass = ""
     val controls = Controls(this::send)
     val view = View(controls)
-    val api = Api()
-    val parser = TecTextParser(controls, api)
-    val pluginManager = DefaultPluginManager()
+    val parser = TecTextParser(controls)
+    val pluginManager = DefaultPluginManager(Paths.get("app/plugins"))
 
     override fun start(primaryStage: Stage?) {
         pluginManager.loadPlugins()
         pluginManager.startPlugins()
 
-        logger.info("Plugindirectory: ");
-        logger.info("\t" + System.getProperty("pf4j.pluginsDir", "plugins") + "\n")
-        val greetings = pluginManager.getExtensions(api.LinePreprocessor::class.java)
+        System.out.println("Plugindirectory: ");
+        System.out.println("\t" + System.getProperty("pf4j.pluginsDir", "plugins") + "\n")
+        val greetings = pluginManager.getExtensions(LinePreprocessor::class.java)
         view.setupUI(primaryStage)
         getCredentials()
     }
@@ -172,10 +177,10 @@ class TecClient : Application() {
             if (!line.contains("SECRET", ignoreCase = false)) {
 //                view.addText(line)
 
-                val preProcesssedLine = api.preProcessLine(line)
-                val textAndStyle = parser.parseLine(preProcesssedLine)
+//                val preProcesssedLine = api.preProcessLine(line)
+                val textAndStyle = parser.parseLine(line)
                 view.addTextWithStyle(textAndStyle)
-                api.postProcessLine(preProcesssedLine)
+//                api.postProcessLine(preProcesssedLine)
             } else {
                 clientLogin(line)
             }

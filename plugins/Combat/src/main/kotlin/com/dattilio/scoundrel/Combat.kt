@@ -1,3 +1,6 @@
+package com.dattilio.scoundrel
+
+import com.dattilio.klient.api.LinePreprocessor
 import org.slf4j.LoggerFactory
 import ro.fortsoft.pf4j.Extension
 import ro.fortsoft.pf4j.Plugin

@@ -1,5 +1,5 @@
-group 'TecSmashed'
-version '0.1'
+group 'com.dattilio.scoundrel'
+version '0.0.1'
 
 buildscript {
     ext.kotlin_version = '1.1.3-2'
@@ -11,21 +11,20 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
-
 jar {
-    baseName = 'KotlinPlugin'
-    version = '0.1.0'
+    baseName = 'combat'
+    version = '0.0.1'
     manifest {
-        attributes 'Plugin-Class' : 'ro.fortsoft.pf4j.demo.kotlin.KotlinPlugin',
-                'Plugin-Id' : 'KotlinPlugin',
-                'Plugin-Version' : '1.0.0',
-                'Plugin-Provider' : 'Anindya Chatterjee'
+        attributes 'Plugin-Class' : 'com.dattilio.scoundrel.Combat',
+                'Plugin-Id' : 'Combat',
+                'Plugin-Version' : '0.0.1',
+                'Plugin-Provider' : 'Pmoney'
     }
 }
 
 task plugin(type: Jar) {
-    baseName = 'KotlinPlugin'
-    version = '0.1.0'
+    baseName = 'Combat'
+    version = '0.0.1'
     into('classes'){
         with jar
     }
@@ -39,19 +38,17 @@ assemble.dependsOn plugin
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-kapt'
 
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
     compileOnly project(':api')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile 'ro.fortsoft.pf4j:pf4j:1.3.0'
     kapt ('ro.fortsoft.pf4j:pf4j:1.3.0') {
         exclude group: "org.slf4j"
     }
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
-    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
 compileKotlin {

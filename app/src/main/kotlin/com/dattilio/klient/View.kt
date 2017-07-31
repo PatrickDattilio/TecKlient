@@ -1,3 +1,5 @@
+package com.dattilio.klient
+
 import javafx.scene.Scene
 import javafx.scene.control.*
 import javafx.scene.layout.GridPane
