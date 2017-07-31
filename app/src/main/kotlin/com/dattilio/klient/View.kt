@@ -46,7 +46,7 @@ class View(val controls: Controls) {
         root.add(textArea, 0, 5, 4, 1)
         root.add(controls, 5, 0, 1, 4)
 
-        primaryStage?.title = "Hello World!"
+        primaryStage?.title = "TecKlient"
         primaryStage?.scene = scene
         primaryStage?.show()
         //ScenicView.show(scene)
