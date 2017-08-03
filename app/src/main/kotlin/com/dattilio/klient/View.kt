@@ -7,9 +7,10 @@ import javafx.stage.Stage
 import org.apache.logging.log4j.LogManager
 import org.fxmisc.flowless.VirtualizedScrollPane
 import org.fxmisc.richtext.InlineCssTextArea
-import widget.Controls
+import com.dattilio.klient.widget.Controls
+import javax.inject.Inject
 
-class View(val controls: Controls) {
+class View @Inject constructor(val controls: Controls) {
 
     private val logger = LogManager.getLogger()
     val gameScreen = InlineCssTextArea()

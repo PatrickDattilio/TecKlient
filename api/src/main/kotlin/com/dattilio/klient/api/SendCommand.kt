@@ -1,8 +1,13 @@
 package com.dattilio.klient.api
 
-import ro.fortsoft.pf4j.ExtensionPoint
+import io.reactivex.subjects.BehaviorSubject
 
-interface SendCommand : ExtensionPoint {
+//Handles telling various parts of the application commands that are to be sent.
 
-    fun sendCommand(send: (String)->Unit)
+class SendCommand {
+    val commands: BehaviorSubject<String> = BehaviorSubject.create<String>()
+
+    fun send(command: String) {
+        commands.onNext(command)
+    }
 }

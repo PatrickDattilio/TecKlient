@@ -1,10 +1,10 @@
 package com.dattilio.klient
 
 import org.apache.logging.log4j.LogManager
-import widget.Controls
+import com.dattilio.klient.widget.Controls
 import java.util.regex.Pattern
 
-class TecTextParser(val controls: Controls, val pluginManager: PluginManager) {
+class TecTextParser(val controls: Controls) {
 
     private val logger = LogManager.getLogger()
     val pattern = Pattern.compile("<(.*?)>")
@@ -14,17 +14,16 @@ class TecTextParser(val controls: Controls, val pluginManager: PluginManager) {
 
     fun parseLine(line: String): ArrayList<TextAndStyle> {
 
-        val preProcesssedLine = pluginManager.preProcessLine(line)
         val textList = ArrayList<TextAndStyle>()
-        if ("SKOOT" in preProcesssedLine) {
-            parseSkoot(preProcesssedLine)
+        if ("SKOOT" in line) {
+            parseSkoot(line)
         } else {
             var styleList = ArrayList<String>()
             var currentFontColor: String? = null
             var currentAlignment: String? = null
             var currentWeight: String? = null
 
-            val segments = segmentLine(preProcesssedLine)
+            val segments = segmentLine(line)
             segments
                     .asSequence()
                     .filterNot { it.trim().isEmpty() }

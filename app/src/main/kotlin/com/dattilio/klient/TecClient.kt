@@ -1,54 +1,44 @@
 package com.dattilio.klient
 
+import com.dattilio.klient.api.SendCommand
+import com.dattilio.klient.widget.Controls
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
 import io.reactivex.rxjavafx.schedulers.JavaFxScheduler
 import io.reactivex.schedulers.Schedulers
-import javafx.application.Application
 import javafx.event.EventHandler
 import javafx.scene.input.KeyCode
 import javafx.scene.input.KeyEvent
-import javafx.stage.Stage
 import okhttp3.HttpUrl
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
 import toHexString
-import widget.Controls
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
 import java.net.Socket
 import java.nio.charset.Charset
 import java.security.MessageDigest
+import javax.inject.Inject
 
 
-class TecClient : Application() {
-    private val logger = LogManager.getLogger()
-
-    companion object {
-        @JvmStatic
-        fun main(vararg args: String) {
-            launch(TecClient::class.java)
-        }
-    }
-
-    val okHttp = OkHttpClient.Builder()
-            .followRedirects(false)
-            .build()
+class TecClient @Inject constructor(val sendCommand: SendCommand,
+                                    val logger: Logger,
+                                    val okHttp: OkHttpClient,
+                                    val controls: Controls,
+                                    val view: View,
+                                    val appComponent: AppComponent) {
 
     var socket: Socket? = null
     var user = ""
     var pass = ""
-    val controls = Controls(this::send)
-    val view = View(controls)
-    val pluginManager = PluginManager()
-    val parser = TecTextParser(controls,pluginManager)
+    val pluginManager = PluginManager(appComponent)
+    val parser = TecTextParser(controls)
 
-    override fun start(primaryStage: Stage?) {
-        view.setupUI(primaryStage)
-        getCredentials()
+    init {
+        sendCommand.commands.subscribe(this::send, logger::error)
     }
 
     private fun getCredentials() {
@@ -167,10 +157,10 @@ class TecClient : Application() {
             if (!line.contains("SECRET", ignoreCase = false)) {
 //                view.addText(line)
 
-//                val preProcesssedLine = api.preProcessLine(line)
-                val textAndStyle = parser.parseLine(line)
+                val preProcessedLine = pluginManager.preProcessLine(line)
+                val textAndStyle = parser.parseLine(preProcessedLine)
                 view.addTextWithStyle(textAndStyle)
-//                api.postProcessLine(preProcesssedLine)
+                pluginManager.postProcessLine(preProcessedLine)
             } else {
                 clientLogin(line)
             }
@@ -203,6 +193,10 @@ class TecClient : Application() {
                 view.textArea.clear()
             }
         }
+    }
+
+    fun start() {
+        getCredentials()
     }
 }
 

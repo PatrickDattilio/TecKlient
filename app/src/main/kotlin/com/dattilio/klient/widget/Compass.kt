@@ -1,5 +1,6 @@
-package widget
+package com.dattilio.klient.widget
 
+import com.dattilio.klient.api.SendCommand
 import javafx.geometry.Insets
 import javafx.scene.layout.Background
 import javafx.scene.layout.BackgroundFill
@@ -9,8 +10,14 @@ import javafx.scene.paint.Color
 import javafx.scene.shape.Polygon
 import javafx.scene.shape.Rectangle
 import javafx.scene.shape.Shape
+import javax.inject.Inject
 
-class Compass(width: Double, height: Double, val sendCommand: (String) -> Unit) : Pane() {
+class Compass @Inject constructor(val command: SendCommand) : Pane() {
+    init {
+        height = 120.0
+        width = 120.0
+    }
+
     val compass = HashMap<String, Shape>()
     val size = 36.0
 
@@ -33,10 +40,10 @@ class Compass(width: Double, height: Double, val sendCommand: (String) -> Unit) 
     val se = Rectangle(78.0, 78.0, size, size, "se")
 
 
-    private fun Rectangle(x: Double, y: Double, width: Double, height: Double, command: String): Rectangle {
+    private fun Rectangle(x: Double, y: Double, width: Double, height: Double, commandString: String): Rectangle {
         val rect = Rectangle(x, y, width, height)
-        rect.setOnMouseClicked { sendCommand(command) }
-        compass.put(command, rect)
+        rect.setOnMouseClicked { command.send(commandString) }
+        compass.put(commandString, rect)
         return rect
     }
 
@@ -46,10 +53,10 @@ class Compass(width: Double, height: Double, val sendCommand: (String) -> Unit) 
 
         background = Background(BackgroundFill(Color.GREY, CornerRadii.EMPTY, Insets.EMPTY))
 
-        u.setOnMouseClicked { sendCommand("u") }
+        u.setOnMouseClicked {command.send("u") }
         compass.put("u", u)
 
-        d.setOnMouseClicked { sendCommand("d") }
+        d.setOnMouseClicked { command.send("d") }
         compass.put("d", d)
         children.addAll(nw, n, ne, w, u, d, e, sw, s, se)
 

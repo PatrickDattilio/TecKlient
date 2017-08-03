@@ -1,13 +1,17 @@
 package com.dattilio.klient.widget
 
 import javafx.scene.canvas.Canvas
+import javafx.scene.canvas.GraphicsContext
 import javafx.scene.paint.Color
 import javafx.scene.paint.Paint
+import javax.inject.Inject
 
-class Map(width: Double, height: Double) : Canvas(width, height) {
-    val map = graphicsContext2D
+class Map @Inject constructor(): Canvas() {
+    val map: GraphicsContext = graphicsContext2D
 
     init {
+        height = 120.0
+        width = 120.0
         map.fill = Paint.valueOf("000000")
         map.fillRect(0.0, 0.0, width, height)
     }

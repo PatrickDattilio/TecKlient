@@ -37,15 +37,21 @@ assemble.dependsOn plugin
 
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-kapt'
-
+sourceSets {
+    main.java.srcDirs += [file("$buildDir/generated/source/kapt/main")]
+}
 repositories {
     mavenCentral()
 }
 
 dependencies {
     compileOnly project(':api')
+    compile 'com.squareup.moshi:moshi:1.5.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     compile 'ro.fortsoft.pf4j:pf4j:1.3.0'
+
+    compile 'com.google.dagger:dagger:2.11'
+    kapt 'com.google.dagger:dagger-compiler:2.11'
     kapt ('ro.fortsoft.pf4j:pf4j:1.3.0') {
         exclude group: "org.slf4j"
     }
