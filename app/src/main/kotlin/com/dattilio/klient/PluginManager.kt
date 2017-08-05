@@ -1,23 +1,16 @@
 package com.dattilio.klient
 
-import com.dattilio.klient.api.DaggerPlugin
 import com.dattilio.klient.api.LinePostprocessor
 import com.dattilio.klient.api.LinePreprocessor
-import java.nio.file.Paths
-import dagger.internal.MembersInjectors.injectMembers
-import ro.fortsoft.pf4j.*
+import com.dattilio.klient.api.SendCommand
+import ro.fortsoft.pf4j.DefaultPluginManager
 import javax.inject.Inject
 
 
-class PluginManager @Inject constructor(val appComponent: AppComponent) {
+class PluginManager @Inject constructor(sendCommand: SendCommand) {
 
 
-    val pluginManager= object: DefaultPluginManager(Paths.get("plugins")) {
-        override fun createPluginFactory():PluginFactory {
-            return DaggerPluginFactory(appComponent)
-        }
-
-    }
+    val pluginManager = DefaultPluginManager()
     private var preProcessors: MutableList<LinePreprocessor>
     private var postProcessors: MutableList<LinePostprocessor>
 
@@ -29,14 +22,20 @@ class PluginManager @Inject constructor(val appComponent: AppComponent) {
         preProcessors = pluginManager.getExtensions(LinePreprocessor::class.java)
         postProcessors = pluginManager.getExtensions(LinePostprocessor::class.java)
 
+        for (preprocessor in preProcessors) {
+            preprocessor.setSendCommand(sendCommand)
+        }
+
     }
 
     fun preProcessLine(line: String): String {
         var processedLine = line
         for (preProcessor in preProcessors) {
-            processedLine = preProcessor.preProcessLine(processedLine)
-            if (line != processedLine) {
-
+            if (preProcessor != null) {
+                processedLine = preProcessor.preProcessLine(processedLine)
+                if (line != processedLine) {
+                    System.out.println("PreProcessor: " + preProcessor::class.simpleName + " modified line: " + line)
+                }
             }
         }
         return line
@@ -49,16 +48,16 @@ class PluginManager @Inject constructor(val appComponent: AppComponent) {
 
     }
 
-    class DaggerPluginFactory(val appComponent: AppComponent) : DefaultPluginFactory() {
-        override fun create(pluginWrapper: PluginWrapper?): Plugin {
-            val plugin = super.create(pluginWrapper)
-            if ((plugin != null).and(plugin is DaggerPlugin) ){
-                plugin.inject(appComponent)
-            }
-            return plugin
-        }
-
-    }
+//    class DaggerPluginFactory(val appComponent: AppComponent) : DefaultPluginFactory() {
+//        override fun create(pluginWrapper: PluginWrapper?): Plugin {
+//            val plugin = super.create(pluginWrapper)
+//            if ((plugin != null).and(plugin is DaggerPlugin)) {
+//                appComponent.inject(plugin as DaggerPlugin)
+//            }
+//            return plugin
+//        }
+//
+//    }
 }
 
 

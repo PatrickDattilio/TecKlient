@@ -1,7 +1,6 @@
 package com.dattilio.klient
 
 import dagger.Component
-import ro.fortsoft.pf4j.Plugin
 import javax.inject.Singleton
 
 @Singleton
@@ -9,5 +8,5 @@ import javax.inject.Singleton
 interface AppComponent{
     fun getTecClient():TecClient
     fun getView():View
-    fun inject(plugin:Plugin)
+    fun inject(app:App)
 }

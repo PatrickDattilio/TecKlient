@@ -10,7 +10,9 @@ import dagger.Provides
 import okhttp3.OkHttpClient
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
+import javax.inject.Singleton
 
+@Singleton
 @Module
 class AppModule(val app: App) {
 
@@ -19,41 +21,49 @@ class AppModule(val app: App) {
 //        return app.getAppComponent()
 //    }
 
+    @Singleton
     @Provides
     fun providesSendCommand(): SendCommand {
         return SendCommand()
     }
 
+    @Singleton
     @Provides
     fun providesCompass(sendCommand: SendCommand): Compass {
         return Compass(sendCommand)
     }
 
+    @Singleton
     @Provides
     fun providesMap(): Map {
         return Map()
     }
 
+    @Singleton
     @Provides
     fun providesMacros(sendCommand: SendCommand): Macros {
         return Macros(sendCommand)
     }
 
+    @Singleton
     @Provides
     fun providesControls(map: Map, compass: Compass, macros: Macros): Controls {
         return Controls(map, compass, macros)
     }
 
+    @Singleton
     @Provides
     fun providesView(controls: Controls): View {
         return View(controls)
     }
 
+    @Singleton
     @Provides
     fun providesLogger(): Logger {
         return LogManager.getLogger()
     }
 
+    @Singleton
     @Provides
     fun providesOkHttp(): OkHttpClient {
         return OkHttpClient.Builder()
@@ -61,6 +71,7 @@ class AppModule(val app: App) {
                 .build()
     }
 
+    @Singleton
     @Provides
     fun providesClient(sendCommand: SendCommand,
                        logger: Logger,

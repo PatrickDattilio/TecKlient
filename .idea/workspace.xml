@@ -2,27 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/DaggerPlugin.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePostprocessor.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Component.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Macros.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatSettings.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatPreprocessor.kt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_zafarkhaja_java_semver_0_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjavafx_2_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_8_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_core_2_8_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_flowless_flowless_0_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_richtext_richtextfx_0_7_M5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_undo_undofx_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_wellbehaved_wellbehavedfx_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre8_1_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactfx_reactfx_2_0_M5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ro_fortsoft_pf4j_pf4j_1_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/DaggerPlugin.kt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/out/production/classes/com/dattilio/klient/api/LinePreprocessor.class" afterPath="$PROJECT_DIR$/api/out/production/classes/com/dattilio/klient/api/LinePreprocessor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/build.gradle" afterPath="$PROJECT_DIR$/api/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/SendCommand.kt" afterPath="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/SendCommand.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePreprocessor.kt" afterPath="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePreprocessor.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Component.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Component.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Compass.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Compass.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/Combat/build.gradle" afterPath="$PROJECT_DIR$/plugins/Combat/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" afterPath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/text/TestApplication.kt" afterPath="$PROJECT_DIR$/app/src/test/java/com/dattilio/klient/TestApplication.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -171,232 +184,47 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="AppModule.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-190">
-                  <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="19" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#29#389#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DefaultPluginFactory.java" pinned="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginFactory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Component.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Component.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#29#113#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Combat.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#32#506#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="settings.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/plugins/settings.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PluginManager.kt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#29#303#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DaggerPlugin.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/DaggerPlugin.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-                  <folding>
-                    <element signature="e#33#101#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DaggerAppComponent.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="102" column="20" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#3146#3147#0" expanded="true" />
-                    <element signature="e#3209#3210#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MembersInjector.java" pinned="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.11/6e7298a21d8301476e8be905781be518c0b9ee61/dagger-2.11-sources.jar!/dagger/MembersInjector.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#29#119#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="TecClient.kt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#29#751#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Controls.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#36#94#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Macros.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Macros.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-                  <folding>
-                    <element signature="e#36#176#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Compass.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Compass.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-                  <folding>
-                    <element signature="e#36#420#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Map.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#36#203#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SendCommand.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/SendCommand.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="View.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#29#353#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TecTextParser.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="373">
-                  <caret line="107" column="43" lean-forward="false" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#29#145#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Combat.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombatPreprocessor.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/CombatPreprocessor.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="107" column="38" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+              <folding>
+                <element signature="e#32#440#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/plugins/settings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Enum" />
         <option value="Class" />
+        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
@@ -404,42 +232,44 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>;</find>
-      <find>= 106</find>
-      <find>p</find>
-      <find>queue</find>
-      <find>target</find>
-      <find>next</find>
-      <find>long</find>
-      <find>plugin =</find>
-      <find>loaded</find>
-      <find>controls</find>
-      <find>height</find>
-      <find>macros.</find>
-      <find>TecClient</find>
-      <find>controlscontrols</find>
-      <find>apt</find>
-      <find>Dagger</find>
-      <find>a</find>
-      <find>annotation</find>
-      <find>pluginm</find>
-      <find>pluginManager</find>
-      <find>source</find>
-      <find>rx</find>
-      <find>wrapper</find>
-      <find>factory</find>
-      <find>createPLuginFactory</find>
-      <find>preProcesssedLine</find>
       <find>Factory</find>
       <find>fa</find>
       <find>send</find>
+      <find>combat</find>
+      <find>getCredentials</find>
+      <find>view.addtext</find>
+      <find>vi</find>
+      <find>Vi</find>
+      <find>gameScreen</find>
+      <find>View</find>
+      <find>sta</find>
+      <find>(String) -&gt;</find>
+      <find>extensionPoint</find>
+      <find>queue.add</find>
+      <find>que</find>
+      <find>queue.remove</find>
+      <find>remove</find>
+      <find>logger</find>
+      <find>No log4j2 configuration file found</find>
+      <find>resource</find>
+      <find>logger.</find>
+      <find>gamehand</find>
+      <find>handler</find>
+      <find>addEvent</find>
+      <find>previousCommandIndex</find>
       <find>sendCommand</find>
+      <find>getEntries</find>
+      <find>extensionFactory</find>
+      <find>get</find>
+      <find>kill</find>
     </findStrings>
     <replaceStrings>
       <replace>else if</replace>
       <replace>line){</replace>
       <replace>queue.add</replace>
       <replace>line</replace>
+      <replace>addAction</replace>
+      <replace>removeAction</replace>
     </replaceStrings>
     <dirStrings>
       <dir>P:\dev\TecKlient2\app</dir>
@@ -457,12 +287,12 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$/plugins/combat" value="C:\Users\Pmoney\.gradle\wrapper\dists\gradle-3.5-rc-2-all\c0k4lbl8pjtnoeqme5ekch4re\gradle-3.5-rc-2" />
+        <entry key="$PROJECT_DIR$/api" value="C:\Users\Pmoney\.gradle\wrapper\dists\gradle-3.5-rc-2-all\c0k4lbl8pjtnoeqme5ekch4re\gradle-3.5-rc-2" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
-        <entry key="$PROJECT_DIR$/plugins/combat" value="3.5" />
+        <entry key="$PROJECT_DIR$/api" value="3.5" />
       </map>
     </option>
     <option name="availableProjects">
@@ -470,8 +300,8 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="plugins/combat" />
-              <option name="path" value="$PROJECT_DIR$/plugins/combat" />
+              <option name="name" value="api" />
+              <option name="path" value="$PROJECT_DIR$/api" />
             </ExternalProjectPojo>
           </key>
           <value>
@@ -640,26 +470,6 @@
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="kaptGenerateStubsKotlin" />
               </ExternalTaskPojo>
@@ -676,6 +486,26 @@
                 <option name="name" value="kaptTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="plugin" />
               </ExternalTaskPojo>
@@ -686,14 +516,9 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
+                <option name="description" value="Displays the components produced by project ':api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="build" />
+                <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
@@ -701,19 +526,9 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':api'." />
+                <option name="description" value="Displays the sub-projects of project ':api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="check" />
+                <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
@@ -721,67 +536,19 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles the source set 'main'.kotlin." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="compileKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles the source set 'test'.kotlin." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="compileTestKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':api'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="copyMainKotlinClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="copyTestKotlinClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':api'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':api'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the dependent components of components in project ':api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
+                <option name="description" value="Displays all buildscript dependencies declared in project ':api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="help" />
+                <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="description" value="Assembles test classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="jar" />
+                <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
@@ -789,9 +556,18 @@
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of project ':api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="copyMainKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
@@ -799,24 +575,21 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':api'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':api'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from project ':api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
                 <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="kaptGenerateStubsTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="kaptGenerateStubsKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="copyTestKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
@@ -824,9 +597,82 @@
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
+                <option name="description" value="Compiles main Java source." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
-                <option name="name" value="testClasses" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'test'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="compileTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'main'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="compileKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="kaptTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':api'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/api" />
+                <option name="name" value="kaptKotlin" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1000,9 +846,14 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':plugins/combat'. [incubating]" />
+                <option name="description" value="Assembles the outputs of this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="components" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
@@ -1010,9 +861,19 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':plugins/combat'." />
+                <option name="description" value="Displays all buildscript dependencies declared in project ':plugins/combat'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="projects" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
@@ -1020,19 +881,67 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'main'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="compileKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'test'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="compileTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':plugins/combat'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="copyMainKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="copyTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':plugins/combat'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':plugins/combat'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the dependent components of components in project ':plugins/combat'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':plugins/combat'." />
+                <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="buildEnvironment" />
+                <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
+                <option name="description" value="Assembles a jar archive containing the main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="testClasses" />
+                <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
@@ -1040,9 +949,20 @@
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="jar" />
+                <option name="name" value="kaptGenerateStubsKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="kaptGenerateStubsTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="kaptKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="kaptTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of project ':plugins/combat'. [incubating]" />
@@ -1051,7 +971,7 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="copyMainKotlinClasses" />
+                <option name="name" value="plugin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
@@ -1059,99 +979,14 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':plugins/combat'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="kaptGenerateStubsTestKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="kaptGenerateStubsKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="copyTestKotlinClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles the source set 'test'.kotlin." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="compileTestKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':plugins/combat'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':plugins/combat'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Processes test resources." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
                 <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
+                <option name="description" value="Displays the sub-projects of project ':plugins/combat'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles the source set 'main'.kotlin." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="compileKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="plugin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="kaptTestKotlin" />
+                <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':plugins/combat'." />
@@ -1159,8 +994,19 @@
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':plugins/combat'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-                <option name="name" value="kaptKotlin" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
+                <option name="name" value="testClasses" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1169,21 +1015,21 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/api/build.gradle" value="4166812296" />
+        <entry key="$PROJECT_DIR$/api" value="10439296257342" />
+        <entry key="$PROJECT_DIR$/api/build.gradle" value="2966113407" />
         <entry key="$PROJECT_DIR$/api/gradle/wrapper/gradle-wrapper.properties" value="615277776" />
         <entry key="$PROJECT_DIR$/api/settings.gradle" value="1703848984" />
         <entry key="$PROJECT_DIR$/app/build.gradle" value="4175791814" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="615277776" />
         <entry key="$PROJECT_DIR$/plugins/Combat/build.gradle" value="3404376296" />
-        <entry key="$PROJECT_DIR$/plugins/combat" value="8937603478920" />
-        <entry key="$PROJECT_DIR$/plugins/combat/build.gradle" value="973850713" />
+        <entry key="$PROJECT_DIR$/plugins/combat/build.gradle" value="3048606707" />
         <entry key="$PROJECT_DIR$/plugins/combat/settings.gradle" value="2128572763" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="140727554" />
       </map>
     </option>
     <option name="projectBuildClasspath">
       <map>
-        <entry key="$PROJECT_DIR$/plugins/combat">
+        <entry key="$PROJECT_DIR$/api">
           <value>
             <ExternalProjectBuildClasspathPojo>
               <option name="modulesBuildClasspath">
@@ -1429,8 +1275,8 @@
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-all/c0k4lbl8pjtnoeqme5ekch4re/gradle-3.5-rc-2/lib/plugins/gradle-tooling-api-builders-3.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-all/c0k4lbl8pjtnoeqme5ekch4re/gradle-3.5-rc-2/lib/plugins/gradle-workers-3.5.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-all/c0k4lbl8pjtnoeqme5ekch4re/gradle-3.5-rc-2/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$PROJECT_DIR$/plugins/combat/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/plugins/combat/buildSrc/src/main/groovy" />
+                  <option value="$PROJECT_DIR$/api/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/api/buildSrc/src/main/groovy" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -1460,27 +1306,34 @@
         <option value="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/CombatSettings.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Client.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Send.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Compass.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Macros.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/text/TestApplication.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/dattilio/klient/TestApplication.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/SendCommand.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt" />
-        <option value="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePostprocessor.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/api/build.gradle" />
         <option value="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/SendCommand.kt" />
-        <option value="$PROJECT_DIR$/plugins/combat/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Component.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt" />
-        <option value="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt" />
+        <option value="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePostprocessor.kt" />
         <option value="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/DaggerPlugin.kt" />
+        <option value="$PROJECT_DIR$/api/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt" />
+        <option value="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/DaggerExtension.kt" />
+        <option value="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePreprocessorPlugin.kt" />
+        <option value="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/CombatPreProcessor.kt" />
+        <option value="$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePreprocessor.kt" />
+        <option value="$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Component.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Compass.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt" />
+        <option value="$PROJECT_DIR$/plugins/combat/build.gradle" />
+        <option value="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" />
+        <option value="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/CombatPreprocessor.kt" />
       </list>
     </option>
   </component>
@@ -1490,11 +1343,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2568" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2150" />
+    <option name="width" value="1271" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1512,6 +1364,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="TecKlient2" type="cbb8eebc:String" user="TecKlient2" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1522,41 +1386,6 @@
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
               <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -1568,89 +1397,7 @@
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
               <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="klient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="combat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="combat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="combat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="combat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TecKlient2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="combat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="scoundrel" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="TecKlient2" type="cbb8eebc:String" user="TecKlient2" />
             </path>
           </expand>
           <select />
@@ -1668,10 +1415,17 @@
     <property name="project.structure.proportion" value="0.15655577" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-    <property name="SearchEverywhereHistoryKey" value="Combat&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt&#10;AppCompo&#9;null&#9;null&#10;compon&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java&#10;Default&#9;FILE&#9;jar://C:/Users/Pmoney/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginManager.java&#10;Client&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/TecClient.kt&#10;view&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/View.kt&#10;Controls&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt&#10;Map&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt&#10;module&#9;null&#9;null&#10;DaggerApp&#9;null&#9;null&#10;build&#9;FILE&#9;file://P:/dev/TecKlient2/app/build.gradle&#10;MatchResu&#9;null&#9;null&#10;.gitignore&#9;FILE&#9;file://P:/dev/TecKlient2/.gitignore&#10;abstra&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/sun/nio/fs/AbstractPath.class" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="SearchEverywhereHistoryKey" value="Extension&#9;FILE&#9;jar://C:/Users/Pmoney/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/ExtensionFactory.java&#10;App&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/App.kt&#10;combat&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt&#10;controls&#9;null&#9;null&#10;.iml&#9;FILE&#9;file://P:/dev/TecKlient2/.idea/modules/app/app.iml&#10;app&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/App.kt&#10;Module&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/AppModule.kt&#10;client&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/TecClient.kt&#10;AppComp&#9;null&#9;null&#10;Compo&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java&#10;View_&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/View_Factory.java&#10;View&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/View.kt&#10;dagger&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java&#10;comb&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt&#10;Combat&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/build/generated/source/kapt/main/com/dattilio/scoundrel/Combat_MembersInjector.java&#10;AppCompo&#9;null&#9;null&#10;compon&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java&#10;Default&#9;FILE&#9;jar://C:/Users/Pmoney/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginManager.java&#10;Client&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/TecClient.kt&#10;view&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/View.kt&#10;Controls&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt&#10;Map&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt&#10;module&#9;null&#9;null&#10;DaggerApp&#9;null&#9;null&#10;build&#9;FILE&#9;file://P:/dev/TecKlient2/app/build.gradle&#10;MatchResu&#9;null&#9;null&#10;.gitignore&#9;FILE&#9;file://P:/dev/TecKlient2/.gitignore&#10;abstra&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/sun/nio/fs/AbstractPath.class" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin\com\dattilio" />
+      <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin\com" />
+      <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin" />
+      <recent name="P:\dev\TecKlient2\app\src\main\kotlin\com\dattilio\klient" />
+      <recent name="P:\dev\TecKlient2\app" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.dattilio.klient.api" />
       <recent name="com.dattilio.klient" />
@@ -1683,13 +1437,6 @@
       <recent name="P:\dev\TecKlient2\app\src\test\resources" />
       <recent name="P:\dev\TecKlient2\app\src\test\kotlin" />
       <recent name="P:\dev\TecKlient2\app\src\main\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin\com\dattilio" />
-      <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin\com" />
-      <recent name="P:\dev\TecKlient2\plugins\combat\src\main\kotlin" />
-      <recent name="P:\dev\TecKlient2\app\src\main\kotlin\com\dattilio\klient" />
-      <recent name="P:\dev\TecKlient2\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1826,7 +1573,7 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
     </configuration>
-    <configuration name="combat [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="combat [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
@@ -1837,24 +1584,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="combat::dev:TecKlient2 [copyMainKotlinClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="copyMainKotlinClasses" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1877,20 +1607,37 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
     </configuration>
+    <configuration name="combat::dev:TecKlient2:app [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyPlugins]" />
-      <item index="1" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.App" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.combat [build]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.combat [assemble]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyMainKotlinClasses]" />
+      <item index="0" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.App" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2:app [clean]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.combat [assemble]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.combat [clean]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyPlugins]" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Kotlin.com.dattilio.klient.App" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyMainKotlinClasses]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.combat [assemble]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.combat [build]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyPlugins]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2 [copyPlugins]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.combat [clean]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.combat [assemble]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.combat::dev:TecKlient2:app [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -1914,7 +1661,8 @@
       <workItem from="1501518616705" duration="11696000" />
       <workItem from="1501638153871" duration="7763000" />
       <workItem from="1501696620286" duration="4090000" />
-      <workItem from="1501700741391" duration="11586000" />
+      <workItem from="1501700741391" duration="14996000" />
+      <workItem from="1501787360299" duration="25942000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored the project to support plugins.">
       <created>1501472160700</created>
@@ -1958,45 +1706,83 @@
       <option name="project" value="LOCAL" />
       <updated>1501532263766</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Trying to use dagger to use our object graph to inject members into dynamically loaded plugins">
+      <created>1501731084547</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1501731084547</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46294000" />
+    <option name="totallyTimeSpent" value="75646000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2568" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-2150" y="0" width="1271" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31796876" sideWeight="0.45151034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31785995" sideWeight="0.45151034" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40234375" sideWeight="0.5091415" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32734376" sideWeight="0.48131955" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32651454" sideWeight="0.48622367" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32494098" sideWeight="0.48131955" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32494098" sideWeight="0.48622367" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.49349806" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1709062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30282554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18402226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2650702" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952777" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40234375" sideWeight="0.4908585" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40519276" sideWeight="0.4908585" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40234375" sideWeight="0.5091415" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40519276" sideWeight="0.4908585" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31796876" sideWeight="0.45151034" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32494098" sideWeight="0.48131955" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32651454" sideWeight="0.48622367" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.49349806" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2558381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16658017" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -2041,304 +1827,365 @@
     <MESSAGE value="Parse hr,pre, use preprocessing plugins." />
     <MESSAGE value="remove workspace" />
     <MESSAGE value="Started working on combat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on combat" />
+    <MESSAGE value="Trying to use dagger to use our object graph to inject members into dynamically loaded plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to use dagger to use our object graph to inject members into dynamically loaded plugins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt</url>
-          <line>2</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/LegacyExtensionFinder.java</url>
+          <line>48</line>
           <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="67" />
+          <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java</url>
-          <line>232</line>
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/LegacyExtensionFinder.java</url>
+          <line>83</line>
           <properties />
-          <option name="timeStamp" value="32" />
+          <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java</url>
-          <line>224</line>
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/LegacyExtensionFinder.java</url>
+          <line>104</line>
           <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginFactory.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="68" />
+          <option name="timeStamp" value="173" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="70" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="174" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="e.printStackTrace();" language="JAVA" />
+        <watch expression="preProcessors.size" language="kotlin" />
+        <watch expression="&quot;You are no longer busy.&quot; in line" language="kotlin" />
+        <watch expression="commandHistory[previousCommandIndex]" language="kotlin" />
+        <watch expression="System.getProperties()" language="kotlin" />
+        <watch expression="File(&quot;resources&quot;, &quot;log4j2.properties&quot;)" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="440">
+          <caret line="441" column="0" lean-forward="false" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/jvm/JvmClassMapping.kt">
+    <entry file="file://$PROJECT_DIR$/.idea/modules/app/app.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="94" column="29" lean-forward="false" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.moshi/moshi/1.5.0/161e7c65b30c025d095997a5d125b3b57a30d24e/moshi-1.5.0-sources.jar!/com/squareup/moshi/JsonAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="4">
+          <caret line="62" column="2" lean-forward="false" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/text/regex/MatchResult.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/459702eacc545a5478627fe879cec6e004c00f3a/log4j-api-2.8.2-sources.jar!/org/apache/logging/log4j/spi/AbstractLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/util/stream/LongStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="739" column="34" lean-forward="false" selection-start-line="739" selection-start-column="30" selection-end-line="739" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2706">
-          <caret line="421" column="16" lean-forward="false" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
+        <state relative-caret-position="1360">
+          <caret line="120" column="12" lean-forward="true" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePreprocessor.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/4693b08b8d9abe152417b9564bb7a68d82630180/log4j-core-2.8.2-sources.jar!/org/apache/logging/log4j/core/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="629">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/654135274d4c27132ea208a4ec07f344bdb83bcb/slf4j-api-1.7.5-sources.jar!/org/slf4j/LoggerFactory.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/4693b08b8d9abe152417b9564bb7a68d82630180/log4j-core-2.8.2-sources.jar!/org/apache/logging/log4j/core/LoggerContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+        <state relative-caret-position="640">
+          <caret line="675" column="0" lean-forward="false" selection-start-line="675" selection-start-column="0" selection-end-line="675" selection-end-column="0" />
+          <folding>
+            <element signature="e#16008#16009#0" expanded="false" />
+            <element signature="e#16052#16053#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/Plugin.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="578">
+          <caret line="108" column="32" lean-forward="false" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/text/regex/Regex.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/javafx/scene/layout/Background.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="205" column="11" lean-forward="false" selection-start-line="205" selection-start-column="11" selection-end-line="205" selection-end-column="11" />
+          <folding>
+            <element signature="e#8334#8335#0" expanded="false" />
+            <element signature="e#8367#8368#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/javafx/scene/layout/Region.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="896" column="83" lean-forward="false" selection-start-line="896" selection-start-column="77" selection-end-line="896" selection-end-column="83" />
+        <state relative-caret-position="-335">
+          <caret line="912" column="19" lean-forward="false" selection-start-line="912" selection-start-column="19" selection-end-line="912" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/javafx/scene/layout/Pane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="123" column="10" lean-forward="false" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
-          <folding>
-            <element signature="e#3912#3913#0" expanded="false" />
-            <element signature="e#3935#3936#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/dattilio/klient/TestApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#29#198#0" expanded="true" />
-            <marker date="1501699335142" expanded="true" signature="292:400" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/AppModule_ProvidesViewFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/App_MembersInjector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/AppModule_ProvidesControlsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#36#203#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Compass.kt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/collections/Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="147" column="23" lean-forward="false" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="8291" column="44" lean-forward="false" selection-start-line="8291" selection-start-column="36" selection-end-line="8291" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="e#36#420#0" expanded="true" />
+            <element signature="e#29#419#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Macros.kt">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        <state relative-caret-position="243">
+          <caret line="348" column="45" lean-forward="false" selection-start-line="348" selection-start-column="45" selection-end-line="348" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/log4j2.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="208" column="37" lean-forward="false" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
           <folding>
-            <element signature="e#36#176#0" expanded="true" />
+            <element signature="e#29#770#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/AppModule_ProvidesMapFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/TecClient_Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/View_Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/javafx/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="304" column="25" lean-forward="false" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/AppModule_ProvidesSendCommandFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/View.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#29#353#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/SendCommand.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/654135274d4c27132ea208a4ec07f344bdb83bcb/slf4j-api-1.7.5-sources.jar!/org/slf4j/LoggerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="277">
+          <caret line="279" column="23" lean-forward="false" selection-start-line="279" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
+          <folding>
+            <element signature="e#10895#10896#0" expanded="false" />
+            <element signature="e#10938#10939#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#29#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/LinePostprocessor.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/ExtensionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="136">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/combat/build.gradle">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultExtensionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="357">
+          <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/ExtensionWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#29#240#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/ExtensionFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#1109#1110#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultExtensionFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/654135274d4c27132ea208a4ec07f344bdb83bcb/slf4j-api-1.7.5-sources.jar!/org/slf4j/helpers/NOPLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/plugins/Combat-0.0.1/classes/com/dattilio/scoundrel/Combat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="519" column="0" lean-forward="false" selection-start-line="519" selection-start-column="0" selection-end-line="519" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractExtensionFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <folding>
+            <element signature="e#6741#6742#0" expanded="false" />
+            <element signature="e#6790#6791#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/PluginWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#1620#1621#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/PluginDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#1420#1421#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/plugins/Combat-0.0.1/classes/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/plugins/Combat-0.0.1/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2351,94 +2198,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/Plugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="243">
+          <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/SendCommand.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/processor/LegacyExtensionStorage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/PluginWrapper.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/LegacyExtensionFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecTextParser.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="107" column="43" lean-forward="false" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
+        <state relative-caret-position="640">
+          <caret line="104" column="47" lean-forward="false" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
           <folding>
-            <element signature="e#29#145#0" expanded="true" />
+            <element signature="e#3627#3628#0" expanded="true" />
+            <element signature="e#3692#3693#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="67" column="27" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="27" />
-          <folding>
-            <element signature="e#1109#1110#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/AbstractPluginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="619" column="37" lean-forward="false" selection-start-line="619" selection-start-column="37" selection-end-line="619" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/PluginFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Action.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/App.kt">
+    <entry file="file://$PROJECT_DIR$/plugins/combat/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#119#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/plugins/settings.json">
+    <entry file="file://$PROJECT_DIR$/plugins/combat/build/tmp/plugin/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2446,99 +2249,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt">
+    <entry file="file://$PROJECT_DIR$/plugins/combat/build/tmp/jar/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <element signature="e#32#506#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt">
+    <entry file="file://$PROJECT_DIR$/plugins/combat/build/tmp/kapt3/stubs/main/error/NonExistentClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/combat/build/tmp/kapt3/stubs/main/com/dattilio/scoundrel/CombatSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/combat/build/tmp/kapt3/stubs/main/com/dattilio/scoundrel/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/combat/build/tmp/kapt3/stubs/main/com/dattilio/scoundrel/Combat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/plugins/settings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#36#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/Component.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#29#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/AppModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="e#29#389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.11/6e7298a21d8301476e8be905781be518c0b9ee61/dagger-2.11-sources.jar!/dagger/MembersInjector.java">
+    <entry file="file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="170">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java">
+    <entry file="file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/CombatPreprocessor.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="102" column="20" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="20" />
+        <state relative-caret-position="481">
+          <caret line="107" column="38" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
           <folding>
-            <element signature="e#3146#3147#0" expanded="true" />
-            <element signature="e#3209#3210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/TecClient.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="e#29#751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/kotlin/com/dattilio/klient/api/DaggerPlugin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding>
-            <element signature="e#33#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/dattilio/klient/PluginManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-          <folding>
-            <element signature="e#29#303#0" expanded="true" />
+            <element signature="e#32#440#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2603,7 +2375,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

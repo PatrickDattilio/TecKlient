@@ -12,7 +12,7 @@ buildscript {
     }
 }
 jar {
-    baseName = 'combat'
+    baseName = 'Combat'
     version = '0.0.1'
     manifest {
         attributes 'Plugin-Class' : 'com.dattilio.scoundrel.Combat',

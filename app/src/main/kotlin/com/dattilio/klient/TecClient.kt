@@ -21,6 +21,7 @@ import java.io.InputStreamReader
 import java.net.Socket
 import java.nio.charset.Charset
 import java.security.MessageDigest
+import java.util.*
 import javax.inject.Inject
 
 
@@ -34,61 +35,62 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
     var socket: Socket? = null
     var user = ""
     var pass = ""
-    val pluginManager = PluginManager(appComponent)
+    val pluginManager = PluginManager(sendCommand)
     val parser = TecTextParser(controls)
+
+
+    private var saveToHistory: Boolean = false
+    private var previousCommandIndex: Int = 0
+    private val commandHistory = LinkedList<String>()
 
     init {
         sendCommand.commands.subscribe(this::send, logger::error)
     }
 
+    val usernameHandler: EventHandler<KeyEvent> = EventHandler({
+        event ->
+        if (event.code == KeyCode.ENTER) {
+            event.consume()
+            getUsername()
+        }
+    })
+    val passwordHandler: EventHandler<KeyEvent> = EventHandler({
+        event ->
+        if (event.code == KeyCode.ENTER) {
+            event.consume()
+            getPassword()
+        }
+    })
+
     private fun getCredentials() {
-        askForCredentials()
-    }
-
-    fun askForCredentials() {
         view.addText("Please enter your username:")
-        view.textArea.onKeyPressed = usernameInputHandler()
-        view.textArea.onKeyReleased = clearHandler()
+        view.textArea.addEventFilter(KeyEvent.KEY_PRESSED, usernameHandler)
     }
 
-    private fun usernameInputHandler(): EventHandler<KeyEvent> {
-        return EventHandler { event ->
-            if (event.code == KeyCode.ENTER) {
-                val username = view.textArea.getText()
-                view.textArea.clear()
-                view.addText("Please enter your password:")
-                view.textArea.onKeyPressed = passwordInputHandler(username)
-            }
-        }
+    private fun getUsername() {
+        view.textArea.removeEventFilter(KeyEvent.KEY_PRESSED, usernameHandler)
+        user = view.textArea.text
+        view.textArea.clear()
+        view.addText("Please enter your password:")
+        view.textArea.addEventFilter(KeyEvent.KEY_PRESSED, passwordHandler)
     }
 
-    private fun clearHandler(): EventHandler<in KeyEvent>? {
-        return EventHandler { event ->
-            if (event.code == KeyCode.ENTER) {
-                view.textArea.clear()
-            }
-        }
-    }
+    private fun getPassword() {
+        view.textArea.removeEventFilter(KeyEvent.KEY_PRESSED, passwordHandler)
+        val password = view.textArea.text
+        view.textArea.clear()
+        loginToWebsite(user, password)
+                .subscribeOn(Schedulers.io())
+                .observeOn(JavaFxScheduler.platform())
+                .subscribe({ (user, pass) ->
+                    if (user.isNullOrEmpty() or pass.isNullOrEmpty()) {
+                        view.addText("I'm sorry, that username or password was incorrect. Please try again.")
+                        getCredentials()
+                    } else {
+                        gameConnect()
+                    }
+                })
 
-    private fun passwordInputHandler(username: String): EventHandler<KeyEvent> {
-        return EventHandler { event ->
-            if (event.code == KeyCode.ENTER) {
-                val password = view.textArea.getText()
-                view.textArea.clear()
-                loginToWebsite(username, password)
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(JavaFxScheduler.platform())
-                        .subscribe({ (user, pass) ->
-                            if (user.isNullOrEmpty() or pass.isNullOrEmpty()) {
-                                view.addText("I'm sorry, that username or password was incorrect. Please try again.")
-                                askForCredentials()
-                            } else {
-                                gameConnect()
-                            }
-                        })
-
-            }
-        }
     }
 
     data class Login(val username: String, val password: String)
@@ -129,7 +131,7 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
     }
 
     fun gameConnect() {
-        view.textArea.onKeyPressed = gameInputHandler()
+        setupGameInputHandler()
         Observable.create({ emitter: ObservableEmitter<String> ->
             socket = Socket("tec.skotos.net", 6730)
             send("SKOTOS Zealous 0.7.12.2\n")
@@ -171,28 +173,58 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
         val secret = line.substring(7).trim()
         val hash_string = user + pass + secret
         val zealous_hash = MessageDigest.getInstance("MD5").digest(hash_string.toByteArray()).toHexString()
+        saveToHistory = false
         send("USER " + user)
         send("SECRET " + secret)
         send("HASH " + zealous_hash)
         send("CHAR ")
 //                # After a Zealotry login the server still sends a password prompt.This just responds to
 //                # that with a dummy entry.
+        saveToHistory = true
         send("")
     }
 
     private fun send(text: String) {
+        if (saveToHistory) {
+            commandHistory.addLast(text)
+            previousCommandIndex = commandHistory.lastIndex
+        }
         view.addText(text)
         socket?.getOutputStream()?.write((text + "\r\n").toByteArray(Charset.forName("utf-8")))
         socket?.getOutputStream()?.flush()
     }
 
-    private fun gameInputHandler(): EventHandler<KeyEvent> {
-        return EventHandler { event ->
-            if (event.code == KeyCode.ENTER) {
-                send(view.textArea.text)
+
+    private fun setupGameInputHandler() {
+        view.textArea.addEventFilter(KeyEvent.KEY_PRESSED, { key ->
+            if (key.code == KeyCode.ENTER) {
+                val command = view.textArea.text
+                send(command)
                 view.textArea.clear()
+                key.consume()
+            } else if (key.code == KeyCode.UP) {
+                saveToHistory = false
+                view.textArea.text = getPreviousCommand(1)
+            } else if (key.code == KeyCode.DOWN) {
+                saveToHistory = false
+                view.textArea.text = getPreviousCommand(-1)
+            } else {
+                saveToHistory = true
             }
+        })
+    }
+
+    private fun getPreviousCommand(direction: Int): String {
+        val newPrevIndex = previousCommandIndex + direction
+
+        if (newPrevIndex < 0) {
+            previousCommandIndex = commandHistory.size + newPrevIndex
+        } else if (newPrevIndex > commandHistory.lastIndex) {
+            previousCommandIndex = newPrevIndex - commandHistory.size
+        } else {
+            previousCommandIndex = newPrevIndex
         }
+        return commandHistory[previousCommandIndex]
     }
 
     fun start() {
