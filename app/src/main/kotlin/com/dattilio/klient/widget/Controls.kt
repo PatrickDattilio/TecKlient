@@ -5,10 +5,11 @@ import javax.inject.Inject
 
 class Controls @Inject constructor(val map: Map,
                                    val compass: Compass,
-                                   macros: Macros) : VBox() {
+                                   macros: Macros,
+                                   val status: Status) : VBox() {
 
     init {
-        children.addAll(macros, map, compass)
+        children.addAll(macros, map, compass, status)
     }
 
     fun updateMap(skoot: String) {
@@ -25,7 +26,7 @@ class Controls @Inject constructor(val map: Map,
 
     fun updatePlayerStatus(skoot: String) {
         val statusData = Regex("\\W+").split(skoot)
-        //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        status.update(statusData)
     }
 
     fun updateLighting(skoot: String) {

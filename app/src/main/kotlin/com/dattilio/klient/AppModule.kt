@@ -1,9 +1,7 @@
 package com.dattilio.klient
 
 import com.dattilio.klient.api.SendCommand
-import com.dattilio.klient.widget.Compass
-import com.dattilio.klient.widget.Controls
-import com.dattilio.klient.widget.Macros
+import com.dattilio.klient.widget.*
 import com.dattilio.klient.widget.Map
 import dagger.Module
 import dagger.Provides
@@ -47,8 +45,14 @@ class AppModule(val app: App) {
 
     @Singleton
     @Provides
-    fun providesControls(map: Map, compass: Compass, macros: Macros): Controls {
-        return Controls(map, compass, macros)
+    fun providesStatus(sendCommand: SendCommand): Status {
+        return Status(sendCommand)
+    }
+
+    @Singleton
+    @Provides
+    fun providesControls(map: Map, compass: Compass, macros: Macros, status: Status): Controls {
+        return Controls(map, compass, macros, status)
     }
 
     @Singleton
@@ -77,8 +81,7 @@ class AppModule(val app: App) {
                        logger: Logger,
                        okHttp: OkHttpClient,
                        controls: Controls,
-                       view: View,
-                       appComponent: AppComponent): TecClient {
-        return TecClient(sendCommand, logger, okHttp, controls, view, appComponent)
+                       view: View): TecClient {
+        return TecClient(sendCommand, logger, okHttp, controls, view)
     }
 }

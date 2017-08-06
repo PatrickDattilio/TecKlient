@@ -1,24 +1,14 @@
 package com.dattilio.klient
 
-import javafx.application.Application
 import javafx.stage.Stage
-import javax.inject.Inject
 import java.io.File
 
-
-
-open class App : Application() {
-
-    @Inject
-    lateinit var view: View
-
-    @Inject
-    lateinit var controller: TecClient
+class TestApp : App() {
 
     companion object {
         @JvmStatic
         fun main(vararg args: String) {
-            launch(App::class.java)
+            launch(TestApp::class.java)
         }
     }
 
@@ -31,4 +21,5 @@ open class App : Application() {
         view.setupUI(primaryStage)
         controller.start()
     }
+
 }

@@ -29,8 +29,7 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
                                     val logger: Logger,
                                     val okHttp: OkHttpClient,
                                     val controls: Controls,
-                                    val view: View,
-                                    val appComponent: AppComponent) {
+                                    val view: View) {
 
     var socket: Socket? = null
     var user = ""
