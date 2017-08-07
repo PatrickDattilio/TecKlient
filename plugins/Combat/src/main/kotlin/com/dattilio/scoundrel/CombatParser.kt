@@ -32,7 +32,7 @@ class CombatParser(val presenter: CombatPreProcessor) {
                 parseOpponent(line, true)
             } else if ("You slit" in line) {
                 presenter.killed(KillStatus.YOU)
-                parseOpponent(line, false)
+                parseOpponent(line.replace("'s",""), false)
             }
         }
     }

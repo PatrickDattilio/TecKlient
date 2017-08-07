@@ -1,6 +1,6 @@
 package com.dattilio.scoundrel
 
-enum class Action(priority: Int) {
+enum class Action(priority: Int){
     NOTHING(0),
     ATTACK(100),
     KILL(101),

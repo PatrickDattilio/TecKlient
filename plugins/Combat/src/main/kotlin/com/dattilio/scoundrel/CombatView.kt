@@ -28,7 +28,7 @@ class CombatView(presenter: CombatPreProcessor) {
         engagedText = Text()
         val combatBox = VBox(checkBox, queueLabel, queueText, engagedLabel, engagedText)
         combatBox.minHeight = 300.0
-        combatBox.minWidth = 3000.0
+        combatBox.minWidth = 300.0
         stage.scene = Scene(combatBox)
         stage.show()
     }
