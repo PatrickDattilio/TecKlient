@@ -5,7 +5,7 @@ import javafx.event.EventHandler
 import javafx.scene.canvas.Canvas
 import javafx.scene.paint.Color
 
-class Status(sendCommand: SendCommand) : Canvas(60.0, 60.0) {
+class Status(sendCommand: SendCommand) : Canvas(100.0, 100.0) {
     val canvas = graphicsContext2D
     var health = 0.0
     var fatigue = 0.0
@@ -17,7 +17,7 @@ class Status(sendCommand: SendCommand) : Canvas(60.0, 60.0) {
     }
 
     fun update(statusData: List<String>) {
-        val value = 105.0 - statusData[1].toDouble()
+        val value = 100.0 - statusData[1].toDouble()
         if (statusData[0] == "Health") {
             health = value
         } else if (statusData[0] == "Fatigue") {
