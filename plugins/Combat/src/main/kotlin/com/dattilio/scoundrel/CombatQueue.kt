@@ -2,7 +2,7 @@ package com.dattilio.scoundrel
 
 import java.util.*
 
-class CombatQueue(val presenter: CombatPreProcessor) : PriorityQueue<Action>() {
+class CombatQueue(val presenter: CombatPreProcessor) : PriorityQueue<Action>(Collections.reverseOrder()) {
 
     fun addAction(action: Action) {
         if (action !in this) {
