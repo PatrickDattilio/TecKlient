@@ -1,5 +1,9 @@
-build
-.gradle
+# Gradle files
+.gradle/
+build/
 .idea
 app/plugins/
 app/out/
+
+# Intellij
+*.iml
