@@ -5,7 +5,8 @@ import java.util.regex.Pattern
 class CombatParser(val presenter: CombatPreProcessor) {
     enum class KillStatus {YOU, OTHER, ALIVE }
 
-    private var enemyAttackPattern: Pattern = Pattern.compile("] [A |An] (.*?) \\S+ you")
+    private val enemyAttackPattern: Pattern = Pattern.compile("] [A |An] (.*?) \\S+ you")
+    private val killPattern = Pattern.compile("You slit (.*)\'s")
 
     fun processLine(line: String) {
         if ("You are no longer busy." in line) {
@@ -32,16 +33,19 @@ class CombatParser(val presenter: CombatPreProcessor) {
                 parseOpponent(line, true)
             } else if ("You slit" in line) {
                 presenter.killed(KillStatus.YOU)
-                parseOpponent(line.replace("'s",""), false)
+                parseOpponent(line, false)
             }
         }
     }
 
     fun parseOpponent(line: String, add: Boolean) {
-        val opponent = enemyAttackPattern.matcher(line)
+        val opponent = if(add){
+            enemyAttackPattern.matcher(line)
+        }else{
+            killPattern.matcher(line)
+        }
         if (opponent.find()) {
             presenter.updateEngaged(opponent.group(1), add)
-
         }
     }
 }
