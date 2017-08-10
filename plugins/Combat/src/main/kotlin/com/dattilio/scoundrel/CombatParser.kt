@@ -15,10 +15,16 @@ class CombatParser(val presenter: CombatPreProcessor) {
             presenter.killed(KillStatus.OTHER)
         } else if ("falls unconscious" in line) {
             presenter.opponentUnconcious()
-        } else if ("You fumble!" in line) {
-            presenter.recoverNow(false)
-        } else if (("You must be wielding a weapon to attack." in line).or("You can't do that right now." in line)) {
-            presenter.recoverNow(true)
+        } else if ("You must be wielding a weapon to attack." in line) {
+            presenter.wield(true)
+        } else if (("You fumble!" in line)
+                .or("You can't do that right now." in line)
+                .or("You must be carrying something to wield it." in line)) {
+            presenter.recover(true)
+        } else if ("You wield a " + presenter.combatSettings.weapon in line) {
+            presenter.wield(false)
+        } else if ("You take a " + presenter.combatSettings.weapon in line) {
+            presenter.recover(false)
         } else if ("clamped onto you" in line) {
             presenter.bound(true)
         } else if ("You manage to break free!" in line) {
