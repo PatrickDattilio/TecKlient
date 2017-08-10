@@ -21,7 +21,6 @@ open class CombatPreProcessor : LinePreprocessor {
     val parser = CombatParser(this)
     var action = Action.NOTHING
     val random = Random()
-    var killPattern: Pattern
 
     val engaged = ArrayList<String>()
     override fun setSendCommand(sendCommand: SendCommand) {
@@ -37,7 +36,6 @@ open class CombatPreProcessor : LinePreprocessor {
 
     init {
         retrieveCombatSettings()
-        killPattern = Pattern.compile("You slit (.*)\'s")
 
     }
 
