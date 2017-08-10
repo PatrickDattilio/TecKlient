@@ -137,6 +137,7 @@ open class CombatPreProcessor : LinePreprocessor {
 
     fun checkBoxClicked(newValue: Boolean) {
         enabled = newValue
+        queue.clear()
     }
 
     fun notBusy() {
