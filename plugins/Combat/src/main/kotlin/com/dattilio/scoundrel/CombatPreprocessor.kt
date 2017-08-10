@@ -68,7 +68,12 @@ open class CombatPreProcessor : LinePreprocessor {
             action = queue.poll()
             when (action) {
                 Action.RECOVER -> {
-                    recover()
+                    recover(true)
+                    free = false
+                }
+
+                Action.WIELD -> {
+                    wield(true)
                     free = false
                 }
 
@@ -96,20 +101,25 @@ open class CombatPreProcessor : LinePreprocessor {
         }
     }
 
-    fun recoverNow(recoverNow: Boolean) {
-        queue.addAction(Action.RECOVER)
-        if (recoverNow) {
+    fun wield(addAction: Boolean) {
+        if (addAction) {
+            queue.addAction(Action.WIELD)
+            sendCommand("wie " + combatSettings.weapon)
+        } else {
+            queue.removeAction(Action.WIELD)
             act()
         }
     }
 
-    private fun recover() {
-        sendCommand("get " + combatSettings.weapon)
-        Thread.sleep(random.longs(1234, 2512).findFirst().asLong / 1000)
-        sendCommand("wie " + combatSettings.weapon)
-        free = true
-        Thread.sleep(random.longs(1593, 2849).findFirst().asLong / 1000)
-        act()
+    fun recover(addAction: Boolean) {
+        if (addAction) {
+            queue.addAction(Action.RECOVER)
+            sendCommand("get " + combatSettings.weapon)
+        } else {
+            queue.removeAction(Action.RECOVER)
+            queue.addAction(Action.WIELD)
+            act()
+        }
     }
 
 
