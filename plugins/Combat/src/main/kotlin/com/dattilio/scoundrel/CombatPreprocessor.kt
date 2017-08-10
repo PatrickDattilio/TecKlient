@@ -5,7 +5,6 @@ import com.dattilio.klient.api.SendCommand
 import org.slf4j.LoggerFactory
 import ro.fortsoft.pf4j.Extension
 import java.util.*
-import java.util.regex.Pattern
 
 @Extension
 open class CombatPreProcessor : LinePreprocessor {
