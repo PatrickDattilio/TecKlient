@@ -4,6 +4,7 @@ import com.dattilio.klient.api.SendCommand
 import com.dattilio.klient.widget.Controls
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
+import io.reactivex.disposables.Disposable
 import io.reactivex.rxjavafx.schedulers.JavaFxScheduler
 import io.reactivex.schedulers.Schedulers
 import javafx.event.EventHandler
@@ -16,7 +17,6 @@ import okhttp3.Request
 import org.apache.logging.log4j.Logger
 import toHexString
 import java.io.BufferedReader
-import java.io.IOException
 import java.io.InputStreamReader
 import java.net.Socket
 import java.nio.charset.Charset
@@ -36,7 +36,6 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
     var pass = ""
     val pluginManager = PluginManager(sendCommand)
     val parser = TecTextParser(controls)
-
 
     private var saveToHistory: Boolean = false
     private var previousCommandIndex: Int = 0
@@ -129,28 +128,35 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
         }
     }
 
+    private var connectionDisposable: Disposable? = null
+
     fun gameConnect() {
         setupGameInputHandler()
-        Observable.create({ emitter: ObservableEmitter<String> ->
+        connectionDisposable = Observable.create({ emitter: ObservableEmitter<String> ->
             socket = Socket("tec.skotos.net", 6730)
             send("SKOTOS Zealous 0.7.12.2\n")
             var line: String
             val reader = BufferedReader(InputStreamReader(socket?.getInputStream()))
             try {
                 line = reader.readLine()
+                view.isConnected(true)
                 while (true) {
                     if (!line.isNullOrEmpty()) {
                         emitter.onNext(line)
                         logger.debug(line)
                     }
                     line = reader.readLine()
+
                 }
-            } catch (e: IOException) {
+            } catch (e: Exception) {
                 emitter.onError(e)
             }
         }).subscribeOn(Schedulers.io())
                 .observeOn(JavaFxScheduler.platform())
-                .subscribe(this::handleMessage, { t -> t.printStackTrace() })
+                .subscribe(this::handleMessage, { t: Throwable ->
+                    t.printStackTrace()
+                    view.isConnected(false)
+                })
     }
 
     private fun handleMessage(line: String) {
@@ -228,6 +234,17 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
 
     fun start() {
         getCredentials()
+    }
+
+    fun reconnect() {
+        connectionDisposable?.dispose()
+        view.gameScreen.clear()
+        gameConnect()
+    }
+
+    fun disconnect() {
+        connectionDisposable?.dispose()
+        socket?.close()
     }
 }
 

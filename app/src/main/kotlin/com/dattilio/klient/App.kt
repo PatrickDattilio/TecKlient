@@ -28,7 +28,7 @@ open class App : Application() {
                 .appModule(AppModule(this))
                 .build()
                 .inject(this)
-        view.setupUI(primaryStage)
+        view.setupUI(primaryStage,controller)
         controller.start()
     }
 }
