@@ -1,5 +1,6 @@
 package com.dattilio.klient
 
+import com.dattilio.klient.widget.Controls
 import javafx.scene.Scene
 import javafx.scene.control.*
 import javafx.scene.layout.GridPane
@@ -7,7 +8,6 @@ import javafx.stage.Stage
 import org.apache.logging.log4j.LogManager
 import org.fxmisc.flowless.VirtualizedScrollPane
 import org.fxmisc.richtext.InlineCssTextArea
-import com.dattilio.klient.widget.Controls
 import javax.inject.Inject
 
 class View @Inject constructor(val controls: Controls) {
@@ -15,9 +15,11 @@ class View @Inject constructor(val controls: Controls) {
     private val logger = LogManager.getLogger()
     val gameScreen = InlineCssTextArea()
     val textArea = TextArea()
-
+    val reconnect = MenuItem("Reconnect")
+    val disconnect = MenuItem("Disconnect")
     val scrollPane = VirtualizedScrollPane<InlineCssTextArea>(gameScreen)
-    fun setupUI(primaryStage: Stage?) {
+
+    fun setupUI(primaryStage: Stage?, presenter: TecClient) {
         val root = GridPane()
         val scene = Scene(root, 900.0, 900.0)
         textArea.style = "-fx-font-family: consolas"
@@ -38,7 +40,11 @@ class View @Inject constructor(val controls: Controls) {
         val file = Menu("File")
         val exit = MenuItem("Exit")
         exit.setOnAction { System.exit(0) }
-        file.items.add(exit)
+        reconnect.isVisible = false
+        reconnect.setOnAction { presenter.reconnect() }
+        disconnect.isVisible = false
+        disconnect.setOnAction { presenter.disconnect() }
+        file.items.addAll(reconnect,disconnect,exit)
         menuBar.menus.add(file)
 
 
@@ -79,5 +85,8 @@ class View @Inject constructor(val controls: Controls) {
         }
     }
 
-
+    fun isConnected(connected:Boolean){
+        reconnect.isVisible = !connected
+        disconnect.isVisible = connected
+    }
 }

@@ -14,12 +14,12 @@ class TestApp : App() {
 
     override fun start(primaryStage: Stage?) {
         System.setProperty("log4j.configuration", File("resources", "log4j2.properties").toString())
-        DaggerAppComponent.builder()
-                .appModule(AppModule(this))
-                .build()
-                .inject(this)
-        view.setupUI(primaryStage)
-        controller.start()
+//        DaggerAppComponent.builder()
+//                .appModule(AppModule(this))
+//                .build()
+//                .inject(this)
+//        view.setupUI(primaryStage,controller)
+//        controller.start()
     }
 
 }
