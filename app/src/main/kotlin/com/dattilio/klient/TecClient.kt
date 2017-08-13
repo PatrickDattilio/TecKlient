@@ -4,6 +4,7 @@ import com.dattilio.klient.api.SendCommand
 import com.dattilio.klient.widget.Controls
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
+import io.reactivex.disposables.Disposable
 import io.reactivex.rxjavafx.schedulers.JavaFxScheduler
 import io.reactivex.schedulers.Schedulers
 import javafx.event.EventHandler
@@ -127,9 +128,11 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
         }
     }
 
+    private var connectionDisposable: Disposable? = null
+
     fun gameConnect() {
         setupGameInputHandler()
-        Observable.create({ emitter: ObservableEmitter<String> ->
+        connectionDisposable = Observable.create({ emitter: ObservableEmitter<String> ->
             socket = Socket("tec.skotos.net", 6730)
             send("SKOTOS Zealous 0.7.12.2\n")
             var line: String
@@ -234,11 +237,13 @@ class TecClient @Inject constructor(val sendCommand: SendCommand,
     }
 
     fun reconnect() {
+        connectionDisposable?.dispose()
         view.gameScreen.clear()
         gameConnect()
     }
 
     fun disconnect() {
+        connectionDisposable?.dispose()
         socket?.close()
     }
 }
