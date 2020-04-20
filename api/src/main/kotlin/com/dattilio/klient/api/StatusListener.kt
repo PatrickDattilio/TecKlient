@@ -1,9 +1,8 @@
 package com.dattilio.klient.api
 
 import com.dattilio.klient.api.model.Status
-import ro.fortsoft.pf4j.ExtensionPoint
 
-interface StatusListener : ExtensionPoint {
+interface StatusListener  {
 
     fun status(status: Status)
 }

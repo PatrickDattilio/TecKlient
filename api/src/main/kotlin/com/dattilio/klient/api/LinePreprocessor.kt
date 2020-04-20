@@ -1,8 +1,6 @@
 package com.dattilio.klient.api
 
-import ro.fortsoft.pf4j.ExtensionPoint
-
-interface LinePreprocessor : ExtensionPoint {
+interface LinePreprocessor {
 
     fun preProcessLine(line: String): String
     fun setSendCommand(sendCommand: SendCommand)

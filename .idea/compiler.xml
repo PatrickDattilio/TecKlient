@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <bytecodeTargetLevel>
+      <module name="Klient.client.main" target="11" />
+      <module name="Klient.client.test" target="11" />
+      <module name="Klient.hunting.main" target="1.8" />
+      <module name="Klient.hunting.test" target="1.8" />
+      <module name="Klient.plugins" target="1.8" />
+      <module name="Klient.plugins.combat" target="1.8" />
+      <module name="Klient.plugins.combat.main" target="1.8" />
+      <module name="Klient.plugins.combat.test" target="1.8" />
+      <module name="Klient.plugins.hunting" target="1.8" />
+      <module name="Klient.plugins.hunting.main" target="1.8" />
+      <module name="Klient.plugins.hunting.test" target="1.8" />
+      <module name="Klient.plugins.main" target="1.8" />
+      <module name="Klient.plugins.map" target="1.8" />
+      <module name="Klient.plugins.map.main" target="1.8" />
+      <module name="Klient.plugins.map.test" target="1.8" />
+      <module name="Klient.plugins.test" target="1.8" />
+      <module name="Klient.sample_app" target="1.8" />
+      <module name="Klient.sample_app.main" target="1.8" />
+      <module name="Klient.sample_app.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
