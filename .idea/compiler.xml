@@ -16,10 +16,6 @@
       <module name="Klient.client.test" target="11" />
       <module name="Klient.hunting.main" target="1.8" />
       <module name="Klient.hunting.test" target="1.8" />
-      <module name="Klient.plugins" target="1.8" />
-      <module name="Klient.plugins.combat" target="1.8" />
-      <module name="Klient.plugins.combat.main" target="1.8" />
-      <module name="Klient.plugins.combat.test" target="1.8" />
       <module name="Klient.plugins.hunting" target="1.8" />
       <module name="Klient.plugins.hunting.main" target="1.8" />
       <module name="Klient.plugins.hunting.test" target="1.8" />
