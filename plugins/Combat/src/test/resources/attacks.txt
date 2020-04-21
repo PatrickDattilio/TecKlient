@@ -1,0 +1,428 @@
+[Success: 95, Roll: 16] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 58] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 100] A mottled wiry rat rakes you with its claws! Your lorica hamata absorbs the impact of the blow.
+[Success: 7, Roll: 46] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a mottled wiry rat, managing to land a strike! Critical Hit! Light stab to the abdomen.
+[Success: 95, Roll: 36] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 68] You slash horizontally at a mottled wiry rat with the tip of your tin dagger. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 7] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 64] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 22, Roll: 16] Aiming for a mottled wiry rat's torso, you bring your tin dagger to bear in a downward stabbing motion. but miss.
+[Success: 95, Roll: 59] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 16] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. It suffers a shallow cut to its abdomen.
+[Success: 95, Roll: 37] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 77] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 35, Roll: 80] You hit a mottled wiry rat! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 64] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 17, Roll: 44] You bring down your tin dagger in a chopping motion aimed at a mottled wiry rat! It suffers a shallow cut to its head.
+[Success: 95, Roll: 52] A mottled wiry rat misses you with its claws.
+[Success: 95, Roll: 92] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 7, Roll: 34] You tightly grip your tin dagger. Stepping towards a mottled wiry rat, you then lunge a stab at it and strike! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 53] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 5, Roll: 24] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. Critical Hit! Firm cut to the abdomen.
+[Success: 95, Roll: 40] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 94] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat. You successfully twirl your entire body, striking twice! Critical Hit! Jolting slash to the abdomen. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 65] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 73] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 83] You make a quick stabbing motion at a mottled wiry rat with your tin dagger! It suffers a deep puncture to its abdomen.
+[Success: 95, Roll: 63] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 48] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a mottled wiry rat! It suffers a deep puncture to its chest.
+[Success: 95, Roll: 20] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 47] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. It suffers a cut to its abdomen.
+[Success: 5, Roll: 58] You slit a mottled wiry rat's throat with a tin dagger.
+[Success: 95, Roll: 41] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 25, Roll: 63] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a pale white rat with crimson splotches, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 13, Roll: 37] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 100] A pale white rat with crimson splotches rakes you with its claws! You suffer a shallow cut to your neck.
+[Success: 25, Roll: 58] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a pale white rat with crimson splotches, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 60] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 72] You slash horizontally at a pale white rat with crimson splotches with the tip of your tin dagger. It suffers a deep cut to its abdomen.
+[Success: 11, Roll: 98] You make a quick stabbing motion at a pale white rat with crimson splotches with your tin dagger! Critical Hit! Jolting jab to the abdomen.
+[Success: 95, Roll: 7] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 9] You bring down your tin dagger in a chopping motion aimed at a pale white rat with crimson splotches, but miss.
+[Success: 95, Roll: 11] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 8] You make a quick stabbing motion at a pale white rat with crimson splotches with your tin dagger, but miss.
+[Success: 11, Roll: 22] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a pale white rat with crimson splotches, but manage to land only one good hit. It suffers a cut to its abdomen.
+[Success: 95, Roll: 100] A pale white rat with crimson splotches rakes you with its claws! Your lorica hamata absorbs the impact of the blow.
+[Success: 11, Roll: 33] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a pale white rat with crimson splotches, but manage to land only one good hit. It suffers a cut to its abdomen.
+[Success: 95, Roll: 33] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 76] You bring down your tin dagger in a chopping motion aimed at a pale white rat with crimson splotches! It suffers a cut to its head.
+[Success: 95, Roll: 43] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 18] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 24] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 29] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 79] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 43] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a pale white rat with crimson splotches! It suffers a deep puncture to its chest.
+[Success: 11, Roll: 80] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 22] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 42] You bring down your tin dagger in a chopping motion aimed at a pale white rat with crimson splotches! It suffers a cut to its neck.
+[Success: 5, Roll: 76] You slit a pale white rat with crimson splotches's throat with a tin dagger.
+[Success: 35, Roll: 70] You lunge forward a step, stabbing a gaunt grey rat with your tin dagger! It suffers a deep puncture to its left hindpaw.
+[Success: 95, Roll: 22] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 5, Roll: 63] You tightly grip your tin dagger. Stepping towards a gaunt grey rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a gaunt grey rat in a follow-up slash! It suffers a deep cut to its right front paw. It suffers a deep cut to its left hindpaw.
+[Success: 5, Roll: 87] You bring down your tin dagger in a chopping motion aimed at a gaunt grey rat! Critical Hit! Shocking slice to the neck.
+[Success: 95, Roll: 12] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 5, Roll: 4] You slash horizontally at a gaunt grey rat with the tip of your tin dagger, but miss.
+[Success: 5, Roll: 90] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a gaunt grey rat. You successfully twirl your entire body, striking twice! It suffers a severe cut to its left front leg. It suffers a severe cut to its right front paw.
+[Success: 95, Roll: 79] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 5, Roll: 28] You jab at a gaunt grey rat with the point of your tin dagger! It suffers a faint wound to its head.
+[Success: 5, Roll: 6] You bring down your tin dagger in a chopping motion aimed at a gaunt grey rat! It suffers a shallow cut to its chest.
+[Success: 5, Roll: 51] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a gaunt grey rat, but manage to land only one good hit. Critical Hit! Grazing slice to the tail.
+[Success: 95, Roll: 50] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 5, Roll: 56] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a gaunt grey rat. You successfully twirl your entire body, striking twice! It suffers a deep cut to its right front paw. Critical Hit! Jolting slash to the left hindpaw.
+[Success: 5, Roll: 86] You slit a gaunt grey rat's throat with a tin dagger.
+[Success: 95, Roll: 23] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 8] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a pale white rat with crimson splotches but fail to hit.
+[Success: 25, Roll: 14] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a pale white rat with crimson splotches, but fail to hit.
+[Success: 95, Roll: 82] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 10] You jab at a pale white rat with crimson splotches with the point of your tin dagger, but miss.
+[Success: 95, Roll: 78] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 25, Roll: 47] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a pale white rat with crimson splotches, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 18, Roll: 14] Aiming for a pale white rat with crimson splotches's torso, you bring your tin dagger to bear in a downward stabbing motion. but miss.
+[Success: 95, Roll: 85] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 18, Roll: 6] Aiming for a pale white rat with crimson splotches's torso, you bring your tin dagger to bear in a downward stabbing motion. but miss.
+[Success: 95, Roll: 20] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 81] You slash horizontally at a pale white rat with crimson splotches with the tip of your tin dagger. It suffers a deep cut to its abdomen.
+[Success: 31, Roll: 84] You hit a pale white rat with crimson splotches! Critical Hit! Firm stab to the abdomen.
+[Success: 95, Roll: 87] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 25, Roll: 41] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a pale white rat with crimson splotches, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 48] A pale white rat with crimson splotches misses you with its claws.
+[Success: 18, Roll: 93] Aiming for a pale white rat with crimson splotches's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a puncture to its abdomen.
+[Success: 11, Roll: 47] You make a quick stabbing motion at a pale white rat with crimson splotches with your tin dagger! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 64] A pale white rat with crimson splotches misses you with its claws.
+[Success: 13, Roll: 27] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 74] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 31] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a faint wound to its abdomen.
+[Success: 11, Roll: 68] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 16] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 63] You bring down your tin dagger in a chopping motion aimed at a pale white rat with crimson splotches! Critical Hit! Stinging slice to the face.
+[Success: 95, Roll: 21] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 26] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a faint wound to its abdomen.
+[Success: 31, Roll: 75] You hit a pale white rat with crimson splotches! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 78] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 49] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a cut to its abdomen. Critical Hit! Powerful slice to the abdomen.
+[Success: 5, Roll: 54] You slit a pale white rat with crimson splotches's throat with a tin dagger.
+[Success: 95, Roll: 71] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 31, Roll: 26] You miss a pale white rat with crimson splotches.
+[Success: 11, Roll: 54] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 56] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 80] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a pale white rat with crimson splotches. You successfully twirl your entire body, striking twice! It suffers a severe cut to its abdomen. Critical Hit! Firm slash to the abdomen.
+[Success: 95, Roll: 40] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 18, Roll: 58] Aiming for a pale white rat with crimson splotches's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a puncture to its abdomen.
+[Success: 13, Roll: 31] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 65] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 91] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! Critical Hit! Firm slash to the abdomen. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 46] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 31, Roll: 80] You hit a pale white rat with crimson splotches! It suffers a puncture to its abdomen.
+[Success: 11, Roll: 20] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike! It suffers a cut to its abdomen.
+[Success: 95, Roll: 87] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 56] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a deep cut to its abdomen.
+[Success: 5, Roll: 34] You slit a pale white rat with crimson splotches's throat with a tin dagger.
+[Success: 95, Roll: 33] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 10, Roll: 39] You jab at a grimy rat with the point of your tin dagger! It suffers a faint wound to its head.
+[Success: 8, Roll: 59] You make a quick stabbing motion at a grimy rat with your tin dagger! It suffers a faint wound to its left front leg.
+[Success: 95, Roll: 92] A grimy rat leaps up at you, but does not manage to bite. You move your leg out of the way of a grimy rat's attack.
+[Success: 8, Roll: 54] You tightly grip your tin dagger. Stepping towards a grimy rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a grimy rat in a follow-up slash! It suffers a shallow cut to its right front leg. It suffers a shallow cut to its neck.
+[Success: 5, Roll: 64] You slash horizontally at a grimy rat with the tip of your tin dagger. Critical Hit! Strong strike to the left front paw.
+[Success: 28, Roll: 44] You hit a grimy rat! It suffers a faint wound to its left front paw.
+[Success: 95, Roll: 77] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 28, Roll: 40] You hit a grimy rat! It suffers a faint wound to its left hind leg.
+[Success: 8, Roll: 16] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a grimy rat, but manage to land only one good hit. It suffers a shallow cut to its right front paw.
+[Success: 95, Roll: 65] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 8, Roll: 58] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a grimy rat, but manage to land only one good hit. It suffers a shallow cut to its neck.
+[Success: 8, Roll: 64] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a grimy rat. You successfully twirl your entire body, striking twice! It suffers a shallow cut to its left front leg. It suffers a shallow cut to its right hind leg.
+[Success: 95, Roll: 69] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 8, Roll: 68] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a grimy rat. You successfully twirl your entire body, striking twice! It suffers a shallow cut to its right front leg. Critical Hit! Firm cut to the back.
+[Success: 8, Roll: 43] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a grimy rat! It suffers a faint wound to its chest.
+[Success: 95, Roll: 100] With a shrilly squeak, a grimy rat leaps up towards your face, biting and clawing with it's disease-ridden teeth and claws!  Your lorica hamata absorbs the impact of the blow.
+[Success: 8, Roll: 8] You step towards a grimy rat, lunging with your tin dagger, but miss. Stepping towards a grimy rat, you then lunge a stab at it, but miss.
+[Success: 8, Roll: 17] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a grimy rat! It suffers a faint wound to its chest.
+[Success: 8, Roll: 95] You make a quick stabbing motion at a grimy rat with your tin dagger! Critical Hit! Powerful strike to the back.
+[Success: 95, Roll: 81] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 95, Roll: 20] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 8, Roll: 81] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a grimy rat! Critical Hit! Strong jab to the chest.
+[Success: 95, Roll: 25] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 56] You slit a grimy rat's throat with a tin dagger.
+[Success: 11, Roll: 75] You slash horizontally at a pale white rat with crimson splotches with the tip of your tin dagger. Critical Hit! Powerful slice to the abdomen.
+[Success: 95, Roll: 86] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 11] You slash horizontally at a pale white rat with crimson splotches with the tip of your tin dagger, but miss.
+[Success: 95, Roll: 2] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 42] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 30] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 59] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a pale white rat with crimson splotches, but manage to land only one good hit. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 33] A pale white rat with crimson splotches misses you with its claws.
+[Success: 11, Roll: 4] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a pale white rat with crimson splotches but fail to hit.
+[Success: 95, Roll: 91] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 66] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a severe cut to its abdomen. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 49] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 81] You make a quick stabbing motion at a pale white rat with crimson splotches with your tin dagger! It suffers a deep puncture to its abdomen.
+[Success: 25, Roll: 42] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a pale white rat with crimson splotches, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 36] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 27] You bring down your tin dagger in a chopping motion aimed at a pale white rat with crimson splotches! It suffers a shallow cut to its head.
+[Success: 95, Roll: 83] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 18, Roll: 42] Aiming for a pale white rat with crimson splotches's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 57] A sickly yellow rat misses you with its teeth! You dodge a sickly yellow rat's attack.
+[Success: 11, Roll: 17] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike! It suffers a cut to its abdomen.
+[Success: 95, Roll: 9] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 11, Roll: 18] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike! It suffers a cut to its abdomen.
+[Success: 95, Roll: 57] A sickly yellow rat misses you with its teeth! You dodge a sickly yellow rat's attack.
+[Success: 95, Roll: 42] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 13, Roll: 90] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a puncture to its abdomen.
+[Success: 11, Roll: 85] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a pale white rat with crimson splotches. You successfully twirl your entire body, striking twice! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 23] A sickly yellow rat misses you with its teeth! You dodge a sickly yellow rat's attack.
+[Success: 5, Roll: 11] You slit a pale white rat with crimson splotches's throat with a tin dagger.
+[Success: 5, Roll: 78] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a sickly yellow rat. You successfully twirl your entire body, striking twice! It suffers a deep cut to its chest. It suffers a deep cut to its right hindpaw.
+[Success: 5, Roll: 99] You bring down your tin dagger in a chopping motion aimed at a sickly yellow rat! Critical Hit! Damaging cut to the head.
+[Success: 95, Roll: 49] A sickly yellow rat misses you with its teeth! You dodge a sickly yellow rat's attack.
+[Success: 5, Roll: 99] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a sickly yellow rat. You successfully twirl your entire body, striking twice! Critical Hit! Stinging cut to the tail. Strong slash to the left front leg.
+[Success: 5, Roll: 35] You make a quick stabbing motion at a sickly yellow rat with your tin dagger! It suffers a puncture to its chest.
+[Success: 95, Roll: 95] A sickly yellow rat misses you with its teeth! You dodge a sickly yellow rat's attack.
+[Success: 5, Roll: 80] You jab at a sickly yellow rat with the point of your tin dagger! Critical Hit! Strong strike to the right front leg.
+[Success: 5, Roll: 10] You slit a sickly yellow rat's throat with a tin dagger.
+[Success: 95, Roll: 59] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 12] You make a quick stabbing motion at a mottled wiry rat with your tin dagger, but miss.
+[Success: 95, Roll: 74] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 17] You slash horizontally at a mottled wiry rat with the tip of your tin dagger. It suffers a shallow cut to its abdomen.
+[Success: 95, Roll: 18] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 9, Roll: 94] You tightly grip your tin dagger. Stepping towards a mottled wiry rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a mottled wiry rat in a follow-up slash! Critical Hit! Powerful slice to the abdomen. Jolting strike to the abdomen.
+[Success: 95, Roll: 76] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 32] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 35, Roll: 26] You miss a mottled wiry rat.
+[Success: 95, Roll: 3] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 21] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 28] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 17, Roll: 78] You bring down your tin dagger in a chopping motion aimed at a mottled wiry rat! It suffers a cut to its face.
+[Success: 95, Roll: 88] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 82] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 35, Roll: 87] You hit a mottled wiry rat! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 70] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 59] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 62] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 22, Roll: 18] Aiming for a mottled wiry rat's torso, you bring your tin dagger to bear in a downward stabbing motion. but miss.
+[Success: 95, Roll: 76] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 36] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 15, Roll: 55] You tightly grip your tin dagger. Stepping towards a mottled wiry rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a mottled wiry rat in a follow-up slash! Critical Hit! Jolting cut to the abdomen. It suffers a cut to its abdomen.
+[Success: 5, Roll: 82] You slit a mottled wiry rat's throat with a tin dagger.
+[Success: 95, Roll: 65] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 5] You take a step back while gripping your blade tightly and begin a spinning motion, slashing at a plump brown rat, but miss.
+[Success: 5, Roll: 30] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a plump brown rat, but manage to land only one good hit. It suffers a cut to its tail.
+[Success: 5, Roll: 17] Aiming for a plump brown rat's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a faint wound to its right hind leg.
+[Success: 95, Roll: 94] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 9, Roll: 26] You hit a plump brown rat! It suffers a faint wound to its right front leg.
+[Success: 5, Roll: 56] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a plump brown rat, managing to land a strike! It suffers a faint wound to its right front paw.
+[Success: 95, Roll: 96] A plump brown rat bites you with its teeth! Your lorica hamata absorbs the impact of the blow.
+[Success: 5, Roll: 86] You tightly grip your tin dagger. Stepping towards a plump brown rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a plump brown rat in a follow-up slash! It suffers a severe cut to its neck. Critical Hit! Powerful slash to the left hindpaw.
+[Success: 5, Roll: 97] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a plump brown rat! Critical Hit! Shocking thrust to the chest.
+[Success: 95, Roll: 80] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 19] You tightly grip your tin dagger. Stepping towards a plump brown rat, you then lunge a stab at it and strike! It suffers a cut to its right hindpaw.
+[Success: 9, Roll: 21] You hit a plump brown rat! It suffers a faint wound to its neck.
+[Success: 95, Roll: 16] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 94] Aiming for a plump brown rat's torso, you bring your tin dagger to bear in a downward stabbing motion! Critical Hit! Painful jab to the head.
+[Success: 5, Roll: 50] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a plump brown rat! It suffers a deep puncture to its chest.
+[Success: 5, Roll: 74] You slit a plump brown rat's throat with a tin dagger.
+[Success: 95, Roll: 97] A plump brown rat bites you with its teeth! Your leather shoulder pteryges absorb the impact of the blow.
+[Success: 5, Roll: 66] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a plump brown rat, managing to land a strike! It suffers a faint wound to its right hind leg.
+[Success: 95, Roll: 28] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 78] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a plump brown rat, managing to land a strike! Critical Hit! Powerful thrust to the left hind leg.
+[Success: 5, Roll: 18] You slash horizontally at a plump brown rat with the tip of your tin dagger. It suffers a cut to its left hind leg.
+[Success: 95, Roll: 91] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 6] You make a quick stabbing motion at a plump brown rat with your tin dagger! It suffers a faint wound to its left hindpaw.
+[Success: 95, Roll: 6] A grimy rat leaps up at you, but does not manage to bite. Your lorica hamata absorbs the impact of the blow.
+[Success: 5, Roll: 54] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a plump brown rat, managing to land a strike! Critical Hit! Powerful stab to the left front leg.
+[Success: 95, Roll: 57] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 41] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a plump brown rat, but manage to land only one good hit. It suffers a cut to its left front paw.
+[Success: 8, Roll: 42] You hit a plump brown rat! It suffers a puncture to its head.
+[Success: 95, Roll: 22] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 95, Roll: 20] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 61] You slash horizontally at a plump brown rat with the tip of your tin dagger. It suffers a deep cut to its neck.
+[Success: 5, Roll: 38] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a plump brown rat, but manage to land only one good hit. It suffers a cut to its left hindpaw.
+[Success: 95, Roll: 77] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 8, Roll: 6] You miss a plump brown rat.
+[Success: 95, Roll: 26] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 82] You slash horizontally at a plump brown rat with the tip of your tin dagger. Critical Hit! Shocking slice to the left hindpaw.
+[Success: 95, Roll: 36] A grimy rat leaps up at you, but does not manage to bite. You move your leg out of the way of a grimy rat's attack.
+[Success: 5, Roll: 36] You slit a plump brown rat's throat with a tin dagger.
+[Success: 5, Roll: 14] You slash horizontally at a grimy rat with the tip of your tin dagger. It suffers a shallow cut to its neck.
+[Success: 95, Roll: 49] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 12, Roll: 66] Aiming for a grimy rat's torso, you bring your tin dagger to bear in a downward stabbing motion! Critical Hit! Stinging jab to the chest.
+[Success: 25, Roll: 72] You hit a grimy rat! It suffers a faint wound to its chest.
+[Success: 12, Roll: 96] Aiming for a grimy rat's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a faint wound to its left front leg.
+[Success: 95, Roll: 17] A grimy rat leaps up at you, but does not manage to bite. You move your leg out of the way of a grimy rat's attack.
+[Success: 5, Roll: 79] You tightly grip your tin dagger. Stepping towards a grimy rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a grimy rat in a follow-up slash! It suffers a shallow cut to its left hindpaw. Critical Hit! Strong slice to the head.
+[Success: 5, Roll: 48] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a grimy rat, but manage to land only one good hit. Critical Hit! Shocking slice to the left front paw.
+[Success: 95, Roll: 21] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 5, Roll: 16] You tightly grip your tin dagger. Stepping towards a grimy rat, you then lunge a stab at it and strike! It suffers a shallow cut to its left hindpaw.
+[Success: 5, Roll: 9] You make a quick stabbing motion at a grimy rat with your tin dagger! It suffers a faint wound to its right front paw.
+[Success: 95, Roll: 57] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 5, Roll: 50] You tightly grip your tin dagger. Stepping towards a grimy rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a grimy rat in a follow-up slash! It suffers a shallow cut to its tail. It suffers a shallow cut to its right hind leg.
+[Success: 25, Roll: 53] You hit a grimy rat! It suffers a faint wound to its head.
+[Success: 95, Roll: 30] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 5, Roll: 60] You slash horizontally at a grimy rat with the tip of your tin dagger. Critical Hit! Firm slash to the left front paw.
+[Success: 7, Roll: 5] You bring down your tin dagger in a chopping motion aimed at a grimy rat, but miss.
+[Success: 7, Roll: 57] You bring down your tin dagger in a chopping motion aimed at a grimy rat! It suffers a shallow cut to its neck.
+[Success: 95, Roll: 62] A grimy rat leaps up at you, but does not manage to bite. You sway to one side to avoid a grimy rat's attack.
+[Success: 12, Roll: 63] Aiming for a grimy rat's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a faint wound to its tail.
+[Success: 5, Roll: 12] You tightly grip your tin dagger. Stepping towards a grimy rat, you then lunge a stab at it and strike! It suffers a shallow cut to its right hindpaw.
+[Success: 5, Roll: 88] You slit a grimy rat's throat with a tin dagger.
+[Success: 95, Roll: 40] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 32] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 5, Roll: 44] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a gaunt grey rat, but manage to land only one good hit. Critical Hit! Jolting slice to the back.
+[Success: 95, Roll: 1] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 5, Roll: 64] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a gaunt grey rat, managing to land a strike! It suffers a faint wound to its left hindpaw.
+[Success: 95, Roll: 98] A mottled wiry rat rakes you with its claws! Your lorica hamata absorbs the impact of the blow.
+[Success: 5, Roll: 78] You jab at a gaunt grey rat with the point of your tin dagger! Critical Hit! Strong thrust to the left hindpaw.
+[Success: 95, Roll: 86] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 53] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 95, Roll: 20] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 5, Roll: 49] You make a quick stabbing motion at a gaunt grey rat with your tin dagger! It suffers a deep puncture to its neck.
+[Success: 95, Roll: 72] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 89] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 4] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 5, Roll: 54] Aiming for a gaunt grey rat's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a puncture to its right front paw.
+[Success: 95, Roll: 35] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 60] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 5, Roll: 58] You make a quick stabbing motion at a gaunt grey rat with your tin dagger! Critical Hit! Painful stab to the chest.  The attack sheds blood!
+[Success: 95, Roll: 79] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 78] A gaunt grey rat misses you with its teeth! You dodge a gaunt grey rat's attack.
+[Success: 5, Roll: 77] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a gaunt grey rat. You successfully twirl your entire body, striking twice! It suffers a deep cut to its head. Critical Hit! Firm slash to the left hindpaw.
+[Success: 95, Roll: 34] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 5, Roll: 68] You slit a gaunt grey rat's throat with a tin dagger.
+[Success: 95, Roll: 34] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 15] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 13, Roll: 12] You jab at a mottled wiry rat with the point of your tin dagger, but miss.
+[Success: 95, Roll: 45] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 18, Roll: 16] Aiming for a mottled wiry rat's torso, you bring your tin dagger to bear in a downward stabbing motion. but miss.
+[Success: 95, Roll: 40] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 11, Roll: 12] You take a step back while gripping your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but miss.
+[Success: 95, Roll: 63] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 91] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 25, Roll: 33] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a mottled wiry rat, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 4] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 90] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 5, Roll: 20] You bring down your tin dagger in a chopping motion aimed at a mottled wiry rat! It suffers a shallow cut to its face.
+[Success: 95, Roll: 11] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 56] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 8, Roll: 30] You tightly grip your tin dagger. Stepping towards a mottled wiry rat, you then lunge a stab at it and strike! It suffers a cut to its abdomen.
+[Success: 95, Roll: 43] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 5, Roll: 32] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 42] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 11, Roll: 86] You make a quick stabbing motion at a mottled wiry rat with your tin dagger! Critical Hit! Jolting thrust to the abdomen.
+[Success: 95, Roll: 37] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 29] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 13, Roll: 57] You bring down your tin dagger in a chopping motion aimed at a mottled wiry rat! It suffers a cut to its head.
+[Success: 95, Roll: 52] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 13, Roll: 74] You jab at a mottled wiry rat with the point of your tin dagger! Critical Hit! Strong stab to the abdomen.
+[Success: 95, Roll: 64] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 11, Roll: 19] You tightly grip your tin dagger. Stepping towards a mottled wiry rat, you then lunge a stab at it and strike! It suffers a cut to its abdomen.
+[Success: 95, Roll: 35] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 23] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 31, Roll: 92] You hit a mottled wiry rat! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 39] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 18, Roll: 19] Aiming for a mottled wiry rat's torso, you bring your tin dagger to bear in a downward stabbing motion. but miss.
+[Success: 95, Roll: 98] A mottled wiry rat rakes you with its claws! You suffer a shallow cut to your left foot.
+[Success: 25, Roll: 61] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a mottled wiry rat, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 35] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 78] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 11, Roll: 42] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. It suffers a cut to its abdomen.
+[Success: 95, Roll: 8] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 13, Roll: 89] You jab at a mottled wiry rat with the point of your tin dagger! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 2] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 25, Roll: 62] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a mottled wiry rat, managing to land a strike! It suffers a faint wound to its abdomen.
+[Success: 95, Roll: 69] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 95, Roll: 70] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 13, Roll: 6] You bring down your tin dagger in a chopping motion aimed at a mottled wiry rat, but miss.
+[Success: 95, Roll: 31] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 31, Roll: 81] You hit a mottled wiry rat! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 3] A mottled wiry rat misses you with its claws. You dodge a mottled wiry rat's attack.
+[Success: 11, Roll: 57] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a mottled wiry rat, but manage to land only one good hit. It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 95] A pale white rat with crimson splotches misses you with its claws.
+[Success: 5, Roll: 67] You slit a mottled wiry rat's throat with a tin dagger.
+[Success: 27, Roll: 88] You hit a pale white rat with crimson splotches! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 90] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 7, Roll: 33] You make a quick stabbing motion at a pale white rat with crimson splotches with your tin dagger! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 34] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 12] You make a quick stabbing motion at a pale white rat with crimson splotches with your tin dagger! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 46] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 44] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a cut to its abdomen.
+[Success: 95, Roll: 63] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 25, Roll: 78] You hit a pale white rat with crimson splotches! It suffers a puncture to its abdomen.
+[Success: 5, Roll: 97] You make a quick stabbing motion at a pale white rat with crimson splotches with your tin dagger! Critical Hit! Jolting stab to the abdomen.
+[Success: 95, Roll: 39] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 89] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a severe cut to its abdomen.
+[Success: 95, Roll: 86] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 12, Roll: 91] Aiming for a pale white rat with crimson splotches's torso, you bring your tin dagger to bear in a downward stabbing motion! Critical Hit! Strong stab to the abdomen.
+[Success: 25, Roll: 4] You miss a pale white rat with crimson splotches.
+[Success: 95, Roll: 34] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 14] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a pale white rat with crimson splotches! It suffers a puncture to its chest.
+[Success: 95, Roll: 46] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 54] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a pale white rat with crimson splotches, but manage to land only one good hit. It suffers a deep cut to its abdomen.
+[Success: 5, Roll: 27] You slit a pale white rat with crimson splotches's throat with a tin dagger.
+[Success: 95, Roll: 93] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 45] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a plump brown rat, but manage to land only one good hit. It suffers a cut to its head.
+[Success: 5, Roll: 39] You hit a plump brown rat! It suffers a puncture to its neck.
+[Success: 5, Roll: 43] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a plump brown rat, managing to land a strike! It suffers a faint wound to its back.
+[Success: 95, Roll: 72] A plump brown rat misses you with its teeth!
+[Success: 5, Roll: 98] You slash horizontally at a plump brown rat with the tip of your tin dagger. Critical Hit! Grazing slice to the left hind leg.
+[Success: 5, Roll: 22] You bring down your tin dagger in a chopping motion aimed at a plump brown rat! It suffers a shallow cut to its neck.
+[Success: 95, Roll: 32] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 76] You make a quick stabbing motion at a plump brown rat with your tin dagger! Critical Hit! Shocking thrust to the back.
+[Success: 5, Roll: 78] Aiming for a plump brown rat's torso, you bring your tin dagger to bear in a downward stabbing motion! Critical Hit! Strong jab to the right hindpaw.
+[Success: 95, Roll: 29] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 64] You slash horizontally at a plump brown rat with the tip of your tin dagger. It suffers a deep cut to its back.
+[Success: 5, Roll: 60] You make a quick stabbing motion at a plump brown rat with your tin dagger! It suffers a deep puncture to its back.
+[Success: 95, Roll: 49] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 53] Aiming for a plump brown rat's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a puncture to its right hind leg.
+[Success: 5, Roll: 19] You jab at a plump brown rat with the point of your tin dagger! It suffers a faint wound to its left hind leg.
+[Success: 5, Roll: 12] You slash horizontally at a plump brown rat with the tip of your tin dagger. It suffers a cut to its left hindpaw.
+[Success: 95, Roll: 90] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 36] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a plump brown rat! It suffers a deep puncture to its chest.
+[Success: 5, Roll: 70] You slit a plump brown rat's throat with a tin dagger.
+[Success: 95, Roll: 8] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 24, Roll: 46] You hit a pale white rat with crimson splotches! It suffers a faint wound to its abdomen.
+[Success: 5, Roll: 90] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a pale white rat with crimson splotches! It suffers a severe puncture to its chest.
+[Success: 95, Roll: 4] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 68] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a pale white rat with crimson splotches in a follow-up slash! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 67] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 6, Roll: 11] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a faint wound to its abdomen.
+[Success: 5, Roll: 77] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a pale white rat with crimson splotches. You successfully twirl your entire body, striking twice! It suffers a deep cut to its abdomen.
+[Success: 95, Roll: 42] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 39] You tightly grip your tin dagger. Stepping towards a pale white rat with crimson splotches, you then lunge a stab at it and strike! Critical Hit! Stinging cut to the abdomen.
+[Success: 95, Roll: 12] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 79] You bring down your tin dagger in a chopping motion aimed at a pale white rat with crimson splotches! Critical Hit! Shocking slice to the neck.
+[Success: 5, Roll: 10] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a pale white rat with crimson splotches! It suffers a puncture to its chest.
+[Success: 95, Roll: 38] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 17, Roll: 12] With an agile movement of the wrist, you whirl your tin dagger while lunging forward at a pale white rat with crimson splotches, but fail to hit.
+[Success: 95, Roll: 39] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 5, Roll: 38] You jab at a pale white rat with crimson splotches with the point of your tin dagger! It suffers a puncture to its abdomen.
+[Success: 95, Roll: 17] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 95, Roll: 21] A pale white rat with crimson splotches misses you with its claws. You dodge a pale white rat with crimson splotches's attack.
+[Success: 10, Roll: 10] Aiming for a pale white rat with crimson splotches's torso, you bring your tin dagger to bear in a downward stabbing motion. but miss.
+[Success: 5, Roll: 61] Tightly gripping your tin dagger, you make a quick underhand stab aimed at a pale white rat with crimson splotches! Critical Hit! Damaging jab to the chest.
+[Success: 5, Roll: 18] You slit a pale white rat with crimson splotches's throat with a tin dagger.
+[Success: 95, Roll: 4] A ragged looking rat leaps up at you, but does not manage to bite.
+[Success: 5, Roll: 58] You slash horizontally at a ragged looking rat with the tip of your tin dagger. It suffers a shallow cut to its neck.
+[Success: 95, Roll: 20] A ragged looking rat leaps up at you, but does not manage to bite. You move your leg out of the way of a ragged looking rat's attack.
+[Success: 5, Roll: 49] You hit a ragged looking rat! It suffers a faint wound to its right front leg.
+[Success: 7, Roll: 68] Aiming for a ragged looking rat's torso, you bring your tin dagger to bear in a downward stabbing motion! It suffers a faint wound to its back.
+[Success: 5, Roll: 99] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a ragged looking rat. You successfully twirl your entire body, striking twice! Critical Hit! Damaging cut to the left hindpaw. Shocking slash to the chest.
+[Success: 95, Roll: 82] A ragged looking rat leaps up at you, but does not manage to bite. You sway to one side to avoid a ragged looking rat's attack.
+[Success: 5, Roll: 23] You tightly grip your tin dagger. Stepping towards a ragged looking rat, you then lunge a stab at it and strike! Critical Hit! Glancing slash to the head.
+[Success: 5, Roll: 43] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a ragged looking rat, but manage to land only one good hit. Critical Hit! Painful cut to the left front leg.
+[Success: 95, Roll: 65] A ragged looking rat leaps up at you, but does not manage to bite. You sway to one side to avoid a ragged looking rat's attack.
+[Success: 5, Roll: 8] You slash horizontally at a ragged looking rat with the tip of your tin dagger. It suffers a shallow cut to its tail.
+[Success: 5, Roll: 57] You make a quick stabbing motion at a ragged looking rat with your tin dagger! It suffers a faint wound to its neck.
+[Success: 95, Roll: 66] A ragged looking rat leaps up at you, but does not manage to bite. You sway to one side to avoid a ragged looking rat's attack.
+[Success: 20, Roll: 28] You hit a ragged looking rat! It suffers a faint wound to its right front paw.
+[Success: 5, Roll: 35] You tightly grip your tin dagger. Stepping towards a ragged looking rat, you then lunge a stab at it and strike! It suffers a shallow cut to its left front leg.
+[Success: 95, Roll: 60] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 95, Roll: 71] A ragged looking rat leaps up at you, but does not manage to bite. You sway to one side to avoid a ragged looking rat's attack.
+[Success: 5, Roll: 35] You jab at a ragged looking rat with the point of your tin dagger! It suffers a faint wound to its left front leg.
+[Success: 5, Roll: 85] You tightly grip your tin dagger. Stepping towards a ragged looking rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a ragged looking rat in a follow-up slash! Critical Hit! Painful cut to the right hind leg. It suffers a shallow cut to its back.
+[Success: 95, Roll: 85] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 7] You slit a ragged looking rat's throat with a tin dagger.
+[Success: 5, Roll: 25] You hit a plump brown rat! It suffers a faint wound to its tail.
+[Success: 5, Roll: 65] You slash horizontally at a plump brown rat with the tip of your tin dagger. It suffers a deep cut to its head.
+[Success: 95, Roll: 82] A plump brown rat misses you with its teeth! You dodge a plump brown rat's attack.
+[Success: 5, Roll: 62] You take a step back. You grip your blade tightly and begin a spinning motion, slashing at a plump brown rat. You successfully twirl your entire body, striking twice! Critical Hit! Stinging slash to the left front paw. It suffers a deep cut to its right hindpaw.
+[Success: 5, Roll: 93] You tightly grip your tin dagger. Stepping towards a plump brown rat, you then lunge a stab at it and strike. You then move your rear foot forward and pivot on it, spinning your whole body as your tin dagger cuts across a plump brown rat in a follow-up slash! Critical Hit! Damaging strike to the back. Damaging slash to the head.
+[Success: 5, Roll: 15] You make a quick stabbing motion at a plump brown rat with your tin dagger! It suffers a puncture to its right hindpaw.
+[Success: 5, Roll: 50] You slit a plump brown rat's throat with a tin dagger.

@@ -5,18 +5,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/plugins/map/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/kotlin/com.dattilio.klient.plugins.map/AlertManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/kotlin/com.dattilio.klient.plugins.map/MapApp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/kotlin/com.dattilio.klient.plugins.map/MapParser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/kotlin/com.dattilio.klient.plugins.map/MapPreProcessor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/kotlin/com.dattilio.klient.plugins.map/MapStateMachine.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/kotlin/com.dattilio.klient.plugins.map/MapView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/kotlin/com.dattilio.klient.plugins.map/Node.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/map/src/main/resources/sounds/chime.wav" afterDir="false" />
+    <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="Adding beta mapping.">
+      <change afterPath="$PROJECT_DIR$/plugins/Combat/src/test/resources/attacks.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/Combat/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_zafarkhaja_java_semver_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjavafx_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_core_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_flowless_flowless_0_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_richtext_richtextfx_0_7_M5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_undo_undofx_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fxmisc_wellbehaved_wellbehavedfx_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre8_1_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ro_fortsoft_pf4j_pf4j_1_3_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/Action.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatParser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatPreprocessor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatQueue.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatSettings.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/test/java/com/dattilio/scoundrel/CombatParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/test/kotlin/scoundrel/CombatParserTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatParser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatPreProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatPreProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatSettings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatSettings.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +86,9 @@
         <task path="$PROJECT_DIR$/plugins/Combat">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/client">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -68,20 +99,60 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Klient" type="f1a62948:ProjectNode" />
-                <item name="client" type="2d1252cf:ModuleNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Klient" type="f1a62948:ProjectNode" />
-                <item name="client" type="2d1252cf:ModuleNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Klient" type="f1a62948:ProjectNode" />
-                <item name="client" type="2d1252cf:ModuleNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -98,58 +169,10 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
         <option value="Kotlin File" />
-        <option value="JUnit4 Test Class" />
         <option value="Kotlin Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>View</find>
-      <find>sta</find>
-      <find>(String) -&gt;</find>
-      <find>extensionPoint</find>
-      <find>queue.add</find>
-      <find>que</find>
-      <find>queue.remove</find>
-      <find>remove</find>
-      <find>logger</find>
-      <find>No log4j2 configuration file found</find>
-      <find>resource</find>
-      <find>logger.</find>
-      <find>gamehand</find>
-      <find>handler</find>
-      <find>addEvent</find>
-      <find>previousCommandIndex</find>
-      <find>sendCommand</find>
-      <find>getEntries</find>
-      <find>extensionFactory</find>
-      <find>get</find>
-      <find>kill</find>
-      <find>junit</find>
-      <find>engaged</find>
-      <find>stage</find>
-      <find>moshi</find>
-      <find>addaction</find>
-      <find>addAction</find>
-      <find>processLine</find>
-      <find>notbusy</find>
-      <find>act()</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>else if</replace>
-      <replace>line){</replace>
-      <replace>queue.add</replace>
-      <replace>line</replace>
-      <replace>removeAction</replace>
-      <replace>queue.removeAction</replace>
-      <replace>queue.addeAction</replace>
-      <replace>addAction</replace>
-      <replace>queue.addAction</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>P:\dev\TecKlient2\app</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -173,17 +196,22 @@
     <option name="height" value="1416" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="controls&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt&#10;Extension&#9;FILE&#9;jar://C:/Users/Pmoney/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/ExtensionFactory.java&#10;App&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/App.kt&#10;combat&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt&#10;.iml&#9;FILE&#9;file://P:/dev/TecKlient2/.idea/modules/app/app.iml&#10;app&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/App.kt&#10;Module&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/AppModule.kt&#10;client&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/TecClient.kt&#10;AppComp&#9;null&#9;null&#10;Compo&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java&#10;View_&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/View_Factory.java&#10;View&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/View.kt&#10;dagger&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java&#10;comb&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt&#10;Combat&#9;FILE&#9;file://P:/dev/TecKlient2/plugins/combat/build/generated/source/kapt/main/com/dattilio/scoundrel/Combat_MembersInjector.java&#10;AppCompo&#9;null&#9;null&#10;compon&#9;FILE&#9;file://P:/dev/TecKlient2/app/build/generated/source/kapt/main/com/dattilio/klient/DaggerAppComponent.java&#10;Default&#9;FILE&#9;jar://C:/Users/Pmoney/.gradle/caches/modules-2/files-2.1/ro.fortsoft.pf4j/pf4j/1.3.0/e9f194ec6de95282fd02e9a248d6b6fb3f231bc2/pf4j-1.3.0-sources.jar!/ro/fortsoft/pf4j/DefaultPluginManager.java&#10;Client&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/TecClient.kt&#10;view&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/View.kt&#10;Controls&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/widget/Controls.kt&#10;Map&#9;FILE&#9;file://P:/dev/TecKlient2/app/src/main/kotlin/com/dattilio/klient/widget/Map.kt&#10;module&#9;null&#9;null&#10;DaggerApp&#9;null&#9;null&#10;build&#9;FILE&#9;file://P:/dev/TecKlient2/app/build.gradle&#10;MatchResu&#9;null&#9;null&#10;.gitignore&#9;FILE&#9;file://P:/dev/TecKlient2/.gitignore&#10;abstra&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/sun/nio/fs/AbstractPath.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/plugins/combat/src/test/java/com/dattilio/scoundrel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugins/combat/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15655577" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -192,6 +220,7 @@
       <recent name="com.dattilio.klient.text" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dattilio.klient.plugins.combat" />
       <recent name="com.dattilio.scoundrel" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -201,11 +230,11 @@
       <recent name="com.dattilio.scoundrel" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="P:\dev\Klient2\plugins\combat\src\test\resources" />
       <recent name="P:\dev\TecKlient2\app\src\test\java\com\dattilio\klient" />
       <recent name="P:\dev\TecKlient2\plugins\combat\src\test\java\com\dattilio\scoundrel\plugins" />
       <recent name="P:\dev\TecKlient2\app\plugins" />
       <recent name="P:\dev\TecKlient2\app" />
-      <recent name="P:\dev\TecKlient2\api\src\main\kotlin\com\dattilio\klient\api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="scoundrel" />
@@ -218,7 +247,7 @@
       <recent name="P:\dev\TecKlient2\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CombatAppKt">
+  <component name="RunManager" selected="JUnit.CombatParserTest.updateEngaged">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -231,10 +260,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Klient2 [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="P:/dev/Klient2/plugins/combat [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -242,7 +271,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="assemble" />
+            <option value="testClasses" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -250,10 +279,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Klient2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="P:/dev/Klient2/plugins/combat [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -261,7 +290,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -269,54 +298,59 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Klient2:client [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/client" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration name="CombatParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Klient.plugins.combat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dattilio.klient.plugins.combat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dattilio.klient.plugins.combat" />
+      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.plugins.combat.CombatParserTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="client.Klient.client.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.AppKt" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="CombatParserTest.processLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Klient.plugins.combat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dattilio.klient.plugins.combat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dattilio.klient.plugins.combat" />
+      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.plugins.combat.CombatParserTest" />
+      <option name="METHOD_NAME" value="processLine" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CombatAppKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="Klient.plugins.combat.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.plugins.combat.CombatAppKt" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="CombatParserTest.updateEngaged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Klient.plugins.combat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dattilio.klient.plugins.combat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dattilio.klient.plugins.combat" />
+      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.plugins.combat.CombatParserTest" />
+      <option name="METHOD_NAME" value="updateEngaged" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -353,19 +387,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.Klient2 [assemble]" />
-      <item itemvalue="Gradle.Klient2 [clean]" />
-      <item itemvalue="Gradle.Klient2:client [run]" />
-      <item itemvalue="Kotlin.AppKt" />
-      <item itemvalue="Kotlin.CombatAppKt" />
+      <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [testClasses]" />
+      <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [test]" />
+      <item itemvalue="JUnit.CombatParserTest.processLine" />
+      <item itemvalue="JUnit.CombatParserTest" />
+      <item itemvalue="JUnit.CombatParserTest.updateEngaged" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.CombatAppKt" />
-        <item itemvalue="Kotlin.AppKt" />
-        <item itemvalue="Gradle.Klient2:client [run]" />
-        <item itemvalue="Gradle.Klient2 [clean]" />
-        <item itemvalue="Gradle.Klient2 [assemble]" />
+        <item itemvalue="JUnit.CombatParserTest.updateEngaged" />
+        <item itemvalue="JUnit.CombatParserTest" />
+        <item itemvalue="JUnit.CombatParserTest.processLine" />
+        <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [test]" />
+        <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -445,40 +479,15 @@
       <option name="project" value="LOCAL" />
       <updated>1501904372372</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding beta mapping.">
+      <created>1587352607687</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587352607687</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="CombatParserTest - 2017.08.06 at 15h 42m 09s.xml">
-      <configuration name="CombatParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest - 2017.08.06 at 15h 42m 18s.xml">
-      <configuration name="CombatParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest - 2017.08.06 at 15h 43m 02s.xml">
-      <configuration name="CombatParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest - 2017.08.06 at 15h 43m 54s.xml">
-      <configuration name="CombatParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest - 2017.08.06 at 15h 44m 09s.xml">
-      <configuration name="CombatParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest - 2017.08.06 at 15h 45m 01s.xml">
-      <configuration name="CombatParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest - 2017.08.06 at 15h 47m 29s.xml">
-      <configuration name="CombatParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest_(1) - 2017.08.06 at 15h 52m 01s.xml">
-      <configuration name="CombatParserTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest_(1) - 2017.08.06 at 15h 54m 20s.xml">
-      <configuration name="CombatParserTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombatParserTest_(1) - 2017.08.06 at 15h 55m 22s.xml">
-      <configuration name="CombatParserTest (1)" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="87667000" />
@@ -511,24 +520,125 @@
     <MESSAGE value="Started working on combat" />
     <MESSAGE value="Trying to use dagger to use our object graph to inject members into dynamically loaded plugins" />
     <MESSAGE value="Working Combat." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Combat." />
+    <MESSAGE value="Adding beta mapping." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding beta mapping." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup" timestamp="1587352494170">
+    <state x="973" y="454" key="FileChooserDialogImpl" timestamp="1587477709945">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587352494170" />
+    <state x="973" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1587477709945" />
+    <state width="2016" height="397" key="GridCell.Tab.0.bottom" timestamp="1587481659937">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
+    <state width="2016" height="397" key="GridCell.Tab.0.center" timestamp="1587481659937">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="397" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
+    <state width="2016" height="397" key="GridCell.Tab.0.left" timestamp="1587481659937">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="397" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
+    <state width="2016" height="397" key="GridCell.Tab.0.right" timestamp="1587481659937">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="397" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
+    <state width="2016" height="487" key="GridCell.Tab.1.bottom" timestamp="1587478214604">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="487" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
+    <state width="2016" height="487" key="GridCell.Tab.1.center" timestamp="1587478214604">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="487" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
+    <state width="2016" height="487" key="GridCell.Tab.1.left" timestamp="1587478214604">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="487" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
+    <state width="2016" height="487" key="GridCell.Tab.1.right" timestamp="1587478214604">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2016" height="487" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
+    <state x="773" y="442" width="1687" height="589" key="IDE.errors.dialog" timestamp="1587431699827">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="773" y="442" width="1687" height="589" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587431699827" />
+    <state x="694" y="344" key="SettingsEditor" timestamp="1587432033550">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="694" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587432033550" />
+    <state x="785" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587352612218">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="785" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1587352612218" />
+    <state x="900" y="434" width="1432" height="613" key="find.popup" timestamp="1587387892326">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="900" y="434" width="1432" height="613" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587387892326" />
+    <state x="957" y="521" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1587431729709">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="957" y="521" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587431729709" />
+    <state x="1036" y="472" key="refactoring.ChangeSignatureDialog" timestamp="1587478576533">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1036" y="472" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587478576533" />
+    <state x="849" y="332" key="run.anything.popup" timestamp="1587483183245">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="849" y="332" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587483183245" />
+    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup" timestamp="1587477856724">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587477856724" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/AlertManager.kt</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt</url>
+          <line>26</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatPreProcessor.kt</url>
+          <line>20</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatParser.kt</url>
+          <line>17</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/plugins/combat/src/test/kotlin/com/dattilio/klient/plugins/combat/CombatParserTest.kt</url>
+          <line>42</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/plugins/combat/src/test/kotlin/com/dattilio/klient/plugins/combat/CombatParserTest.kt</url>
+          <line>35</line>
+          <option name="timeStamp" value="206" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="java.util.regex.Matcher" fieldName="groups" />
+        <PinnedItemInfo typeName="java.util.regex.Matcher" fieldName="parentPattern" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="javaClass.getResource(&quot;sounds/chime.wav&quot;)" language="kotlin" />
@@ -536,6 +646,12 @@
         <watch expression="javaClass.classLoader.getResource(&quot;sounds/chime.wav&quot;)" language="kotlin" />
         <watch expression="javaClass.classLoader.getResource(&quot;sounds/chime.wav&quot;).toString()" language="kotlin" />
         <watch expression="AudioClip(&quot;file:/P:/dev/Klient2/plugins/combat/build/resources/main/sounds/chime.wav&quot;)" language="kotlin" />
+      </configuration>
+      <configuration name="JUnit">
+        <watch expression="&quot;You wield a &quot; + presenter.combatSettings.weapon() in line" language="kotlin" />
+        <watch expression="mockPresenter.combatSettings" language="kotlin" />
+        <watch expression="combatSettings.weapon() " language="kotlin" />
+        <watch expression="opponent.group(1)" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>

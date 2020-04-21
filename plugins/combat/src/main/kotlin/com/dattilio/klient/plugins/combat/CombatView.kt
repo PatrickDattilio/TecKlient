@@ -25,8 +25,8 @@ class CombatView(presenter: CombatPreProcessor) {
 
     init {
         stage.title = "Combat"
-        presenter.combatSettings.weapon?.let { weapon.text=it}
-        presenter.combatSettings.rotation?.let { weaponRotation.text=it.toString()}
+        presenter.combatSettings.weapon()?.let { weapon.text=it}
+        presenter.combatSettings.rotation()?.let { weaponRotation.text=it.joinToString(",")}
         val weaponBox = HBox(weapon, saveWeapon)
         val rotationBox = HBox(weaponRotation, saveRotation)
 

@@ -4,12 +4,13 @@ import com.tinder.StateMachine
 import java.util.regex.Pattern
 
 class CombatParser(
-    private val presenter: CombatPreProcessor,
+    private val updateEngaged: (engaged:String, add:Boolean) ->Unit,
+    private val combatSettings: CombatSettings,
     private val alertManager: AlertManager,
     private val stateMachine: StateMachine<CombatStateMachine.State, CombatStateMachine.Event, CombatStateMachine.SideEffect>
 ) {
 
-    private val enemyAttackPattern: Pattern = Pattern.compile("] [A |An] (.*?) \\S+ you")
+    private val enemyAttackPattern: Pattern = Pattern.compile("] [A |An ] (.*?)(leaps up at|\\S+) you")
     private val killPattern = Pattern.compile("You slit a (.*)\'s")
 
 
@@ -29,11 +30,11 @@ class CombatParser(
                 .or("You must be carrying something to wield it." in line)
         ) {
             stateMachine.transition(CombatStateMachine.Event.WeaponDropped)
-        } else if (("You wield a " + presenter.combatSettings.weapon in line)
+        } else if (("You wield a " + combatSettings.weapon() in line)
                 .or("That weapon is too small to wield in two hands." in line)
         ) {
             stateMachine.transition(CombatStateMachine.Event.WeaponWielded)
-        } else if ("You take a " + presenter.combatSettings.weapon in line) {
+        } else if ("You take a " + combatSettings.weapon() in line) {
             stateMachine.transition(CombatStateMachine.Event.WeaponRecovered)
         } else if ("is not close enough." in line) {
             stateMachine.transition(CombatStateMachine.Event.TooFar)
@@ -67,7 +68,7 @@ class CombatParser(
             killPattern.matcher(line)
         }
         if (opponent.find()) {
-            presenter.updateEngaged(opponent.group(1), add)
+            updateEngaged.invoke(opponent.group(1), add)
         }
     }
 }

@@ -21,7 +21,7 @@ class CombatPreProcessor constructor() {
     private val view = CombatView(this)
     private val state = CombatStateMachine(::handleSideEffect)
 
-    private val parser = CombatParser(this, AlertManager(), state.stateMachine)
+    private val parser = CombatParser(this::updateEngaged,combatSettings, AlertManager(), state.stateMachine)
     var weapon:String=""
     private val engaged = ArrayList<String>()
     lateinit var send: ByteWriteChannel
