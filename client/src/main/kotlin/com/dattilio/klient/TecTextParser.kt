@@ -2,7 +2,7 @@ package com.dattilio.klient//import org.apache.logging.log4j.LogManager
 import com.dattilio.klient.widget.Controls
 import java.util.regex.Pattern
 
-class TecTextParser(val controls: Controls) {
+class TecTextParser(private val controls: Controls) {
 
     //    private val logger = LogManager.getLogger()
     private val pattern: Pattern = Pattern.compile("<(.*?)>")
@@ -17,7 +17,7 @@ class TecTextParser(val controls: Controls) {
             parseSkoot(line)
         } else {
             val styleList = ArrayList<String>()
-            var currentFontColor = "-fx-fill: #FFFFFF"
+            var currentFontColor = ""
             var currentAlignment: String? = null
             var currentWeight: String? = null
             styleList.add(currentFontColor)

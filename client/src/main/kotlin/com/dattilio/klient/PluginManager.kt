@@ -17,7 +17,7 @@ import java.net.InetSocketAddress
 import javax.inject.Inject
 
 class PluginManager @Inject constructor(
-    val sendCommand: SendCommand
+    private val sendCommand: SendCommand
 ) {
     @ExperimentalCoroutinesApi
     val broadcast = BroadcastChannel<String>(10)

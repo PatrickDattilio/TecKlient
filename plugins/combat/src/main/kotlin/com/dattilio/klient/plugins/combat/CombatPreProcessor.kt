@@ -22,14 +22,12 @@ class CombatPreProcessor constructor() {
     private val state = CombatStateMachine(::handleSideEffect)
 
     private val parser = CombatParser(this::updateEngaged,combatSettings, AlertManager(), state.stateMachine)
-    var weapon:String=""
     private val engaged = ArrayList<String>()
     lateinit var send: ByteWriteChannel
     var attackIndex = 0
-    private var attacks = emptyList<String>()
     private fun nextAttack(): String {
-        attackIndex = (attackIndex + 1) % attacks.size
-        return attacks[attackIndex]
+        attackIndex = (attackIndex + 1) % combatSettings.rotation()!!.size
+        return combatSettings.rotation()!![attackIndex]
     }
 
     private fun handleSideEffect(sideEffect: CombatStateMachine.SideEffect) {
@@ -39,8 +37,8 @@ class CombatPreProcessor constructor() {
 //        }
         when (sideEffect) {
             CombatStateMachine.SideEffect.Attack -> sendCommand(nextAttack())
-            CombatStateMachine.SideEffect.GetWeapon -> sendCommand("get $weapon", true)
-            CombatStateMachine.SideEffect.Wield -> sendCommand("wie $weapon", true)
+            CombatStateMachine.SideEffect.GetWeapon -> sendCommand("get ${combatSettings.weapon()}", true)
+            CombatStateMachine.SideEffect.Wield -> sendCommand("wie  ${combatSettings.weapon()}", true)
             CombatStateMachine.SideEffect.Release -> sendCommand("release")
             CombatStateMachine.SideEffect.Kill -> sendCommand("kl")
             CombatStateMachine.SideEffect.Look -> sendCommand("l")
@@ -124,6 +122,7 @@ class CombatPreProcessor constructor() {
 
     fun saveRotation(rotation: List<String>) {
         this.combatSettings.updateRotation(rotation)
+        attackIndex = 0
     }
 
 

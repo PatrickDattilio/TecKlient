@@ -5,10 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="Adding beta mapping.">
-      <change afterPath="$PROJECT_DIR$/plugins/Combat/src/test/resources/attacks.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/Combat/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="Remove old build files, clean up opponent parsing">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_zafarkhaja_java_semver_0_9_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_8_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
@@ -27,24 +24,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ro_fortsoft_pf4j_pf4j_1_3_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/Action.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/Combat.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatParser.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatPreprocessor.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatQueue.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatSettings.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/main/kotlin/com/dattilio/scoundrel/CombatView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/test/java/com/dattilio/scoundrel/CombatParserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Combat/src/test/kotlin/scoundrel/CombatParserTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatParser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/com/dattilio/klient/PluginManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/com/dattilio/klient/PluginManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/com/dattilio/klient/TecTextParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/com/dattilio/klient/TecTextParser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/com/dattilio/klient/View.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/com/dattilio/klient/View.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatPreProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatPreProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatSettings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatSettings.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +230,7 @@
       <recent name="P:\dev\TecKlient2\app" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CombatParserTest.updateEngaged">
+  <component name="RunManager" selected="Kotlin.CombatAppKt">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -259,44 +242,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="P:/dev/Klient2/plugins/combat [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="testClasses" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="P:/dev/Klient2/plugins/combat [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/plugins/combat" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="CombatParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Klient.plugins.combat" />
@@ -355,6 +300,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="client.Klient.client.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.AppKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombatAppKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Klient.plugins.combat" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.plugins.combat.CombatAppKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="app" />
       <option name="VM_PARAMETERS" />
@@ -387,19 +358,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [testClasses]" />
-      <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [test]" />
       <item itemvalue="JUnit.CombatParserTest.processLine" />
       <item itemvalue="JUnit.CombatParserTest" />
       <item itemvalue="JUnit.CombatParserTest.updateEngaged" />
+      <item itemvalue="Kotlin.AppKt" />
+      <item itemvalue="Kotlin.CombatAppKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.CombatAppKt" />
+        <item itemvalue="Kotlin.AppKt" />
         <item itemvalue="JUnit.CombatParserTest.updateEngaged" />
         <item itemvalue="JUnit.CombatParserTest" />
         <item itemvalue="JUnit.CombatParserTest.processLine" />
-        <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [test]" />
-        <item itemvalue="Gradle.P:/dev/Klient2/plugins/combat [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587352607687</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Remove old build files, clean up opponent parsing">
+      <created>1587483535089</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587483535089</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -521,45 +499,46 @@
     <MESSAGE value="Trying to use dagger to use our object graph to inject members into dynamically loaded plugins" />
     <MESSAGE value="Working Combat." />
     <MESSAGE value="Adding beta mapping." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding beta mapping." />
+    <MESSAGE value="Remove old build files, clean up opponent parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove old build files, clean up opponent parsing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="973" y="454" key="FileChooserDialogImpl" timestamp="1587477709945">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="973" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1587477709945" />
-    <state width="2016" height="397" key="GridCell.Tab.0.bottom" timestamp="1587481659937">
+    <state width="2016" height="397" key="GridCell.Tab.0.bottom" timestamp="1587654833359">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
-    <state width="2016" height="397" key="GridCell.Tab.0.center" timestamp="1587481659937">
+    <state width="2016" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587654833359" />
+    <state width="2016" height="397" key="GridCell.Tab.0.center" timestamp="1587654833358">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="397" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
-    <state width="2016" height="397" key="GridCell.Tab.0.left" timestamp="1587481659937">
+    <state width="2016" height="397" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587654833358" />
+    <state width="2016" height="397" key="GridCell.Tab.0.left" timestamp="1587654833358">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="397" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
-    <state width="2016" height="397" key="GridCell.Tab.0.right" timestamp="1587481659937">
+    <state width="2016" height="397" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587654833358" />
+    <state width="2016" height="397" key="GridCell.Tab.0.right" timestamp="1587654833359">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="397" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587481659937" />
-    <state width="2016" height="487" key="GridCell.Tab.1.bottom" timestamp="1587478214604">
+    <state width="2016" height="397" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587654833359" />
+    <state width="2016" height="487" key="GridCell.Tab.1.bottom" timestamp="1587486088279">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="487" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
-    <state width="2016" height="487" key="GridCell.Tab.1.center" timestamp="1587478214604">
+    <state width="2016" height="487" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587486088279" />
+    <state width="2016" height="487" key="GridCell.Tab.1.center" timestamp="1587486088278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="487" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
-    <state width="2016" height="487" key="GridCell.Tab.1.left" timestamp="1587478214604">
+    <state width="2016" height="487" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587486088278" />
+    <state width="2016" height="487" key="GridCell.Tab.1.left" timestamp="1587486088278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="487" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
-    <state width="2016" height="487" key="GridCell.Tab.1.right" timestamp="1587478214604">
+    <state width="2016" height="487" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587486088278" />
+    <state width="2016" height="487" key="GridCell.Tab.1.right" timestamp="1587486088278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2016" height="487" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587478214604" />
+    <state width="2016" height="487" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587486088278" />
     <state x="773" y="442" width="1687" height="589" key="IDE.errors.dialog" timestamp="1587431699827">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -568,14 +547,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="694" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587432033550" />
-    <state x="785" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587352612218">
+    <state x="785" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587483537508">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="785" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1587352612218" />
-    <state x="900" y="434" width="1432" height="613" key="find.popup" timestamp="1587387892326">
+    <state x="785" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1587483537508" />
+    <state x="255" y="101" width="1876" height="1197" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587561096677">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="900" y="434" width="1432" height="613" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587387892326" />
+    <state x="255" y="101" width="1876" height="1197" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587561096677" />
+    <state x="900" y="434" width="1432" height="613" key="find.popup" timestamp="1587561073902">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="900" y="434" width="1432" height="613" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587561073902" />
     <state x="957" y="521" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1587431729709">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -584,38 +567,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1036" y="472" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587478576533" />
-    <state x="849" y="332" key="run.anything.popup" timestamp="1587483183245">
+    <state x="849" y="332" key="run.anything.popup" timestamp="1587654649774">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="849" y="332" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587483183245" />
-    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup" timestamp="1587477856724">
+    <state x="849" y="332" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587654649774" />
+    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup" timestamp="1587560969162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587477856724" />
+    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587560969162" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt</url>
-          <line>15</line>
-          <option name="timeStamp" value="195" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt</url>
-          <line>26</line>
-          <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatView.kt</url>
-          <line>32</line>
-          <option name="timeStamp" value="197" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatPreProcessor.kt</url>
-          <line>20</line>
-          <option name="timeStamp" value="198" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/plugins/combat/src/main/kotlin/com/dattilio/klient/plugins/combat/CombatParser.kt</url>
           <line>17</line>

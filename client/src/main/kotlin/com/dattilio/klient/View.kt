@@ -1,30 +1,23 @@
 package com.dattilio.klient
 
-import com.dattilio.klient.TecClient
-import com.dattilio.klient.TecTextParser
+//import org.apache.logging.log4j.LogManager
 import com.dattilio.klient.widget.Controls
-import javafx.geometry.Insets
 import javafx.scene.Scene
 import javafx.scene.control.*
-import javafx.scene.layout.Background
-import javafx.scene.layout.BackgroundFill
-import javafx.scene.layout.CornerRadii
 import javafx.scene.layout.GridPane
-import javafx.scene.paint.Color
 import javafx.stage.Stage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.launch
-//import org.apache.logging.log4j.LogManager
 import org.fxmisc.flowless.VirtualizedScrollPane
 import org.fxmisc.richtext.InlineCssTextArea
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 import kotlin.system.exitProcess
 
-class View @Inject constructor(val controls: Controls) : CoroutineScope {
+class View @Inject constructor(private val controls: Controls) : CoroutineScope {
 
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.JavaFx
@@ -47,8 +40,6 @@ class View @Inject constructor(val controls: Controls) : CoroutineScope {
         gameScreen.isWrapText = true
         gameScreen.useInitialStyleForInsertion = true
         gameScreen.style = "-fx-font-family: consolas"
-        gameScreen.background= Background(BackgroundFill(Color.BLACK, CornerRadii.EMPTY, Insets.EMPTY))
-
 
         textArea.isWrapText = true
         textArea.prefRowCount = 2
