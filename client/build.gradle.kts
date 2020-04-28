@@ -4,13 +4,15 @@ plugins {
     kotlin("kapt")
 }
 
-application {
-    mainClassName = "TecKlient"
-}
 repositories {
     mavenCentral()
     jcenter()
 }
+
+application {
+    mainClassName = "com.dattilio.klient.AppKt"
+}
+
 dependencies {
     implementation(project(":api"))
     implementation("javax.inject:javax.inject:1")
@@ -22,13 +24,13 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("com.squareup.okhttp3:okhttp:4.4.0")
     implementation("org.fxmisc.richtext:richtextfx:0.10.4")
-
 }
 
 configure<JavaPluginConvention> {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
+
 tasks {
     compileKotlin {
         kotlinOptions.jvmTarget = "1.8"
@@ -36,5 +38,4 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
     }
-
 }
