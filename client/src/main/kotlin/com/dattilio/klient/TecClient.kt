@@ -6,6 +6,7 @@ import io.ktor.network.sockets.Socket
 import io.ktor.network.sockets.aSocket
 import io.ktor.network.sockets.openReadChannel
 import io.ktor.network.sockets.openWriteChannel
+import io.ktor.utils.io.ByteWriteChannel
 import io.ktor.utils.io.readUTF8Line
 import io.ktor.utils.io.writeStringUtf8
 import io.reactivex.rxjava3.core.Observable
@@ -34,10 +35,11 @@ class TecClient @Inject constructor(
 //                                    val logger: Logger,
     private val pluginManager: PluginManager,
     private val okHttp: OkHttpClient,
-    val controls: Controls,
+    controls: Controls,
     val view: View
 ) : CoroutineScope {
 
+    private lateinit var gameConnection: Job
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.JavaFx
 
@@ -82,26 +84,16 @@ class TecClient @Inject constructor(
 
     private fun getPassword() {
         view.textArea.removeEventFilter(KeyEvent.KEY_PRESSED, passwordHandler)
-        val password = view.textArea.text
+        pass = view.textArea.text
         view.textArea.clear()
-        loginToWebsite(user, password)
-            .subscribeOn(Schedulers.io())
-            .observeOn(JavaFxScheduler.platform())
-            .subscribe { (user, pass) ->
-                if (user.isEmpty() or pass.isEmpty()) {
-                    view.addText("I'm sorry, that username or password was incorrect. Please try again.")
-                    getCredentials()
-                } else {
-                    gameConnect()
-                }
-            }
+        loginToWebsite(user, pass)
 
     }
 
     data class Login(val username: String, val password: String)
 
-    private fun loginToWebsite(username: String, password: String): Observable<Login> {
-        return Observable.fromCallable {
+    private fun loginToWebsite(username: String, password: String){
+        Observable.fromCallable {
             val requestBody = MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("uname", username)
@@ -135,45 +127,63 @@ class TecClient @Inject constructor(
             }
 
             return@fromCallable Login(user, pass)
-        }
+        }.subscribeOn(Schedulers.io())
+            .observeOn(JavaFxScheduler.platform())
+            .subscribe { (user, pass) ->
+                if (user.isEmpty() or pass.isEmpty()) {
+                    view.addText("I'm sorry, that username or password was incorrect. Please try again.")
+                    getCredentials()
+                } else {
+                    gameConnect()
+                }
+            }
     }
 
     @ExperimentalCoroutinesApi
-    val writeToTec = Channel<String>(10)
+    var writeToTec = Channel<String>(10)
+
+    private suspend fun setupGameWriter(output: ByteWriteChannel) {
+        writeToTec.consumeEach {
+            output.writeStringUtf8("$it\r\n")
+            println(it)
+        }
+    }
+
+    private suspend fun setupGameReader(socket: Socket) {
+        val input = socket.openReadChannel()
+        try {
+            while (true) {
+                val line = input.readUTF8Line()
+                line?.let {
+                    println(it)
+                    handleMessage(it)
+                }
+            }
+        } catch (e: Throwable) {
+            e.printStackTrace()
+            socket.close()
+            view.isConnected(false)
+        }
+    }
+
+    private suspend fun connectToServerAsync() = coroutineScope {
+        socket =
+            aSocket(ActorSelectorManager(Dispatchers.IO)).tcp()
+                .connect(InetSocketAddress("tec.skotos.net", 6730))
+        socket?.let {
+            val output = it.openWriteChannel(autoFlush = true)
+            output.writeStringUtf8("SKOTOS Orchil 0.2.3\r\n")
+            view.isConnected(true)
+            launch { setupGameReader(it) }
+            launch { setupGameWriter(output) }
+
+        }
+    }
 
     private fun gameConnect() {
         setupGameInputHandler()
-        launch {
-            socket =
-                aSocket(ActorSelectorManager(Dispatchers.IO)).tcp()
-                    .connect(InetSocketAddress("tec.skotos.net", 6730))
-
-            view.isConnected(true)
-            GlobalScope.async {
-                val output = socket?.openWriteChannel(autoFlush = true)
-                writeToTec.send("SKOTOS Zealous 0.7.12.2")
-                writeToTec.consumeEach {
-                    output?.writeStringUtf8("$it\r\n")
-                    println(it)
-                }
-            }
-            GlobalScope.async {
-                val input = socket?.openReadChannel()
-                try {
-                    while (true) {
-                        val line = input?.readUTF8Line()
-                        line?.let {
-                            handleMessage(it)
-                            //TODO DEBUG FLAG: println(it)
-                        }
-
-                    }
-                } catch (e: Throwable) {
-                    e.printStackTrace()
-                    socket?.close()
-                    view.isConnected(false)
-                }
-            }
+        gameConnection = launch {
+            connectToServerAsync()
         }
     }
 
@@ -220,41 +230,42 @@ class TecClient @Inject constructor(
     }
 
     private fun sendToServer(text: String) {
-        println("sendToServer: $text")
         GlobalScope.async {
             writeToTec.send(text)
         }
     }
 
-
-    private fun setupGameInputHandler() {
-        view.textArea.addEventFilter(KeyEvent.KEY_PRESSED) { key ->
-            when (key.code) {
-                KeyCode.ENTER -> {
-                    val command = view.textArea.text
-                    send(command)
-                    view.textArea.clear()
-                    key.consume()
-                    previousCommandIndex = 0
-                }
-                KeyCode.UP -> {
-                    saveToHistory = false
-                    view.textArea.text = getPreviousCommand(1)
-                }
-                KeyCode.DOWN -> {
-                    saveToHistory = false
-                    view.textArea.text = getPreviousCommand(-1)
-                }
-                else -> {
-                    saveToHistory = true
-                }
+    val gameInputHandler = GameInputHandler { key: KeyEvent ->
+        when (key.code) {
+            KeyCode.ENTER -> {
+                val command = view.textArea.text
+                send(command)
+                view.textArea.clear()
+                key.consume()
+                previousCommandIndex = 0
+            }
+            KeyCode.UP -> {
+                saveToHistory = false
+                view.textArea.text = getPreviousCommand(1)
+            }
+            KeyCode.DOWN -> {
+                saveToHistory = false
+                view.textArea.text = getPreviousCommand(-1)
+            }
+            else -> {
+                saveToHistory = true
             }
         }
     }
 
+    private fun setupGameInputHandler() {
+        view.textArea.addEventFilter(KeyEvent.KEY_PRESSED, gameInputHandler)
+    }
+
+
     private fun getPreviousCommand(direction: Int): String {
         val newPrevIndex = previousCommandIndex + direction
-        if(commandHistory.size == 0) return ""
+        if (commandHistory.size == 0) return ""
         previousCommandIndex = when {
             newPrevIndex < 0 -> {
                 commandHistory.size + newPrevIndex
@@ -275,12 +286,22 @@ class TecClient @Inject constructor(
 
     fun reconnect() {
         view.gameScreen.clear()
-        start()
+        view.textArea.removeEventFilter(KeyEvent.KEY_PRESSED, gameInputHandler)
+        writeToTec = Channel<String>(10)
+        gameConnect()
     }
 
     fun disconnect() {
+        gameConnection.cancel()
         socket?.close()
+        socket = null
         view.isConnected(false)
+    }
+}
+
+class GameInputHandler(private val function: (KeyEvent) -> Unit) : EventHandler<KeyEvent> {
+    override fun handle(event: KeyEvent) {
+        function.invoke(event)
     }
 }
 
