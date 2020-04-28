@@ -24,7 +24,7 @@ class CombatParser(
         } else if ("falls unconscious" in line) {
             stateMachine.transition(CombatStateMachine.Event.EnemyUnconscious)
         } else if (("You must be wielding a weapon to attack." in line).or("You are already carrying" in line)) {
-            stateMachine.transition(CombatStateMachine.Event.WeaponRecovered)
+            stateMachine.transition(CombatStateMachine.Event.SuccessfulGetWeapon)
         } else if (("You fumble" in line)
                 .or("You can't do that right now." in line)
                 .or("You must be carrying something to wield it." in line)
@@ -32,10 +32,11 @@ class CombatParser(
             stateMachine.transition(CombatStateMachine.Event.WeaponDropped)
         } else if (("You wield a " + combatSettings.weapon() in line)
                 .or("That weapon is too small to wield in two hands." in line)
+                .or("You are already wielding that" in line)
         ) {
-            stateMachine.transition(CombatStateMachine.Event.WeaponWielded)
+            stateMachine.transition(CombatStateMachine.Event.SuccessfulWield)
         } else if ("You take a " + combatSettings.weapon() in line) {
-            stateMachine.transition(CombatStateMachine.Event.WeaponRecovered)
+            stateMachine.transition(CombatStateMachine.Event.SuccessfulGetWeapon)
         } else if ("is not close enough." in line) {
             stateMachine.transition(CombatStateMachine.Event.TooFar)
         } else if ("You'll have to retreat first." in line) {

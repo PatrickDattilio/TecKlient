@@ -1,5 +1,6 @@
 package com.dattilio.klient.plugins.combat
 
+import com.tinder.StateMachine
 import io.ktor.network.selector.ActorSelectorManager
 import io.ktor.network.sockets.aSocket
 import io.ktor.network.sockets.openReadChannel
@@ -7,15 +8,14 @@ import io.ktor.network.sockets.openWriteChannel
 import io.ktor.util.cio.write
 import io.ktor.utils.io.ByteWriteChannel
 import io.ktor.utils.io.readUTF8Line
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
+import kotlinx.coroutines.*
 import java.net.InetSocketAddress
 import java.util.*
 import kotlin.random.Random.Default.nextLong
 
 class CombatPreProcessor constructor() {
 
+    var repeater: Deferred<StateMachine.Transition<CombatStateMachine.State, CombatStateMachine.Event, CombatStateMachine.SideEffect>> ?=null
     val combatSettings= CombatSettings("settings.json")
     var enabled = false
     private val view = CombatView(this)
@@ -32,19 +32,48 @@ class CombatPreProcessor constructor() {
 
     private fun handleSideEffect(sideEffect: CombatStateMachine.SideEffect) {
         println(sideEffect)
-//        launch {
-//            updateActionQueueText()
-//        }
         when (sideEffect) {
-            CombatStateMachine.SideEffect.Attack -> sendCommand(nextAttack())
-            CombatStateMachine.SideEffect.GetWeapon -> sendCommand("get ${combatSettings.weapon()}", true)
-            CombatStateMachine.SideEffect.Wield -> sendCommand("wie  ${combatSettings.weapon()}", true)
-            CombatStateMachine.SideEffect.Release -> sendCommand("release")
-            CombatStateMachine.SideEffect.Kill -> sendCommand("kl")
-            CombatStateMachine.SideEffect.Look -> sendCommand("l")
-            CombatStateMachine.SideEffect.Retreat -> sendCommand("ret", true)
-            CombatStateMachine.SideEffect.Lunge -> sendCommand("zl", true)
+            is CombatStateMachine.SideEffect.Attack -> handleAttack(sideEffect)
+            is CombatStateMachine.SideEffect.GetWeapon -> handleGetWeapon(sideEffect)
+            is CombatStateMachine.SideEffect.Wield -> handleWield(sideEffect)
+            is CombatStateMachine.SideEffect.Release -> handleRelease(sideEffect)
+            is CombatStateMachine.SideEffect.Kill -> handleKill(sideEffect)
+            is CombatStateMachine.SideEffect.Status -> handleStatus(sideEffect)
+            is CombatStateMachine.SideEffect.Retreat -> handleRetreat(sideEffect)
+            is CombatStateMachine.SideEffect.Lunge -> handleLunge(sideEffect)
         }
+    }
+
+    private fun handleLunge(sideEffect: CombatStateMachine.SideEffect) {
+        sendCommand("zl", sideEffect.failureEvent, true)
+    }
+
+    private fun handleRetreat(sideEffect: CombatStateMachine.SideEffect) {
+        sendCommand("ret", sideEffect.failureEvent, true)
+    }
+
+    private fun handleStatus(sideEffect: CombatStateMachine.SideEffect) {
+        sendCommand("ss", sideEffect.failureEvent)
+    }
+
+    private fun handleKill(sideEffect: CombatStateMachine.SideEffect) {
+        sendCommand("kl", sideEffect.failureEvent)
+    }
+
+    private fun handleRelease(sideEffect: CombatStateMachine.SideEffect) {
+        sendCommand("release", sideEffect.failureEvent)
+    }
+
+    private fun handleWield(sideEffect: CombatStateMachine.SideEffect) {
+        sendCommand("wie  ${combatSettings.weapon()}", sideEffect.failureEvent, true)
+    }
+
+    private fun handleGetWeapon(sideEffect: CombatStateMachine.SideEffect) {
+        sendCommand("get ${combatSettings.weapon()}", sideEffect.failureEvent, true)
+    }
+
+    private fun handleAttack(sideEffect: CombatStateMachine.SideEffect.Attack) {
+        sendCommand(nextAttack(), sideEffect.failureEvent)
     }
 
 
@@ -89,12 +118,19 @@ class CombatPreProcessor constructor() {
     }
 
 
-    private fun sendCommand(command: String, randomDelay: Boolean = true) {
+    private fun sendCommand(command: String, failureEvent:CombatStateMachine.Event?, randomDelay: Boolean = true) {
+        repeater?.cancel()
         GlobalScope.async {
             if (randomDelay) {
-                kotlinx.coroutines.delay(nextLong(450, 750))
+                delay(nextLong(450, 750))
             }
             send.write("$command\r\n")
+        }
+        failureEvent?.let {
+            repeater = GlobalScope.async {
+                delay(3000)
+                state.stateMachine.transition(it)
+            }
         }
     }
 
@@ -123,6 +159,10 @@ class CombatPreProcessor constructor() {
     fun saveRotation(rotation: List<String>) {
         this.combatSettings.updateRotation(rotation)
         attackIndex = 0
+    }
+
+    fun moveToAttack() {
+        state.stateMachine.transition(CombatStateMachine.Event.EnemyHitYou)
     }
 
 

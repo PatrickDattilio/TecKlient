@@ -16,6 +16,7 @@ class CombatView(presenter: CombatPreProcessor) {
     val stage = Stage()
     val queueText: Text
     val checkBox: CheckBox
+    val startAttacking: CheckBox
     var engagedText: Text
 
     val weapon = TextArea()
@@ -45,12 +46,20 @@ class CombatView(presenter: CombatPreProcessor) {
         checkBox.selectedProperty().addListener { _, _, newValue ->
             presenter.checkBoxClicked(newValue)
         }
+        startAttacking = CheckBox("Start attacking")
+        startAttacking.isSelected = false
+        startAttacking.selectedProperty().addListener { _, _, newValue ->
+            if(newValue) {
+                presenter.moveToAttack()
+            }
+        }
         val queueLabel = Label("Action Queue:")
         queueText = Text()
         val engagedLabel = Label("Engaged to:")
         engagedText = Text()
         val combatBox = VBox(
             checkBox,
+            startAttacking,
             weaponBox,
             rotationBox,
             queueLabel,
