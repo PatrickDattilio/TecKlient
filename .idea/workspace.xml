@@ -5,10 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="Add courses">
+    <list default="true" id="8812ee3e-a83e-4320-ac22-7e779c28a68a" name="Default" comment="Add the ability to create a runnable jar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/client/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/combat/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/combat/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/combat/gradle.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +85,40 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Klient" type="f1a62948:ProjectNode" />
+                <item name="plugins" type="2d1252cf:ModuleNode" />
+                <item name="combat" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
@@ -178,7 +212,7 @@
       <recent name="P:\dev\TecKlient2\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.P:/dev/TecKlient [runShadow]">
+  <component name="RunManager" selected="Gradle.P:/dev/TecKlient/plugins/Combat [runShadow]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -229,10 +263,29 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="P:/dev/TecKlient [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="P:/dev/TecKlient/plugins/Combat [runShadow]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/plugins/Combat" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runShadow" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="P:/dev/TecKlient/plugins/Combat [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/plugins/Combat" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -287,19 +340,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CombatAppKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="Klient.plugins.combat" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.dattilio.klient.plugins.combat.CombatAppKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="app" />
       <option name="VM_PARAMETERS" />
@@ -332,19 +372,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.CombatAppKt" />
-      <item itemvalue="Gradle.P:/dev/TecKlient [shadowJar]" />
       <item itemvalue="Gradle.api::dev:TecKlient:client [shadowJar]" />
       <item itemvalue="Gradle.P:/dev/TecKlient [runShadow]" />
       <item itemvalue="Gradle.P:/dev/TecKlient [knows]" />
+      <item itemvalue="Gradle.P:/dev/TecKlient/plugins/Combat [shadowJar]" />
+      <item itemvalue="Gradle.P:/dev/TecKlient/plugins/Combat [runShadow]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.P:/dev/TecKlient/plugins/Combat [runShadow]" />
+        <item itemvalue="Gradle.P:/dev/TecKlient/plugins/Combat [shadowJar]" />
         <item itemvalue="Gradle.P:/dev/TecKlient [knows]" />
         <item itemvalue="Gradle.P:/dev/TecKlient [runShadow]" />
         <item itemvalue="Gradle.api::dev:TecKlient:client [shadowJar]" />
-        <item itemvalue="Gradle.P:/dev/TecKlient [shadowJar]" />
-        <item itemvalue="Kotlin.CombatAppKt" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588474200196</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add the ability to create a runnable jar">
+      <created>1588476885886</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588476885886</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -498,7 +545,8 @@
     <MESSAGE value="Update Login url" />
     <MESSAGE value="Add toggleable killing blow" />
     <MESSAGE value="Add courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add courses" />
+    <MESSAGE value="Add the ability to create a runnable jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the ability to create a runnable jar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1247" y="296" key="#AppKt" timestamp="1588086390165">
@@ -518,25 +566,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="973" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1587477709945" />
-    <state width="2510" height="396" key="GridCell.Tab.0.bottom" timestamp="1588476813313">
+    <state width="2510" height="396" key="GridCell.Tab.0.bottom" timestamp="1588477407243">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2510" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588476813313" />
+    <state width="2510" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588477407243" />
     <state width="1960" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588386095234" />
-    <state width="2510" height="396" key="GridCell.Tab.0.center" timestamp="1588476813313">
+    <state width="2510" height="396" key="GridCell.Tab.0.center" timestamp="1588477407243">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2510" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588476813313" />
+    <state width="2510" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588477407243" />
     <state width="1960" height="396" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588386095233" />
-    <state width="2510" height="396" key="GridCell.Tab.0.left" timestamp="1588476813313">
+    <state width="2510" height="396" key="GridCell.Tab.0.left" timestamp="1588477407243">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2510" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588476813313" />
+    <state width="2510" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588477407243" />
     <state width="1960" height="396" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588386095233" />
-    <state width="2510" height="396" key="GridCell.Tab.0.right" timestamp="1588476813313">
+    <state width="2510" height="396" key="GridCell.Tab.0.right" timestamp="1588477407243">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2510" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588476813313" />
+    <state width="2510" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588477407243" />
     <state width="1960" height="396" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588386095234" />
     <state width="1424" height="475" key="GridCell.Tab.1.bottom" timestamp="1588367215488">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -562,9 +610,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="694" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587432033550" />
-    <state x="785" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587483537508">
+    <state x="785" y="432" key="Vcs.Push.Dialog.v2" timestamp="1588476891111">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="785" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588476891111" />
     <state x="785" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1587483537508" />
     <state width="1038" height="682" key="XDebugger.FullValuePopup" timestamp="1588303446058">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -591,9 +640,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="849" y="332" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588364715482" />
-    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup" timestamp="1588338116637">
+    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup" timestamp="1588477435935">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="849" y="356" width="672" height="676" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1588477435935" />
     <state x="849" y="356" width="672" height="676" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588338116637" />
   </component>
   <component name="XDebuggerManager">

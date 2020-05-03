@@ -1,9 +1,17 @@
 plugins {
     kotlin("jvm")
     kotlin("kapt")
+    java
+    id("com.github.johnrengelman.shadow")
+    application
 }
 
 version = "unspecified"
+
+
+application {
+    mainClassName = "com.dattilio.klient.plugins.combat.CombatApp"
+}
 
 repositories {
     mavenCentral()
