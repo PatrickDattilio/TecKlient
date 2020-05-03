@@ -165,5 +165,9 @@ class CombatPreProcessor constructor() {
         state.stateMachine.transition(CombatStateMachine.Event.EnemyHitYou)
     }
 
+    fun killingBlowClicked(newValue: Boolean) {
+        state.killingBlow = newValue
+    }
+
 
 }

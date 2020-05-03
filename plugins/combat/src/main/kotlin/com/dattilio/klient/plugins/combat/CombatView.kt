@@ -24,6 +24,8 @@ class CombatView(presenter: CombatPreProcessor) {
     val weaponRotation = TextArea()
     val saveRotation = Button("Save Rotation")
 
+    val killingBlow: CheckBox
+
     init {
         stage.title = "Combat"
         presenter.combatSettings.weapon()?.let { weapon.text=it}
@@ -53,6 +55,13 @@ class CombatView(presenter: CombatPreProcessor) {
                 presenter.moveToAttack()
             }
         }
+
+        killingBlow = CheckBox("Killing blow")
+        killingBlow.isSelected = true
+        killingBlow.selectedProperty().addListener { _, _, newValue ->
+            presenter.killingBlowClicked(newValue)
+        }
+
         val queueLabel = Label("Action Queue:")
         queueText = Text()
         val engagedLabel = Label("Engaged to:")
@@ -62,6 +71,7 @@ class CombatView(presenter: CombatPreProcessor) {
             startAttacking,
             weaponBox,
             rotationBox,
+            killingBlow,
             queueLabel,
             queueText,
             engagedLabel,

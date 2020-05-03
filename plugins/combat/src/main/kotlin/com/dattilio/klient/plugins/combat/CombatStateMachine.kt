@@ -2,7 +2,10 @@ package com.dattilio.klient.plugins.combat
 
 import com.tinder.StateMachine
 
-class CombatStateMachine constructor(sideEffectListener: (sideEffect: SideEffect) -> Unit,startAttacking:Boolean?=false) {
+class CombatStateMachine constructor(
+    sideEffectListener: (sideEffect: SideEffect) -> Unit,
+    startAttacking: Boolean? = false
+) {
 
     sealed class State {
         object Attack : State()
@@ -36,7 +39,6 @@ class CombatStateMachine constructor(sideEffectListener: (sideEffect: SideEffect
         object Retreat : Event()
         object SuccessfulRetreat : Event()
         object FailedRetreat : Event()
-
     }
 
     sealed class SideEffect(val failureEvent: Event? = null) {
@@ -50,14 +52,14 @@ class CombatStateMachine constructor(sideEffectListener: (sideEffect: SideEffect
         object Lunge : SideEffect()
     }
 
+    var killingBlow: Boolean = true
     val stateMachine = StateMachine.create<State, Event, SideEffect> {
         startAttacking?.let {
-           if(it){
-               initialState(State.Attack)
-           }
-            else{
-               initialState(State.Idle)
-           }
+            if (it) {
+                initialState(State.Attack)
+            } else {
+                initialState(State.Idle)
+            }
         }
         state<State.Idle> {
             on<Event.EnemyHitYou> { transitionTo(State.Attack, SideEffect.Attack) }
@@ -72,7 +74,14 @@ class CombatStateMachine constructor(sideEffectListener: (sideEffect: SideEffect
             on<Event.SuccessfulGetWeapon> { transitionTo(State.Wield, SideEffect.Wield) }
             on<Event.TooFar> { transitionTo(State.Attack, SideEffect.Lunge) }
             on<Event.Retreat> { transitionTo(State.Retreat, SideEffect.Retreat) }
-            on<Event.EnemyUnconscious> { transitionTo(State.Kill) }
+            on<Event.EnemyUnconscious> {
+                if (killingBlow) {
+                    transitionTo(State.Kill)
+                } else {
+                    transitionTo(State.Idle)
+                }
+
+            }
             on<Event.Idle> { transitionTo(State.Idle) }
             on<Event.EnemyHitYou> { transitionTo(State.Attack) }
             on<Event.EnemyMissedYou> { transitionTo(State.Attack) }
