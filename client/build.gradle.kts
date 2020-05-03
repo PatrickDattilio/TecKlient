@@ -1,5 +1,4 @@
 plugins {
-    application
     kotlin("jvm")
     kotlin("kapt")
 }
@@ -7,10 +6,6 @@ plugins {
 repositories {
     mavenCentral()
     jcenter()
-}
-
-application {
-    mainClassName = "com.dattilio.klient.AppKt"
 }
 
 dependencies {
