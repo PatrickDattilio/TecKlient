@@ -92,7 +92,7 @@ class TecClient @Inject constructor(
 
     data class Login(val username: String, val password: String)
 
-    private fun loginToWebsite(username: String, password: String){
+    private fun loginToWebsite(username: String, password: String) {
         Observable.fromCallable {
             val requestBody = MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
@@ -104,7 +104,7 @@ class TecClient @Inject constructor(
 
 
             val loginRequest = Request.Builder()
-                .url("https://www.skotos.net/user/login.php".toHttpUrlOrNull()!!)
+                .url("https://login.eternalcitygame.com/login.php".toHttpUrlOrNull()!!)
                 .header(
                     "User-Agent",
                     "'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'"
@@ -176,7 +176,6 @@ class TecClient @Inject constructor(
             view.isConnected(true)
             launch { setupGameReader(it) }
             launch { setupGameWriter(output) }
-
         }
     }
 

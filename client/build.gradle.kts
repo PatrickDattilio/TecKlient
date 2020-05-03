@@ -22,8 +22,15 @@ dependencies {
     kapt("com.google.dagger:dagger-compiler:2.26")
     implementation("io.reactivex.rxjava3:rxjava:3.0.0")
     implementation(kotlin("stdlib-jdk8"))
-    implementation("com.squareup.okhttp3:okhttp:4.4.0")
+    implementation("com.squareup.okhttp3:okhttp:4.6.0")
+    implementation("com.squareup.okhttp3:okhttp-urlconnection:4.6.0")
+
+    implementation( "com.squareup.okhttp3:logging-interceptor:4.4.0")
     implementation("org.fxmisc.richtext:richtextfx:0.10.4")
+    implementation("com.tinder.scarlet:scarlet:0.1.10")
+    implementation("com.tinder.scarlet:websocket-okhttp:0.1.10")
+    implementation("com.tinder.scarlet:message-adapter-moshi:0.1.10")
+    implementation("com.tinder.scarlet:stream-adapter-coroutines:0.1.10")
 }
 
 configure<JavaPluginConvention> {
