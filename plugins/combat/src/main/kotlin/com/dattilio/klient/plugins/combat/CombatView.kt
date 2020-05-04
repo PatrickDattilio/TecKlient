@@ -3,33 +3,34 @@ package com.dattilio.klient.plugins.combat
 import javafx.scene.Scene
 import javafx.scene.control.Button
 import javafx.scene.control.CheckBox
-import javafx.scene.control.Label
 import javafx.scene.control.TextArea
 import javafx.scene.layout.HBox
 import javafx.scene.layout.VBox
-import javafx.scene.text.Text
 import javafx.stage.Stage
 
 
 class CombatView(presenter: CombatPreProcessor) {
 
-    val stage = Stage()
-    val queueText: Text
-    val checkBox: CheckBox
-    val startAttacking: CheckBox
-    var engagedText: Text
+    private val stage = Stage()
 
-    val weapon = TextArea()
-    val saveWeapon = Button("Save Weapon")
-    val weaponRotation = TextArea()
-    val saveRotation = Button("Save Rotation")
+    //Options
+    private val enabledCheckbox: CheckBox = CheckBox("Enabled")
+    private val attackDummyCheckbox: CheckBox = CheckBox("Attack Dummy")
+    private val killingBlowCheckBox: CheckBox = CheckBox("Killing blow")
+    private val closeGapCheckBox: CheckBox = CheckBox("Close Gap")
+    private val gapCloser = TextArea()
+    private val gapCloserSaveButton = Button("Save Rotation")
 
-    val killingBlow: CheckBox
+    //
+    private val weapon = TextArea()
+    private val saveWeapon = Button("Save Weapon")
+    private val weaponRotation = TextArea()
+    private val saveRotation = Button("Save Rotation")
 
     init {
         stage.title = "Combat"
-        presenter.combatSettings.weapon()?.let { weapon.text=it}
-        presenter.combatSettings.rotation()?.let { weaponRotation.text=it.joinToString(",")}
+        presenter.combatSettings.weapon()?.let { weapon.text = it }
+        presenter.combatSettings.rotation()?.let { weaponRotation.text = it.joinToString(",") }
         val weaponBox = HBox(weapon, saveWeapon)
         val rotationBox = HBox(weaponRotation, saveRotation)
 
@@ -40,42 +41,42 @@ class CombatView(presenter: CombatPreProcessor) {
         saveWeapon.setOnMouseClicked { presenter.saveWeapon(weapon.text) }
         saveRotation.setOnMouseClicked {
             val rotation = weaponRotation.text.split(",").map { it.trim() }
-            presenter.saveRotation(rotation) }
+            presenter.saveRotation(rotation)
+        }
 
-
-        checkBox = CheckBox("Auto Combat")
-        checkBox.isSelected = false
-        checkBox.selectedProperty().addListener { _, _, newValue ->
+        enabledCheckbox.isSelected = false
+        enabledCheckbox.selectedProperty().addListener { _, _, newValue ->
             presenter.checkBoxClicked(newValue)
         }
-        startAttacking = CheckBox("Start attacking")
-        startAttacking.isSelected = false
-        startAttacking.selectedProperty().addListener { _, _, newValue ->
-            if(newValue) {
+
+        attackDummyCheckbox.isSelected = false
+        attackDummyCheckbox.selectedProperty().addListener { _, _, newValue ->
+            if (newValue) {
                 presenter.moveToAttack()
             }
         }
 
-        killingBlow = CheckBox("Killing blow")
-        killingBlow.isSelected = true
-        killingBlow.selectedProperty().addListener { _, _, newValue ->
+        killingBlowCheckBox.isSelected = false
+        killingBlowCheckBox.selectedProperty().addListener { _, _, newValue ->
             presenter.killingBlowClicked(newValue)
         }
 
-        val queueLabel = Label("Action Queue:")
-        queueText = Text()
-        val engagedLabel = Label("Engaged to:")
-        engagedText = Text()
+        closeGapCheckBox.selectedProperty().addListener { _, _, newValue ->
+            presenter.gapCloserClicked(newValue)
+        }
+
+        gapCloser.prefRowCount = 1
+        gapCloser.prefWidth = 200.0
+        gapCloserSaveButton.setOnMouseClicked { presenter.saveGapCloser(gapCloser.text) }
+
         val combatBox = VBox(
-            checkBox,
-            startAttacking,
+            enabledCheckbox,
             weaponBox,
             rotationBox,
-            killingBlow,
-            queueLabel,
-            queueText,
-            engagedLabel,
-            engagedText
+            attackDummyCheckbox,
+            killingBlowCheckBox,
+            closeGapCheckBox,
+            HBox(gapCloser, gapCloserSaveButton)
         )
         combatBox.minHeight = 300.0
         combatBox.minWidth = 300.0

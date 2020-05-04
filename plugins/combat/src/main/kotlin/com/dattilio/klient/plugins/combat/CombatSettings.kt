@@ -8,7 +8,12 @@ import kotlinx.coroutines.async
 import java.io.File
 
 @JsonClass(generateAdapter = true)
-data class CombatSettingsInternal(val weapon: String?, val rotation: List<String>?)
+data class CombatSettingsInternal(
+    val weapon: String? = "yourWeapon",
+    val rotation: List<String>? = listOf("attackMacro1", "attackMacro2"),
+    val gapCloser: String? = "gapCloserMacro"
+)
+
 class CombatSettings(val settingsPath: String) {
     private var settings: CombatSettingsInternal? = null
     fun weapon() = settings?.weapon
@@ -18,7 +23,11 @@ class CombatSettings(val settingsPath: String) {
         .adapter(CombatSettingsInternal::class.java)
 
     init {
-        println("Path: ${File(".").absolutePath}")
+        val combatSettingFile = File(settingsPath)
+        val isNewFile = combatSettingFile.createNewFile()
+        if (isNewFile) {
+            File(settingsPath).writeText(moshiAdapter.toJson(CombatSettingsInternal()))
+        }
         settings = moshiAdapter.fromJson(
             File(
                 settingsPath
@@ -27,14 +36,21 @@ class CombatSettings(val settingsPath: String) {
     }
 
     fun updateWeapon(weapon: String) {
-        settings = settings?.copy(weapon = weapon) ?: CombatSettingsInternal(weapon = weapon, rotation = null)
+        settings = settings?.copy(weapon = weapon) ?: CombatSettingsInternal(weapon = weapon)
         GlobalScope.async {
             File(settingsPath).writeText(moshiAdapter.toJson(settings))
         }
     }
 
     fun updateRotation(rotation: List<String>) {
-        settings = settings?.copy(rotation = rotation) ?: CombatSettingsInternal(null, rotation = rotation)
+        settings = settings?.copy(rotation = rotation) ?: CombatSettingsInternal(rotation = rotation)
+        GlobalScope.async {
+            File(settingsPath).writeText(moshiAdapter.toJson(settings))
+        }
+    }
+
+    fun updateGapCloser(gapCloser: String) {
+        settings = settings?.copy(gapCloser = gapCloser) ?: CombatSettingsInternal(gapCloser = gapCloser)
         GlobalScope.async {
             File(settingsPath).writeText(moshiAdapter.toJson(settings))
         }

@@ -114,7 +114,7 @@ class CombatPreProcessor constructor() {
         for (item in engaged) {
             stringBuilder.append(item).append("\n")
         }
-        view.engagedText.text = stringBuilder.toString()
+//        view.engagedText.text = stringBuilder.toString()
     }
 
 
@@ -167,6 +167,14 @@ class CombatPreProcessor constructor() {
 
     fun killingBlowClicked(newValue: Boolean) {
         state.killingBlow = newValue
+    }
+
+    fun saveGapCloser(gapCloser: String) {
+        this.combatSettings.updateGapCloser(gapCloser)
+    }
+
+    fun gapCloserClicked(newValue: Boolean) {
+        state.closeGap = newValue
     }
 
 
