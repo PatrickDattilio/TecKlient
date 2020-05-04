@@ -3,8 +3,7 @@ package com.dattilio.klient.plugins.combat
 import com.tinder.StateMachine
 
 class CombatStateMachine constructor(
-    sideEffectListener: (sideEffect: SideEffect) -> Unit,
-    startAttacking: Boolean? = false
+    sideEffectListener: (sideEffect: SideEffect) -> Unit
 ) {
 
     sealed class State {
@@ -50,11 +49,14 @@ class CombatStateMachine constructor(
         object Status : SideEffect()
         object Retreat : SideEffect(Event.FailedRetreat)
         object Lunge : SideEffect()
+        object Approach : SideEffect()
     }
 
-    var killingBlow: Boolean = true
+    var closeGap: Boolean = false
+    var killingBlow: Boolean = false
+    var attackDummy: Boolean = false
     val stateMachine = StateMachine.create<State, Event, SideEffect> {
-        startAttacking?.let {
+        attackDummy.let {
             if (it) {
                 initialState(State.Attack)
             } else {
@@ -72,7 +74,13 @@ class CombatStateMachine constructor(
             on<Event.WeaponDropped> { transitionTo(State.GetWeapon, SideEffect.GetWeapon) }
             on<Event.FailedGetWeapon> { transitionTo(State.GetWeapon, SideEffect.GetWeapon) }
             on<Event.SuccessfulGetWeapon> { transitionTo(State.Wield, SideEffect.Wield) }
-            on<Event.TooFar> { transitionTo(State.Attack, SideEffect.Lunge) }
+            on<Event.TooFar> {
+                if (closeGap) {
+                    transitionTo(State.Attack, SideEffect.Lunge)
+                } else {
+                    transitionTo(State.Attack, SideEffect.Approach)
+                }
+            }
             on<Event.Retreat> { transitionTo(State.Retreat, SideEffect.Retreat) }
             on<Event.EnemyUnconscious> {
                 if (killingBlow) {
