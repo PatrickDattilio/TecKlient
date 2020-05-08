@@ -74,6 +74,6 @@ class AppModule(val app: App) {
         controls: Controls,
         view: View
     ): TecClient {
-        return TecClient(sendCommand, pluginManager, okHttp, controls, view)
+        return TecClient(sendCommand, pluginManager, okHttp, Login(okHttp),controls, view)
     }
 }

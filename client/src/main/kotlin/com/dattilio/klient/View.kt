@@ -2,8 +2,12 @@ package com.dattilio.klient
 
 //import org.apache.logging.log4j.LogManager
 import com.dattilio.klient.widget.Controls
+import com.sun.javafx.tk.Toolkit
+import javafx.event.EventHandler
 import javafx.scene.Scene
 import javafx.scene.control.*
+import javafx.scene.input.KeyCode
+import javafx.scene.input.KeyEvent
 import javafx.scene.layout.GridPane
 import javafx.stage.Stage
 import kotlinx.coroutines.CoroutineScope
@@ -107,4 +111,50 @@ class View @Inject constructor(private val controls: Controls) : CoroutineScope 
         reconnect.isVisible = !connected
         disconnect.isVisible = connected
     }
+
+    val key = Object()
+    private val usernameHandler: EventHandler<KeyEvent> = EventHandler { event ->
+        if (event.code == KeyCode.ENTER) {
+            event.consume()
+            Toolkit.getToolkit().exitNestedEventLoop(key, null)
+        }
+    }
+    private val passwordHandler: EventHandler<KeyEvent> = EventHandler { event ->
+        if (event.code == KeyCode.ENTER) {
+            event.consume()
+            Toolkit.getToolkit().exitNestedEventLoop(key, null)
+        }
+    }
+    fun getLoginCredentials(): Login.Credentials {
+        addText("Please enter your username:")
+        textArea.addEventFilter(KeyEvent.KEY_PRESSED, usernameHandler)
+        Toolkit.getToolkit().enterNestedEventLoop(key)
+        val username = getUsername()
+        Toolkit.getToolkit().enterNestedEventLoop(key)
+        val password = getPassword()
+        return Login.Credentials(username, password)
+    }
+
+    private fun getUsername(): String {
+        textArea.removeEventFilter(KeyEvent.KEY_PRESSED, usernameHandler)
+        val user = textArea.text
+        textArea.clear()
+        addText("Please enter your password:")
+        textArea.addEventFilter(KeyEvent.KEY_PRESSED, passwordHandler)
+        return user
+    }
+
+    private fun getPassword(): String {
+        textArea.removeEventFilter(KeyEvent.KEY_PRESSED, passwordHandler)
+        val pass = textArea.text
+        textArea.clear()
+        return pass
+
+    }
+
+    fun failedLogin() {
+        addText("I'm sorry, that username or password was incorrect. Please try again.")
+        getLoginCredentials()
+    }
+
 }
