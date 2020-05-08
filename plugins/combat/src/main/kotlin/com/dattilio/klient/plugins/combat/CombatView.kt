@@ -17,9 +17,9 @@ class CombatView(presenter: CombatPreProcessor) {
     private val enabledCheckbox: CheckBox = CheckBox("Enabled")
     private val attackDummyCheckbox: CheckBox = CheckBox("Attack Dummy")
     private val killingBlowCheckBox: CheckBox = CheckBox("Killing blow")
-    private val closeGapCheckBox: CheckBox = CheckBox("Close Gap")
+    private val closeGapCheckBox: CheckBox = CheckBox("Use Gap Closer")
     private val gapCloser = TextArea()
-    private val gapCloserSaveButton = Button("Save Rotation")
+    private val gapCloserSaveButton = Button("Save Gap Closer")
 
     //
     private val weapon = TextArea()
@@ -31,6 +31,8 @@ class CombatView(presenter: CombatPreProcessor) {
         stage.title = "Combat"
         presenter.combatSettings.weapon()?.let { weapon.text = it }
         presenter.combatSettings.rotation()?.let { weaponRotation.text = it.joinToString(",") }
+        presenter.combatSettings.gapCloser()?.let { gapCloser.text = it }
+
         val weaponBox = HBox(weapon, saveWeapon)
         val rotationBox = HBox(weaponRotation, saveRotation)
 

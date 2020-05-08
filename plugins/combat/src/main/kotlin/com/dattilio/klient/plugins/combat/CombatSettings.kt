@@ -11,13 +11,15 @@ import java.io.File
 data class CombatSettingsInternal(
     val weapon: String? = "yourWeapon",
     val rotation: List<String>? = listOf("attackMacro1", "attackMacro2"),
-    val gapCloser: String? = "gapCloserMacro"
+    val gapCloser: String? = "gapCloserMacro",
+    val approach: String? = "approachMacro"
 )
 
 class CombatSettings(val settingsPath: String) {
     private var settings: CombatSettingsInternal? = null
     fun weapon() = settings?.weapon
     fun rotation() = settings?.rotation
+    fun gapCloser() = settings?.gapCloser
     private val moshiAdapter: JsonAdapter<CombatSettingsInternal> = Moshi.Builder()
         .build()
         .adapter(CombatSettingsInternal::class.java)
@@ -25,14 +27,11 @@ class CombatSettings(val settingsPath: String) {
     init {
         val combatSettingFile = File(settingsPath)
         val isNewFile = combatSettingFile.createNewFile()
-        if (isNewFile) {
-            File(settingsPath).writeText(moshiAdapter.toJson(CombatSettingsInternal()))
+        settings = if (isNewFile) {
+            CombatSettingsInternal().also { File(settingsPath).writeText(moshiAdapter.toJson(it)) }
+        } else {
+            moshiAdapter.fromJson(File(settingsPath).readText())
         }
-        settings = moshiAdapter.fromJson(
-            File(
-                settingsPath
-            ).readText()
-        )
     }
 
     fun updateWeapon(weapon: String) {

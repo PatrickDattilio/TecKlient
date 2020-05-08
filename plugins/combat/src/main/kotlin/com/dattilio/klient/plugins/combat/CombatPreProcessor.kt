@@ -14,17 +14,21 @@ import java.util.*
 import kotlin.random.Random.Default.nextLong
 
 class CombatPreProcessor constructor() {
-
-    var repeater: Deferred<StateMachine.Transition<CombatStateMachine.State, CombatStateMachine.Event, CombatStateMachine.SideEffect>> ?=null
-    val combatSettings= CombatSettings("settings.json")
+    var timeouts: MutableMap<String, Deferred<StateMachine.Transition<CombatStateMachine.State, CombatStateMachine.Event, CombatStateMachine.SideEffect>>> =
+        mutableMapOf()
+    val combatSettings = CombatSettings("settings.json")
     var enabled = false
     private val view = CombatView(this)
     private val state = CombatStateMachine(::handleSideEffect)
 
-    private val parser = CombatParser(this::updateEngaged,combatSettings, AlertManager(), state.stateMachine)
+    private val parser = CombatParser(this::updateEngaged, combatSettings, AlertManager(), state.stateMachine)
     private val engaged = ArrayList<String>()
     lateinit var send: ByteWriteChannel
     var attackIndex = 0
+    private fun previousAttack(): String {
+        return combatSettings.rotation()!![attackIndex]
+    }
+
     private fun nextAttack(): String {
         attackIndex = (attackIndex + 1) % combatSettings.rotation()!!.size
         return combatSettings.rotation()!![attackIndex]
@@ -33,47 +37,61 @@ class CombatPreProcessor constructor() {
     private fun handleSideEffect(sideEffect: CombatStateMachine.SideEffect) {
         println(sideEffect)
         when (sideEffect) {
-            is CombatStateMachine.SideEffect.Attack -> handleAttack(sideEffect)
-            is CombatStateMachine.SideEffect.GetWeapon -> handleGetWeapon(sideEffect)
-            is CombatStateMachine.SideEffect.Wield -> handleWield(sideEffect)
-            is CombatStateMachine.SideEffect.Release -> handleRelease(sideEffect)
-            is CombatStateMachine.SideEffect.Kill -> handleKill(sideEffect)
-            is CombatStateMachine.SideEffect.Status -> handleStatus(sideEffect)
-            is CombatStateMachine.SideEffect.Retreat -> handleRetreat(sideEffect)
-            is CombatStateMachine.SideEffect.Lunge -> handleLunge(sideEffect)
+            CombatStateMachine.SideEffect.Attack -> handleAttack(sideEffect, nextAttack())
+            CombatStateMachine.SideEffect.GetWeapon -> handleGetWeapon(sideEffect)
+            CombatStateMachine.SideEffect.Wield -> handleWield(sideEffect)
+            CombatStateMachine.SideEffect.Release -> handleRelease(sideEffect)
+            CombatStateMachine.SideEffect.Kill -> handleKill(sideEffect)
+            CombatStateMachine.SideEffect.Status -> handleStatus(sideEffect)
+            CombatStateMachine.SideEffect.Retreat -> handleRetreat(sideEffect)
+            CombatStateMachine.SideEffect.Lunge -> handleLunge(sideEffect)
+            CombatStateMachine.SideEffect.RepeatAttack -> handleAttack(sideEffect, previousAttack())
+            is CombatStateMachine.SideEffect.Completed -> handleCompleted(sideEffect)
+            is CombatStateMachine.SideEffect.Timeout -> handleTimeout(sideEffect)
+            CombatStateMachine.SideEffect.Approach ->  sendCommand("at", sideEffect.event, true)
         }
     }
 
+    private fun handleCompleted(completed: CombatStateMachine.SideEffect.Completed) {
+        completed.cancelTimeout.let { timeouts[it::class.java.simpleName]?.cancel()}
+        completed.sideEffect?.let{handleSideEffect(it)}
+    }
+
+    private fun handleTimeout(timeout: CombatStateMachine.SideEffect.Timeout) {
+        timeouts.remove(timeout.sideEffect::class.java.simpleName)?.cancel()
+        handleSideEffect(timeout.sideEffect)
+    }
+
     private fun handleLunge(sideEffect: CombatStateMachine.SideEffect) {
-        sendCommand("zl", sideEffect.failureEvent, true)
+        sendCommand("zl", sideEffect.event, true)
     }
 
     private fun handleRetreat(sideEffect: CombatStateMachine.SideEffect) {
-        sendCommand("ret", sideEffect.failureEvent, true)
+        sendCommand("ret", sideEffect.event, true)
     }
 
     private fun handleStatus(sideEffect: CombatStateMachine.SideEffect) {
-        sendCommand("ss", sideEffect.failureEvent)
+        sendCommand("ss", sideEffect.event)
     }
 
     private fun handleKill(sideEffect: CombatStateMachine.SideEffect) {
-        sendCommand("kl", sideEffect.failureEvent)
+        sendCommand("kl", sideEffect.event)
     }
 
     private fun handleRelease(sideEffect: CombatStateMachine.SideEffect) {
-        sendCommand("release", sideEffect.failureEvent)
+        sendCommand("release", sideEffect.event)
     }
 
     private fun handleWield(sideEffect: CombatStateMachine.SideEffect) {
-        sendCommand("wie  ${combatSettings.weapon()}", sideEffect.failureEvent, true)
+        sendCommand("wie  ${combatSettings.weapon()}", sideEffect.event, true)
     }
 
     private fun handleGetWeapon(sideEffect: CombatStateMachine.SideEffect) {
-        sendCommand("get ${combatSettings.weapon()}", sideEffect.failureEvent, true)
+        sendCommand("get ${combatSettings.weapon()}", sideEffect.event, true)
     }
 
-    private fun handleAttack(sideEffect: CombatStateMachine.SideEffect.Attack) {
-        sendCommand(nextAttack(), sideEffect.failureEvent)
+    private fun handleAttack(sideEffect: CombatStateMachine.SideEffect, attack: String) {
+        sendCommand(attack, sideEffect.event)
     }
 
 
@@ -118,8 +136,7 @@ class CombatPreProcessor constructor() {
     }
 
 
-    private fun sendCommand(command: String, failureEvent:CombatStateMachine.Event?, randomDelay: Boolean = true) {
-        repeater?.cancel()
+    private fun sendCommand(command: String, failureEvent: CombatStateMachine.Event?, randomDelay: Boolean = true) {
         GlobalScope.async {
             if (randomDelay) {
                 delay(nextLong(450, 750))
@@ -127,10 +144,11 @@ class CombatPreProcessor constructor() {
             send.write("$command\r\n")
         }
         failureEvent?.let {
-            repeater = GlobalScope.async {
+            println("${System.currentTimeMillis()} Timer starte for: $it")
+            timeouts.put(it::class.java.simpleName, GlobalScope.async {
                 delay(3000)
                 state.stateMachine.transition(it)
-            }
+            })
         }
     }
 
@@ -162,7 +180,7 @@ class CombatPreProcessor constructor() {
     }
 
     fun moveToAttack() {
-        state.stateMachine.transition(CombatStateMachine.Event.EnemyHitYou)
+        state.stateMachine.transition(CombatStateMachine.Event.UnderAttack)
     }
 
     fun killingBlowClicked(newValue: Boolean) {
