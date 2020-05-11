@@ -32,6 +32,7 @@ class CombatStateMachine constructor(
 
         object Retreat : Event()
         object NewOpponent : Event()
+        object Prone : Event()
 
 
         sealed class Timeout(val sideEffect: SideEffect) : Event() {
@@ -40,14 +41,16 @@ class CombatStateMachine constructor(
             object GetWeapon : Timeout(SideEffect.GetWeapon)
             object Wield : Timeout(SideEffect.Wield)
             object Approach : Timeout(SideEffect.Approach)
+            object Stand: Timeout(SideEffect.Stand)
         }
 
         sealed class Completed(val sideEffect: SideEffect) : Event() {
-            object Attack : Completed(SideEffect.Attack)
+            class Attack(val success:Boolean) : Completed(SideEffect.Attack)
             object Retreat : Completed(SideEffect.Retreat)
             object GetWeapon : Completed(SideEffect.GetWeapon)
             object Wield : Completed(SideEffect.Wield)
             object Approach : Completed(SideEffect.Approach)
+            object Stand: Completed(SideEffect.Stand)
         }
 
     }
@@ -67,6 +70,7 @@ class CombatStateMachine constructor(
             val sideEffect: SideEffect? = null,
             val cancelTimeout: SideEffect
         ) : SideEffect()
+        object Stand:SideEffect(event=Event.Timeout.Stand)
 
         class Timeout(val sideEffect: SideEffect) : SideEffect()
 
@@ -103,7 +107,7 @@ class CombatStateMachine constructor(
                 )
             }
             on<Event.Timeout> { transitionTo(State.Attack, SideEffect.Timeout(it.sideEffect)) }
-
+            on<Event.Prone> {transitionTo(State.Attack,SideEffect.Stand)}
             on<Event.Bound> { transitionTo(State.Release, SideEffect.Release) }
             on<Event.WeaponDropped> { transitionTo(State.GetWeapon, SideEffect.GetWeapon) }
             on<Event.Timeout.GetWeapon> { transitionTo(State.GetWeapon, SideEffect.GetWeapon.timeout()) }
@@ -112,7 +116,7 @@ class CombatStateMachine constructor(
                 if (closeGap) {
                     transitionTo(State.Attack, SideEffect.Lunge)
                 } else {
-                    transitionTo(State.Attack, SideEffect.Approach)
+                    transitionTo(State.Idle, SideEffect.Approach)
                 }
             }
             on<Event.Retreat> { transitionTo(State.Retreat, SideEffect.Retreat) }

@@ -9,6 +9,7 @@ class CombatParser(
     private val alertManager: AlertManager,
     private val stateMachine: StateMachine<State, Event, SideEffect>
 ) {
+    val rollRegex = "Success: (\\d+), Roll: (\\d+)]".toPattern().toRegex()
 
     fun processLine(line: String) {
         when {
@@ -33,6 +34,10 @@ class CombatParser(
             -> {
                 stateMachine.transition(Event.WeaponDropped)
             }
+            "You stand up" in line -> stateMachine.transition(Event.Completed.Stand)
+            ("You must be standing." in line)
+                .or("on your butt" in line)
+                .or("off your feet" in line) -> stateMachine.transition(Event.Prone)
             ("You fumble" in line)
                 .and("drop" in line)
                 .and(combatSettings.weapon().toString() in line)
@@ -46,7 +51,8 @@ class CombatParser(
             -> {
                 stateMachine.transition(Event.Completed.Wield)
             }
-            "You stop next to" in line -> {
+            ("You stop next to" in line)
+                .or("stops next to you" in line) -> {
                 stateMachine.transition(Event.Completed.Approach)
             }
             "is not close enough." in line -> {
@@ -75,15 +81,20 @@ class CombatParser(
                 when {
                     (" at a " in line)
                         .or(" at an " in line) -> {
-                        stateMachine.transition(Event.Completed.Attack)
+                        val result = rollRegex.find(line)
+                        val success = result!!.groupValues[2].toInt() > result.groupValues[1].toInt()
+                        stateMachine.transition(Event.Completed.Attack(success))
                     }
                     (" at you" in line)
                         .or(" tries to " in line)
                         .or(" towards you" in line)
-                        .or(" into you" in line)-> {
+                        .or(" into you" in line)
+                        .or(" misses you" in line)
+                        .or("You block" in line) -> {
                         stateMachine.transition(Event.UnderAttack)
                     }
-                    "You slit" in line -> {
+                    ("You slit" in line )
+                        .or(("You bash" in line).and("killing" in line))-> {
                         stateMachine.transition(Event.EnemyKilled)
                     }
                 }

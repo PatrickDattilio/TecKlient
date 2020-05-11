@@ -49,6 +49,7 @@ class CombatPreProcessor constructor() {
             is CombatStateMachine.SideEffect.Completed -> handleCompleted(sideEffect)
             is CombatStateMachine.SideEffect.Timeout -> handleTimeout(sideEffect)
             CombatStateMachine.SideEffect.Approach ->  sendCommand("at", sideEffect.event, true)
+            CombatStateMachine.SideEffect.Stand ->  sendCommand("stand", sideEffect.event, true)
         }
     }
 
