@@ -9,10 +9,11 @@ class CombatParser(
     private val alertManager: AlertManager,
     private val stateMachine: StateMachine<State, Event, SideEffect>
 ) {
-    val rollRegex = "Success: (\\d+), Roll: (\\d+)]".toPattern().toRegex()
-
+    val rollRegex = "Success: (\\d+)\\s*, Roll: (\\d+)\\s*]".toPattern().toRegex()
+    val statsParser = StatsParser()
     fun processLine(line: String) {
         when {
+            statsParser.shouldParseStats(line) ->{}
             "to you" in line -> alertManager.alertWithSound()
             "You are no longer busy." in line -> {
                 stateMachine.transition(Event.NoLongerBusy)
@@ -26,7 +27,8 @@ class CombatParser(
             }
             ("You must be wielding a weapon to attack." in line)
                 .or("You are already carrying" in line)
-                .or("You take a " in line) -> {
+                .or(("You take a " in line).and(combatSettings.weapon()?:"" in line))
+                .or(("withdraw a " in line).and(combatSettings.weapon()?:"" in line))-> {
                 stateMachine.transition(Event.Completed.GetWeapon)
             }
             ("You can't do that right now." in line)
@@ -73,7 +75,7 @@ class CombatParser(
             "must be unconscious first" in line -> {
                 stateMachine.transition(Event.EnemyKilled)
             }
-            "  arrives." in line -> {
+            " arrives." in line -> {
                 stateMachine.transition(Event.NewOpponent)
             }
             // Something is attacking us
@@ -93,8 +95,8 @@ class CombatParser(
                         .or("You block" in line) -> {
                         stateMachine.transition(Event.UnderAttack)
                     }
-                    ("You slit" in line )
-                        .or(("You bash" in line).and("killing" in line))-> {
+                    ("You slit" in line)
+                        .or(("You bash" in line).and("killing" in line)) -> {
                         stateMachine.transition(Event.EnemyKilled)
                     }
                 }
@@ -102,3 +104,41 @@ class CombatParser(
         }
     }
 }
+
+private data class Character(val name:String?="",
+                             val homeland:String?="")
+
+class StatsParser() {
+    var parsingStats = false
+    var horizontalRuleCount = 0
+    var name = ""
+    var homeland = ""
+
+    fun shouldParseStats(line: String): Boolean {
+        if ("Character Sheet for " in line) {
+            parsingStats = true
+        } else if (parsingStats) {
+            parsingStats = parse(line)
+        }
+        return parsingStats
+    }
+
+    private fun parse(line: String): Boolean {
+        if ("<hr>" in line) {
+            horizontalRuleCount++
+            if (horizontalRuleCount > 1) {
+                parsingStats = false
+                horizontalRuleCount = 0
+            }
+        } else if ("Name: " in line) {
+
+            name = line.substringAfter("Name:  ")
+            homeland = name.substringAfter("Homeland: ")
+            name = name.substringBefore("Homeland:").trim()
+            print(Character(name, homeland))
+        }
+
+        return parsingStats
+    }
+}
+

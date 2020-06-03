@@ -13,6 +13,7 @@ dependencies {
     implementation("javax.inject:javax.inject:1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-javafx:1.1.1")
     implementation("io.ktor:ktor-websockets:1.3.1")
+    implementation(kotlin("stdlib-jdk8"))
     implementation("com.google.dagger:dagger:2.26")
     kapt("com.google.dagger:dagger-compiler:2.26")
     implementation("io.reactivex.rxjava3:rxjava:3.0.0")

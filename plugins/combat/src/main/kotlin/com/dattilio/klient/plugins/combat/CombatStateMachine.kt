@@ -143,7 +143,7 @@ class CombatStateMachine constructor(
         }
         state<State.Retreat> {
             on<Event.NoLongerBusy> { transitionTo(State.Retreat, SideEffect.Retreat) }
-            on<Event.Idle> { transitionTo(State.Retreat, SideEffect.Retreat) }
+            on<Event.Idle> { transitionTo(State.Idle) }
             on<Event.Timeout> { transitionTo(this, it.sideEffect) }
             on<Event.Completed.Retreat> { transitionTo(State.Attack, SideEffect.Lunge) }
 
@@ -179,7 +179,7 @@ class CombatStateMachine constructor(
             on<Event.NoLongerBusy> { transitionTo(State.Wield, SideEffect.Wield) }
 
             on<Event.Timeout.Wield> { transitionTo(State.Wield, SideEffect.Wield.timeout()) }
-            on<Event.Completed.Wield> { transitionTo(State.Idle, SideEffect.Wield.completed(it.sideEffect)) }
+            on<Event.Completed.Wield> { transitionTo(State.Idle, SideEffect.Attack.completed(it.sideEffect)) }
             on<Event.WeaponDropped> { transitionTo(State.GetWeapon, SideEffect.GetWeapon) }
             on<Event.Timeout.GetWeapon> { transitionTo(State.GetWeapon, SideEffect.GetWeapon.timeout()) }
             on<Event.Completed.GetWeapon> { transitionTo(State.Wield, SideEffect.Wield.completed(it.sideEffect)) }

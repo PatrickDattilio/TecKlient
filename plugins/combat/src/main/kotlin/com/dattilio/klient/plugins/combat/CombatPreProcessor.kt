@@ -8,6 +8,8 @@ import io.ktor.network.sockets.openWriteChannel
 import io.ktor.util.cio.write
 import io.ktor.utils.io.ByteWriteChannel
 import io.ktor.utils.io.readUTF8Line
+import io.ktor.utils.io.writeStringUtf8
+import jdk.nashorn.internal.objects.Global
 import kotlinx.coroutines.*
 import java.net.InetSocketAddress
 import java.util.*
@@ -18,6 +20,7 @@ class CombatPreProcessor constructor() {
         mutableMapOf()
     val combatSettings = CombatSettings("settings.json")
     var enabled = false
+    var globalTimeout:Job?=null
     private val view = CombatView(this)
     private val state = CombatStateMachine(::handleSideEffect)
 
@@ -104,6 +107,7 @@ class CombatPreProcessor constructor() {
     }
 
     init {
+
         GlobalScope.async {
 
             val socket =
@@ -116,6 +120,7 @@ class CombatPreProcessor constructor() {
                 try {
                     while (true) {
                         val line = input.readUTF8Line()
+
                         line?.let { println(it) }
                         line?.let { preProcessLine(it) }
                     }
@@ -138,6 +143,14 @@ class CombatPreProcessor constructor() {
 
 
     private fun sendCommand(command: String, failureEvent: CombatStateMachine.Event?, randomDelay: Boolean = true) {
+        globalTimeout?.let{
+            it.cancel()
+            globalTimeout = GlobalScope.async {
+                println("No Commands in 10 seconds, reverting to idle.")
+                delay(10000)
+                state.stateMachine.transition(CombatStateMachine.Event.Idle)
+            }
+        }
         GlobalScope.async {
             if (randomDelay) {
                 delay(nextLong(450, 750))

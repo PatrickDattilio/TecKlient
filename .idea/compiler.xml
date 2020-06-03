@@ -12,6 +12,9 @@
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
     <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="client.main" target="1.8" />
+      <module name="client.test" target="1.8" />
       <module name="Klient.client.main" target="11" />
       <module name="Klient.client.test" target="11" />
       <module name="Klient.hunting.main" target="1.8" />
@@ -20,9 +23,6 @@
       <module name="Klient.plugins.hunting.main" target="1.8" />
       <module name="Klient.plugins.hunting.test" target="1.8" />
       <module name="Klient.plugins.main" target="1.8" />
-      <module name="Klient.plugins.map" target="1.8" />
-      <module name="Klient.plugins.map.main" target="1.8" />
-      <module name="Klient.plugins.map.test" target="1.8" />
       <module name="Klient.plugins.test" target="1.8" />
       <module name="Klient.sample_app" target="1.8" />
       <module name="Klient.sample_app.main" target="1.8" />

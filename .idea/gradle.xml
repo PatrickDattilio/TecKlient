@@ -14,12 +14,40 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
             <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/headless" />
+            <option value="$PROJECT_DIR$/headless/client" />
+            <option value="$PROJECT_DIR$/headless/combat" />
+            <option value="$PROJECT_DIR$/headless/courses" />
+            <option value="$PROJECT_DIR$/headless/locksmithing" />
             <option value="$PROJECT_DIR$/plugins" />
-            <option value="$PROJECT_DIR$/plugins/Combat" />
+            <option value="$PROJECT_DIR$/plugins/combat" />
             <option value="$PROJECT_DIR$/plugins/courses" />
+            <option value="$PROJECT_DIR$/plugins/map" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/headless/client" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api" />
+            <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/headless" />
+            <option value="$PROJECT_DIR$/headless/client" />
+            <option value="$PROJECT_DIR$/headless/combat" />
+            <option value="$PROJECT_DIR$/headless/courses" />
+            <option value="$PROJECT_DIR$/headless/locksmithing" />
+            <option value="$PROJECT_DIR$/plugins" />
+            <option value="$PROJECT_DIR$/plugins/combat" />
+            <option value="$PROJECT_DIR$/plugins/courses" />
+            <option value="$PROJECT_DIR$/plugins/map" />
+          </set>
+        </option>
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
