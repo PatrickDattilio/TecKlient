@@ -22,7 +22,7 @@ class MapStateMachine(sideEffectListener: (position: Node, sideEffect: SideEffec
     var graphvizInitialized = false
     var map: MutableGraph? = null
 
-    private var position: Node = Node(-1, mutableMapOf(), "Toga", 0, 0, 0)
+    private var position: Node = Node(0, mutableMapOf(), "Toga", 0, 0, 0)
 
     init {
         if (dotFile.exists()) {
@@ -54,38 +54,14 @@ class MapStateMachine(sideEffectListener: (position: Node, sideEffect: SideEffec
         class SetInitialPosition(long: Long)
 
         class RoomDescription(line: String) : Event()
-
-        class MovedEast(val line: String) : Event() {
-
-        }
-
-        class MovedWest(val line: String) : Event() {
-
-        }
-
-        class MovedNorth(val line: String) : Event() {
-
-        }
-
-        class MovedSouth(val line: String) : Event() {
-
-        }
-
-        class MovedNorthEast(val line: String) : Event() {
-
-        }
-
-        class MovedSouthEast(val line: String) : Event() {
-
-        }
-
-        class MovedNorthWest(val line: String) : Event() {
-
-        }
-
-        class MovedSouthWest(val line: String) : Event() {
-
-        }
+        class MovedEast(val line: String) : Event()
+        class MovedWest(val line: String) : Event()
+        class MovedNorth(val line: String) : Event()
+        class MovedSouth(val line: String) : Event()
+        class MovedNorthEast(val line: String) : Event()
+        class MovedSouthEast(val line: String) : Event()
+        class MovedNorthWest(val line: String) : Event()
+        class MovedSouthWest(val line: String) : Event()
     }
 
     sealed class SideEffect {
@@ -164,7 +140,11 @@ class MapStateMachine(sideEffectListener: (position: Node, sideEffect: SideEffec
     }
 
     private fun saveGraph() {
-
+        val graphFile = File("map.txt")
+        val isNewFile = graphFile.createNewFile()
+        if (isNewFile) {
+            graphFile.writeText(tecMap.toString())
+        }
         val map: MutableGraph = Factory.mutGraph().setDirected(true)
         val sortedMap= TreeMap<Point,Node>(kotlin.Comparator { first, second ->
             var delta = first.x - second.x
@@ -191,36 +171,36 @@ class MapStateMachine(sideEffectListener: (position: Node, sideEffect: SideEffec
 //                var otherRank = rank
                 val other = mutNode(exit.id.toString())
                 var link: LinkTarget?=null
-                when (dir) {
-                    Direction.SW -> {
-                        link = room.port(Compass.SOUTH_WEST).linkTo(other.port(Compass.NORTH_EAST))
-                    }
-                    Direction.S -> {
-                        link =room.port(Compass.SOUTH).linkTo(other.port(Compass.NORTH))
-                    }
-                    Direction.SE -> {
-                        link =room.port(Compass.SOUTH_EAST).linkTo(other.port(Compass.NORTH_WEST))
-                    }
-                    Direction.W ->
-                        link =room.port(Compass.WEST).linkTo(other.port(Compass.EAST))
-                    Direction.E ->
-                        link =room.port(Compass.EAST).linkTo(other.port(Compass.WEST))
-                    Direction.NW ->
-                        link =room.port(Compass.NORTH_WEST).linkTo(other.port(Compass.SOUTH_EAST))
-
-                    Direction.N ->
-                        link =room.port(Compass.NORTH).linkTo(other.port(Compass.SOUTH))
-
-                    Direction.NE ->
-                        link =room.port(Compass.NORTH_EAST).linkTo(other.port(Compass.SOUTH_WEST))
-
-                    Direction.UP -> {
-                    }
-                    Direction.DOWN -> {
-                    }
-                    Direction.OTHER -> {
-                    }
-                }
+//                when (dir) {
+//                    Direction.SW -> {
+//                        link = room.port(Compass.SOUTH_WEST).linkTo(other.port(Compass.NORTH_EAST))
+//                    }
+//                    Direction.S -> {
+//                        link =room.port(Compass.SOUTH).linkTo(other.port(Compass.NORTH))
+//                    }
+//                    Direction.SE -> {
+//                        link =room.port(Compass.SOUTH_EAST).linkTo(other.port(Compass.NORTH_WEST))
+//                    }
+//                    Direction.W ->
+//                        link =room.port(Compass.WEST).linkTo(other.port(Compass.EAST))
+//                    Direction.E ->
+//                        link =room.port(Compass.EAST).linkTo(other.port(Compass.WEST))
+//                    Direction.NW ->
+//                        link =room.port(Compass.NORTH_WEST).linkTo(other.port(Compass.SOUTH_EAST))
+//
+//                    Direction.N ->
+//                        link =room.port(Compass.NORTH).linkTo(other.port(Compass.SOUTH))
+//
+//                    Direction.NE ->
+//                        link =room.port(Compass.NORTH_EAST).linkTo(other.port(Compass.SOUTH_WEST))
+//
+//                    Direction.UP -> {
+//                    }
+//                    Direction.DOWN -> {
+//                    }
+//                    Direction.OTHER -> {
+//                    }
+//                }
                 link?.let { room.addLink(it)}
 
                 node.label?.let { room.add(Attributes.attr("tag", node.label)) }
