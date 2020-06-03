@@ -1,5 +1,5 @@
 package com.dattilio.klient.client//import org.apache.logging.log4j.LogManager
-import com.dattilio.klient.widget.Controls
+import com.dattilio.klient.client.widget.Controls
 import java.util.regex.Pattern
 
 class TecTextParser(private val controls: Controls) {
